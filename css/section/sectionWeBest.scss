@@ -1,0 +1,52 @@
+.we-best {
+    background: url("../../images/best_bg.jpg") center;
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    position: relative; 
+}
+.content--we-best {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-position: center center;
+    .title {
+        margin-top: 133px;
+    }
+}
+
+.advantages {
+    display: flex;
+}
+
+.advantages__item {
+    margin-top: 55px;
+    padding: 15px;
+    margin-right: 37px;
+}
+.advantages__item:last-child {
+    margin-right: 0px;
+}
+.advantages__icon{
+    width: 90%;
+    height: 90px;
+    svg {
+      max-width: 95%;
+    }
+}
+.advantages__desc{
+    text-align: center;
+    margin-top: 33px;
+}
+.advantages__title{
+    font-size: 24px;
+    font-family: 'Lifehack-Medium';
+    color: $black;
+}
+.advantages__text{
+    text-align: justify;
+    margin-top: 25px;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    font-size: 14px;
+    color:$grey;
+}

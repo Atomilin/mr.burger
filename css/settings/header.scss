@@ -1,0 +1,76 @@
+.header {
+	padding-top: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header__btns {
+  display: flex;
+  align-items: center;
+  margin-left: 70px;
+}
+
+.header__links {
+  display: flex;
+  align-items: center;
+}
+
+.header__menu {
+	flex: 1;
+	text-align: right;
+	margin-right: 20px;
+}
+
+.nav__list {
+	width: 100%;
+	display: flex;
+  	align-items: center;
+}
+
+.nav__item {
+	display: flex;
+	align-items: center;
+	&:after {
+		content: "";
+		display: block;
+		width: 4px;
+		height: 4px;
+		border-radius: 50%;
+		background: white;
+		margin: 0 15px;
+	}
+	&:last-child {
+		margin-right: 0;
+		&:after {
+			display: none;
+		}
+	}
+}
+
+.nav__link {
+	font-size: 13px;
+	text-transform: uppercase;
+	color: $white;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.button {
+	background: $orange;
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px;
+	border: none;
+	padding: 9px 16px;
+	transition: .5s;
+	font-family: 'Ubuntu', Helvetica, sans-serif;
+	&:hover {
+		background-color: darken($orange, 5%);
+	  }
+}

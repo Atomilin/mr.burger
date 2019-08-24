@@ -1,0 +1,62 @@
+.main {
+    background-image: url("../../images/heading_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    position: relative; 
+}
+
+.main-content {
+    margin-top: 93px;
+    position: relative;
+    display: flex;
+}
+  
+.main-content__left, .main-content__right {
+    float: left;
+    width: 50%;
+}
+  
+.main-content__right {
+    padding-top: 54px;
+}
+
+.main-content__subtitle {
+    font-size: 65px;
+    color: white;
+    font-family: 'Lifehack-Medium';
+    text-transform: lowercase;
+}
+  
+.main-content__img {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    max-height: 100%;
+}
+  
+.next-screen-arrow {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 60px;
+    transform: translateX(-50%);
+    transition: .3s;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      .next-screen-arrow__icon {
+        margin-top: -12px;
+      }
+    }
+}
+  
+.next-screen-arrow__icon {
+    width: 40px;
+    height: 40px;
+    transition: .3s;
+    fill: $white;
+}

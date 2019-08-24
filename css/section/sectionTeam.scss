@@ -1,0 +1,28 @@
+.team {
+    background-image: url("../../images/team_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    position: relative; 
+}
+
+.team__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.team__section {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    background: rgba(#2f3234, .93);
+    padding: 5% 4% 0 8%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.title--team {
+    text-align: center;
+}
