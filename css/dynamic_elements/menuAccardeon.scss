@@ -35,13 +35,13 @@
 	font-family: 'Gagalin-Regular', Helvetica, sans-serif;
 
     &.meat {
-        background-image: url('../../images/meat_bg.jpg');
+        background-image: url('./images/meat_bg.jpg');
     }
     &.vegan {
-        background-image: url('../../images/vegan_bg.jpg');
+        background-image: url('./images/vegan_bg.jpg');
     }
     &.diet {
-        background-image: url('../../images/diet_bg.jpg');
+        background-image: url('./images/diet_bg.jpg');
     }
 }
 

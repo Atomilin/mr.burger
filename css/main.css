@@ -56,31 +56,31 @@ body {
 
 @font-face {
   font-family: 'Gagalin-Regular';
-  src: url("../../fonts/Gagalin-Regular.woff") format("woff");
+  src: url("./fonts/Gagalin-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Lifehack-Medium';
-  src: url("../../fonts/Lifehack-Medium.woff") format("woff");
+  src: url("./fonts/Lifehack-Medium.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../../fonts/Ubuntu-Light.woff") format("woff");
+  src: url("./fonts/Ubuntu-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../../fonts/Ubuntu-Medium.woff") format("woff");
+  src: url("./fonts/Ubuntu-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../../fonts/Ubuntu-Bold.woff") format("woff");
+  src: url("./fonts/Ubuntu-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 
@@ -292,7 +292,7 @@ a:hover {
   height: 20px; }
 
 .main {
-  background-image: url("../../images/heading_bg.jpg");
+  background-image: url("./images/heading_bg.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative; }
@@ -360,7 +360,7 @@ a:hover {
   fill: #fff; }
 
 .we-best {
-  background: url("../../images/best_bg.jpg") center;
+  background: url("./images/best_bg.jpg") center;
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative; }
@@ -429,7 +429,7 @@ a:hover {
   justify-content: center; }
 
 .team {
-  background-image: url("../../images/team_bg.jpg");
+  background-image: url("./images/team_bg.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative; }
@@ -466,7 +466,7 @@ a:hover {
   text-align: center; }
 
 .menu {
-  background: url("../../images/menu_bg.jpg") 50% no-repeat;
+  background: url("./images/menu_bg.jpg") 50% no-repeat;
   background-size: cover;
   position: relative; }
 
@@ -559,7 +559,7 @@ a:hover {
     background-color: rgba(35, 37, 39, 0.8); }
 
 .process {
-  background: url("../../images/we_work_bg.png") 50% no-repeat;
+  background: url("./images/we_work_bg.png") 50% no-repeat;
   background-size: cover;
   position: relative;
   -webkit-box-pack: center;
@@ -571,7 +571,7 @@ a:hover {
 
 .form {
   width: 100%;
-  background: url("../../images/order_bg.jpg") 50% no-repeat;
+  background: url("./images/order_bg.jpg") 50% no-repeat;
   background-size: cover;
   position: relative;
   -webkit-box-pack: center;
@@ -907,11 +907,11 @@ a:hover {
   position: relative;
   font-family: 'Gagalin-Regular', Helvetica, sans-serif; }
   .menu-acco__link.meat {
-    background-image: url("../../images/meat_bg.jpg"); }
+    background-image: url("./images/meat_bg.jpg"); }
   .menu-acco__link.vegan {
-    background-image: url("../../images/vegan_bg.jpg"); }
+    background-image: url("./images/vegan_bg.jpg"); }
   .menu-acco__link.diet {
-    background-image: url("../../images/diet_bg.jpg"); }
+    background-image: url("./images/diet_bg.jpg"); }
 
 .menu-acco__title {
   font-size: 40px;
