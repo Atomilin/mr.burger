@@ -17,13 +17,13 @@
 			color: $yellow;
 		}
 		.menu-acco__desc {
-			max-width: 500px;
+			max-width: 50.0rem;
 		}
 	}
 }
 
 .menu-acco__link {
-	width: 80px;
+	width: 5rem;
 	display: block;
 	height: 100%;
 	float: left;
@@ -35,18 +35,18 @@
 	font-family: 'Gagalin-Regular', Helvetica, sans-serif;
 
     &.meat {
-        background-image: url('./images/meat_bg.jpg');
+        background-image: url('/images/meat_bg.jpg');
     }
     &.vegan {
-        background-image: url('./images/vegan_bg.jpg');
+        background-image: url('/images/vegan_bg.jpg');
     }
     &.diet {
-        background-image: url('./images/diet_bg.jpg');
+        background-image: url('/images/diet_bg.jpg');
     }
 }
 
 .menu-acco__title {
-	font-size: 40px;
+	font-size: 2rem;
 	color: #fff;
 	text-align: center;
     white-space: nowrap;
@@ -60,20 +60,19 @@
 .menu-acco__desc {
 	height: 100%;
 	background: rgba(#2f3234, .93);
-	width: 0;
+	width: 0rem;
 	transition: .3s;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	overflow: hidden;
 	width: auto;
-	max-width: 0;
+	max-width: 0rem;
 }
 
 .menu-acco__text {
-	font-size: 14px;
+	font-size: 1rem;
 	color: #fff;
-    padding: 60px 40px;
     line-height: 1.8;
 	width: auto;
 }

@@ -1,5 +1,5 @@
 .we-best {
-    background: url("./images/best_bg.jpg") center;
+    background: url("/images/best_bg.jpg") center;
     background-repeat: no-repeat;
     background-size: 100%; 
     position: relative; 
@@ -10,43 +10,45 @@
     align-items: center;
     background-position: center center;
     .title {
-        margin-top: 133px;
+        margin-top: 11rem;
     }
 }
 
 .advantages {
     display: flex;
+    margin-top: 2rem;
 }
 
 .advantages__item {
-    margin-top: 55px;
-    padding: 15px;
-    margin-right: 37px;
+    //padding: 1.5rem;
+    margin-right: 6rem;
 }
 .advantages__item:last-child {
-    margin-right: 0px;
+    margin-right: 0rem;
 }
 .advantages__icon{
     width: 90%;
-    height: 90px;
+    height: 5rem;
     svg {
       max-width: 95%;
     }
 }
 .advantages__desc{
     text-align: center;
-    margin-top: 33px;
+    margin-top: 3.3rem;
 }
 .advantages__title{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: 'Lifehack-Medium';
+    white-space: nowrap;
     color: $black;
 }
 .advantages__text{
     text-align: justify;
-    margin-top: 25px;
+    margin-top: 2.5rem;
     font-family: 'Ubuntu';
     font-weight: 300;
-    font-size: 14px;
-    color:$grey;
+    font-size: 1.3rem;
+    line-height: normal;
+    color: #2f3234cc;
 }

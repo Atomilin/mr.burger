@@ -1,5 +1,5 @@
 .header {
-	padding-top: 12px;
+	padding-top: 1.2rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -8,7 +8,7 @@
 .header__btns {
   display: flex;
   align-items: center;
-  margin-left: 70px;
+  margin-left: 7.0rem;
 }
 
 .header__links {
@@ -19,7 +19,7 @@
 .header__menu {
 	flex: 1;
 	text-align: right;
-	margin-right: 20px;
+	margin-right: 2.0rem;
 }
 
 .nav__list {
@@ -34,14 +34,14 @@
 	&:after {
 		content: "";
 		display: block;
-		width: 4px;
-		height: 4px;
+		width: 0.4rem;
+		height: 0.4rem;
 		border-radius: 50%;
 		background: white;
-		margin: 0 15px;
+		margin: 0 1.5rem;
 	}
 	&:last-child {
-		margin-right: 0;
+		margin-right: 0rem;
 		&:after {
 			display: none;
 		}
@@ -49,27 +49,32 @@
 }
 
 .nav__link {
-	font-size: 13px;
+	transition: .5s;
+	white-space: pre;
+	font-size: 1rem;
 	text-transform: uppercase;
 	color: $white;
 	text-decoration: none;
 	&:hover {
-		text-decoration: underline;
+		transition: .5s;
+		font-size: 1.3rem;
 	}
 }
 
 .button {
 	background: $orange;
-	font-size: 13px;
+	font-size: 1.3rem;
 	text-transform: uppercase;
 	color: #fff;
 	text-align: center;
 	text-decoration: none;
-	border-radius: 5px;
+	border-radius: 0.5rem;
 	border: none;
-	padding: 9px 16px;
+	padding: 0.9rem 1.6rem;
 	transition: .5s;
-	font-family: 'Ubuntu', Helvetica, sans-serif;
+	font-family: Ubuntu;
+	font-style: normal;
+	font-stretch: normal;
 	&:hover {
 		background-color: darken($orange, 5%);
 	  }

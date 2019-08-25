@@ -7,7 +7,6 @@
 
 .review__item{
     height: 50%;
-    position: relative;
     filter: grayscale(100%);
 }
 
@@ -48,7 +47,7 @@
     height: 100%;
     transform: translate(-50%, -50%) scale(.7);
     opacity: 0;
-    padding: 17% 12% 0;
+    padding: 5% 12% 0;
     transition: .3s;
     z-index: 10;
 }
@@ -56,25 +55,25 @@
 .overlay__title {
     font-family: 'Gagalin-Regular', Helvetica, sans-serif;
     color: #fff;
-    font-size: 14px;
-    margin-bottom: 35px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
   }
 
 .overlay__text{
     color: #ffffff;
-    font-size: 14px;
-    margin-bottom: 17px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
 .overlay__button{
-    border-radius: 5px;
+    border-radius: 0.5rem;
     background-color: $grey;
-    padding: 8px 12px;
+    padding: 1rem 1rem;
     display: inline-block;
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 0.8rem;
     transition: .3s;
     &:hover {
       background-color: darken($grey, 5%);

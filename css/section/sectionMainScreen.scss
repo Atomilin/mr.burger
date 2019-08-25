@@ -1,12 +1,12 @@
 .main {
-    background-image: url("./images/heading_bg.jpg");
+    background-image: url('/images/heading_bg.jpg');
     background-repeat: no-repeat;
     background-size: 100%; 
     position: relative; 
 }
 
 .main-content {
-    margin-top: 93px;
+    margin-top: 3.3rem;
     position: relative;
     display: flex;
 }
@@ -17,11 +17,12 @@
 }
   
 .main-content__right {
-    padding-top: 54px;
+    margin-top: 5.4rem;
 }
 
 .main-content__subtitle {
-    font-size: 65px;
+    font-size: 4.5rem;
+    line-height: 4rem;
     color: white;
     font-family: 'Lifehack-Medium';
     text-transform: lowercase;
@@ -38,25 +39,24 @@
   
 .next-screen-arrow {
     position: absolute;
-    bottom: 20px;
+    bottom: 0rem;
     left: 50%;
-    width: 60px;
+    width: 6.0rem;
     transform: translateX(-50%);
     transition: .3s;
-    height: 60px;
+    height: 6.0rem;
     display: flex;
     align-items: center;
     justify-content: center;
     &:hover {
       .next-screen-arrow__icon {
-        margin-top: -12px;
+        margin-top: -1.2rem;
       }
     }
 }
   
 .next-screen-arrow__icon {
-    width: 40px;
-    height: 40px;
+    width: 2.0rem;
     transition: .3s;
     fill: $white;
 }
