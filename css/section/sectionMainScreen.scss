@@ -1,23 +1,20 @@
 .main {
     background-image: url('./../images/heading_bg.jpg');
-    background-repeat: no-repeat;
-    background-size: 100%; 
-    position: relative; 
 }
 
 .main-content {
-    margin-top: 3.3rem;
-    position: relative;
     display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
   
 .main-content__left, .main-content__right {
-    float: left;
     width: 50%;
 }
   
 .main-content__right {
-    margin-top: 5.4rem;
 }
 
 .main-content__subtitle {
@@ -37,7 +34,7 @@
     max-height: 100%;
 }
   
-.next-screen-arrow {
+.arrow {
     position: absolute;
     bottom: 0rem;
     left: 50%;
@@ -49,13 +46,13 @@
     align-items: center;
     justify-content: center;
     &:hover {
-      .next-screen-arrow__icon {
+      .arrow__icon {
         margin-top: -1.2rem;
       }
     }
 }
   
-.next-screen-arrow__icon {
+.arrow__icon {
     width: 2.0rem;
     transition: .3s;
     fill: $white;

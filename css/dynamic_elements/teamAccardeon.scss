@@ -6,7 +6,7 @@
 .team-acco__item {
 	margin-bottom: 1.5rem;
 
-	&:hover {
+	&.team-acco__item--active {
 		.content-team {
 			display: flex;
 			max-height: 20.0rem;

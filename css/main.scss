@@ -12,6 +12,7 @@ $grey: #2f3234cc;
 @import "./settings/zeroing.scss"; //сброс стандартных значений
 @import "./settings/header.scss"; //стили для шапки
 @import "./settings/footer.scss"; //стили для подвала
+@import "./settings/mixins"; //миксины
 
 //Sections
 @import "./section/sectionMainScreen.scss"; //стили главной страницы

@@ -1,81 +1,82 @@
 .review__list{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .review__item{
-    height: 50%;
-    filter: grayscale(100%);
+  width: 25%;
+  height: 50%;
+  filter: grayscale(100%);
 }
 
 .review__picture{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    &:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: transparent;
-      transition: .3s;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    transition: .3s;
+  }
+  &:hover {
+    .overlay {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
     }
-    &:hover {
-      .overlay {
-        transform: translate(-50%, -50%) scale(1);
-        opacity: 1;
-      }
-      &:after {
-        background: rgba(#141414, .7);
-      }
+    &:after {
+      background: rgba(#141414, .7);
     }
   }
+}
 
 .review__avatar{
-    height: 100%;
+  height: 100%;
 }
 
 .overlay{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    transform: translate(-50%, -50%) scale(.7);
-    opacity: 0;
-    padding: 5% 12% 0;
-    transition: .3s;
-    z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%) scale(.7);
+  opacity: 0;
+  padding: 5% 12% 0;
+  transition: .3s;
+  z-index: 10;
 }
 
 .overlay__title {
-    font-family: 'Gagalin-Regular', Helvetica, sans-serif;
-    color: #fff;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-  }
+  font-family: 'Gagalin-Regular', Helvetica, sans-serif;
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
 
 .overlay__text{
-    color: #ffffff;
-    font-size: 1rem;
-    margin-bottom: 1rem;
+  color: #ffffff;
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 .overlay__button{
-    border-radius: 0.5rem;
-    background-color: $grey;
-    padding: 1rem 1rem;
-    display: inline-block;
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    transition: .3s;
-    &:hover {
-      background-color: darken($grey, 5%);
-    }
+  border-radius: 0.5rem;
+  background-color: $grey;
+  padding: 1rem 1rem;
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  transition: .3s;
+  &:hover {
+    background-color: darken($grey, 5%);
   }
+}

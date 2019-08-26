@@ -51,7 +51,7 @@
 .nav__link {
 	transition: .5s;
 	white-space: pre;
-	font-size: 1rem;
+	font-size: 0.8125rem;
 	text-transform: uppercase;
 	color: $white;
 	text-decoration: none;
@@ -63,18 +63,15 @@
 
 .button {
 	background: $orange;
-	font-size: 1.3rem;
+	font-size: 0.8125rem;
 	text-transform: uppercase;
 	color: #fff;
 	text-align: center;
 	text-decoration: none;
 	border-radius: 0.5rem;
 	border: none;
-	padding: 0.9rem 1.6rem;
+    padding: 0.5rem 2rem;
 	transition: .5s;
-	font-family: Ubuntu;
-	font-style: normal;
-	font-stretch: normal;
 	&:hover {
 		background-color: darken($orange, 5%);
 	  }

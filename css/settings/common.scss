@@ -29,12 +29,15 @@ body {
   position: relative;
   display: flex;
   overflow: hidden; 
+  background-repeat: no-repeat;
+  background-size: cover; 
+  position: relative; 
 }
 
 .content {
   margin: 0 auto;
-  width: 65%;
-  max-width: 94rem;
+  width: 95%;
+  max-width: 940px;
   position: relative;
   display: flex;
   flex-direction: column; 
