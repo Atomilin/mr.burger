@@ -913,11 +913,11 @@ a:hover {
   position: relative;
   font-family: 'Gagalin-Regular', Helvetica, sans-serif; }
   .menu-acco__link.meat {
-    background-image: url("/images/meat_bg.jpg"); }
+    background-image: url("./images/meat_bg.jpg"); }
   .menu-acco__link.vegan {
-    background-image: url("/images/vegan_bg.jpg"); }
+    background-image: url("./images/vegan_bg.jpg"); }
   .menu-acco__link.diet {
-    background-image: url("/images/diet_bg.jpg"); }
+    background-image: url("./images/diet_bg.jpg"); }
 
 .menu-acco__title {
   font-size: 2rem;
