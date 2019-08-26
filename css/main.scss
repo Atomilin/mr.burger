@@ -7,12 +7,13 @@ $white: #fff;
 $grey: #2f3234cc;
 
 // Settings
+@import "./settings/mixins"; //миксины
 @import "./settings/common.scss"; //общие стили
 @import "./settings/fonts.scss"; //шрифты
 @import "./settings/zeroing.scss"; //сброс стандартных значений
 @import "./settings/header.scss"; //стили для шапки
 @import "./settings/footer.scss"; //стили для подвала
-@import "./settings/mixins"; //миксины
+
 
 //Sections
 @import "./section/sectionMainScreen.scss"; //стили главной страницы

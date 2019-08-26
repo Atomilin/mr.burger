@@ -11,38 +11,38 @@
 
 .advantages {
     display: flex;
-    margin-top: 2rem;
+    margin-top: rem(55px);
 }
 
 .advantages__item {
-    margin-right: 6rem;
+    margin-right: rem(36px);
 }
 .advantages__item:last-child {
     margin-right: 0rem;
 }
 .advantages__icon{
     width: 90%;
-    height: 5rem;
+    height: rem(89px);
     svg {
       max-width: 95%;
     }
 }
 .advantages__desc{
     text-align: center;
-    margin-top: 3.3rem;
+    margin-top: rem(33px);
 }
 .advantages__title{
-    font-size: 1.5rem;
+    font-size: rem(24px);
     font-family: 'Lifehack-Medium';
     white-space: nowrap;
     color: $black;
 }
 .advantages__text{
     text-align: justify;
-    margin-top: 2.5rem;
+    margin-top: rem(25px);
     font-family: 'Ubuntu';
     font-weight: 300;
-    font-size: 1.3rem;
+    font-size: rem(14px);
     line-height: normal;
     color: #2f3234cc;
 }

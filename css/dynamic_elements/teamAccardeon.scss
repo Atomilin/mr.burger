@@ -4,12 +4,12 @@
 }
 
 .team-acco__item {
-	margin-bottom: 1.5rem;
+	margin-bottom: rem(35px);
 
 	&.team-acco__item--active {
 		.content-team {
 			display: flex;
-			max-height: 20.0rem;
+			max-height: rem(200px);
 		}
 		.team-acco__link {
 			color: $yellow;
@@ -26,26 +26,26 @@
 .team-acco__link {
     font-family: 'Gagalin-Regular';
 	color: #fff;
-	font-size: 1.4rem;
+	font-size: rem(14px);
 	text-decoration: none;
 	position: relative;
 	display: inline-flex;
-	margin-bottom: 2.0rem;
+	margin-bottom: rem(20px);
 	align-items: center;
 	&:before,
 	&:after {
 		content: "";
 		display: block;
 		position: absolute;
-		left: -1.8rem;
-		top: 0.8rem;
-		width: 0rem;
-		height: 0rem;
+		left: rem(-18px);
+		top: rem(8px);
+		width: 0;
+		height: 0;
 	}
 	&:before {
-		border-top: 0.7rem solid $yellow;
-		border-left: 0.7rem solid transparent;
-		border-right: 0.5rem solid transparent;
+		border-top: rem(7px) solid $yellow;
+		border-left: rem(7px) solid transparent;
+		border-right: rem(5px) solid transparent;
 		border-bottom: 0rem solid transparent;
 		transform: 0deg;
 		transition: .3s;
@@ -67,8 +67,8 @@
 	flex-shrink: 0;
 	border-radius: 50%;
 	overflow: hidden;
-	width: 7.0rem;
-	height: 7.0rem;
+	width: rem(100px);
+	height: rem(100px);
 	margin-right: 2.0rem;
   }
   
@@ -88,15 +88,15 @@
 	text-align: left;
 }
 .text__header {
-	font-size: 1.2rem;
+	font-size: rem(14px);
 	font-weight: bold;
 	line-height: 1.17;
 }
   
 .text__body {
 	font-family: Ubuntu;
-	font-size: 1rem;
+	font-size: rem(14px);
 	font-weight: 300;
 	line-height: 1.67;
-	margin-top: 1rem;
+	margin-top: rem(10px);
 }

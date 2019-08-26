@@ -17,13 +17,13 @@
 			color: $yellow;
 		}
 		.menu-acco__desc {
-			max-width: 50.0rem;
+			max-width: rem(500px);
 		}
 	}
 }
 
 .menu-acco__link {
-	width: 5rem;
+	width: rem(80px);
 	display: block;
 	height: 100%;
 	float: left;
@@ -46,7 +46,7 @@
 }
 
 .menu-acco__title {
-	font-size: 2rem;
+	font-size: rem(40px);
 	color: #fff;
 	text-align: center;
     white-space: nowrap;
@@ -60,18 +60,18 @@
 .menu-acco__desc {
 	height: 100%;
 	background: rgba(#2f3234, .93);
-	width: 0rem;
+	width: rem(0px);
 	transition: .3s;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	overflow: hidden;
 	width: auto;
-	max-width: 0rem;
+	max-width: rem(0px);
 }
 
 .menu-acco__text {
-	font-size: 1rem;
+	font-size: rem(20px);
 	color: #fff;
     line-height: 1.8;
 	width: auto;

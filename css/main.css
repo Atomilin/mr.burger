@@ -17,7 +17,7 @@ body {
 
 .container {
   height: 100%;
-  min-height: 56rem;
+  min-height: 56.25rem;
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
   -o-transition: transform 1s;
@@ -38,7 +38,7 @@ body {
 .content {
   margin: 0 auto;
   width: 95%;
-  max-width: 940px;
+  max-width: 58.75rem;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -125,7 +125,7 @@ a:hover {
   text-decoration: none; }
 
 .header {
-  padding-top: 1.2rem;
+  margin-top: 0.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,7 +143,7 @@ a:hover {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-left: 7.0rem; }
+  margin-left: 4.3125rem; }
 
 .header__links {
   display: -webkit-box;
@@ -158,7 +158,7 @@ a:hover {
   -ms-flex: 1;
   flex: 1;
   text-align: right;
-  margin-right: 2.0rem; }
+  margin-right: 1.25rem; }
 
 .nav__list {
   width: 100%;
@@ -179,8 +179,8 @@ a:hover {
   .nav__item:after {
     content: "";
     display: block;
-    width: 0.4rem;
-    height: 0.4rem;
+    width: 0.25rem;
+    height: 0.25rem;
     border-radius: 50%;
     background: white;
     margin: 0 1.5rem; }
@@ -202,7 +202,7 @@ a:hover {
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s;
-    font-size: 1.3rem; }
+    font-size: 1rem; }
 
 .button {
   background: #e45028;
@@ -227,13 +227,13 @@ a:hover {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 4rem;
+  height: 3.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
 .footer__col {
-  margin-left: 8rem;
+  margin-left: 5rem;
   width: 100%;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -246,24 +246,24 @@ a:hover {
   color: #ffffff;
   font-size: 1rem;
   line-height: 0.9;
-  margin-top: 0.8rem; }
+  margin-top: 0.5rem; }
 
 .footer__phone {
-  margin-top: 0.5rem;
-  margin-bottom: 1rem; }
+  margin-top: 0.3125rem;
+  margin-bottom: 0.625rem; }
 
 .footer__phone-icon {
-  margin-right: 0.8rem;
+  margin-right: 0.5rem;
   margin-left: 0.1rem;
-  width: 1rem;
-  height: 1rem; }
+  width: 0.75rem;
+  height: 0.75rem; }
 
 .footer__phone-link {
   color: #e35028;
   font-family: 'Ubuntu', Helvetica, sans-serif;
   font-weight: bold;
   text-decoration: none;
-  font-size: 1rem; }
+  font-size: 0.875rem; }
 
 .footer__col_right {
   text-align: right;
@@ -285,15 +285,15 @@ a:hover {
   align-items: center; }
 
 .socials__item {
-  margin-right: 2rem; }
+  margin-left: 0.75rem; }
 
 .socials__item:last-child {
   margin-right: 0; }
 
 .socials__link {
   display: inline-block;
-  max-width: 2rem;
-  max-height: 2rem;
+  max-width: 1.4375rem;
+  max-height: 1.25rem;
   opacity: .3;
   -webkit-transition: .3s;
   -o-transition: .3s;
@@ -302,8 +302,8 @@ a:hover {
     opacity: 1; }
 
 .socials__link-icon {
-  width: 2rem;
-  height: 1.5rem; }
+  width: 1.25rem;
+  height: 1.25rem; }
 
 .main {
   background-image: url("./../images/heading_bg.jpg"); }
@@ -327,8 +327,8 @@ a:hover {
   width: 50%; }
 
 .main-content__subtitle {
-  font-size: 4.5rem;
-  line-height: 4rem;
+  font-size: 4.0625rem;
+  line-height: 0.95em;
   color: white;
   font-family: 'Lifehack-Medium';
   text-transform: lowercase; }
@@ -345,16 +345,16 @@ a:hover {
 
 .arrow {
   position: absolute;
-  bottom: 0rem;
+  bottom: 1.25rem;
   left: 50%;
-  width: 6.0rem;
+  width: 3.75rem;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
-  height: 6.0rem;
+  height: 3.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -365,10 +365,11 @@ a:hover {
   -ms-flex-pack: center;
   justify-content: center; }
   .arrow:hover .arrow__icon {
-    margin-top: -1.2rem; }
+    margin-top: -0.75rem; }
 
 .arrow__icon {
-  width: 2.0rem;
+  width: 2.5rem;
+  height: 2.5rem;
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
@@ -394,23 +395,23 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 2rem; }
+  margin-top: 3.4375rem; }
 
 .advantages__item {
-  margin-right: 6rem; }
+  margin-right: 2.25rem; }
 
 .advantages__item:last-child {
   margin-right: 0rem; }
 
 .advantages__icon {
   width: 90%;
-  height: 5rem; }
+  height: 5.5625rem; }
   .advantages__icon svg {
     max-width: 95%; }
 
 .advantages__desc {
   text-align: center;
-  margin-top: 3.3rem; }
+  margin-top: 2.0625rem; }
 
 .advantages__title {
   font-size: 1.5rem;
@@ -420,10 +421,10 @@ a:hover {
 
 .advantages__text {
   text-align: justify;
-  margin-top: 2.5rem;
+  margin-top: 1.5625rem;
   font-family: 'Ubuntu';
   font-weight: 300;
-  font-size: 1.3rem;
+  font-size: 0.875rem;
   line-height: normal;
   color: #2f3234cc; }
 
@@ -535,23 +536,23 @@ a:hover {
 .overlay__title {
   font-family: 'Gagalin-Regular', Helvetica, sans-serif;
   color: #fff;
-  font-size: 1rem;
-  margin-bottom: 1rem; }
+  font-size: 0.875rem;
+  margin-bottom: 1.875rem; }
 
 .overlay__text {
   color: #ffffff;
-  font-size: 1rem;
-  margin-bottom: 1rem; }
+  font-size: 0.875rem;
+  margin-bottom: 1.0625rem; }
 
 .overlay__button {
-  border-radius: 0.5rem;
+  border-radius: 0.3125rem;
   background-color: #2f3234cc;
-  padding: 1rem 1rem;
+  padding: 0.625rem 0.625rem;
   display: inline-block;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 0.8125rem;
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s; }
@@ -562,7 +563,7 @@ a:hover {
   background-image: url("./../images/we_work_bg.png"); }
 
 .video {
-  margin-top: 3rem; }
+  margin-top: 3.125rem; }
 
 .form {
   background-image: url("./../images/order_bg.jpg");
@@ -574,10 +575,10 @@ a:hover {
   align-items: center; }
 
 .form__wrapper {
-  margin: 5rem 7rem; }
+  margin: 3.125rem 4.375rem; }
 
 .form__content {
-  margin-top: 2rem;
+  margin-top: 2.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -590,7 +591,7 @@ a:hover {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-right: 2rem;
+  margin-right: 1.25rem;
   width: 100%; }
 
 .form__content--right {
@@ -604,7 +605,7 @@ a:hover {
   width: 100%; }
 
 .form__raw {
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -613,7 +614,7 @@ a:hover {
   margin-bottom: 0; }
 
 .form__label {
-  margin-right: 2rem;
+  margin-right: 1.25rem;
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1; }
@@ -625,23 +626,23 @@ a:hover {
   font-family: 'Ubuntu';
   display: block;
   font-weight: normal;
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   text-align: left;
   color: #fff;
-  margin-bottom: 0.5rem; }
+  margin-bottom: 0.4375rem; }
 
 .form__input {
   outline: none;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-weight: normal;
-  border: 0.2rem solid transparent;
+  border: 0.125rem solid transparent;
   background-color: #ffffff;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 300;
-  color: rgba(34, 31, 31, 0.5);
-  padding: 0.5rem 0.5rem;
-  border-radius: 0.3rem;
+  color: #2f3234;
+  padding: 0.3125rem 0.3125rem;
+  border-radius: 0.3125rem;
   width: 100%; }
 
 .form__input:focus {
@@ -649,9 +650,9 @@ a:hover {
 
 .form__textarea {
   resize: none;
-  height: 7.7rem;
-  border-radius: 0.3rem;
-  border: 0.1rem solid transparent; }
+  height: 6.875rem;
+  border-radius: 0.3125rem;
+  border: 0.125rem solid transparent; }
 
 .form__radio {
   -webkit-box-flex: 1;
@@ -660,7 +661,7 @@ a:hover {
 
 .form__button {
   text-align: right;
-  margin-right: 2rem; }
+  margin-right: 1.25rem; }
 
 .form__button:last-child {
   margin-right: 0rem; }
@@ -673,9 +674,9 @@ a:hover {
 
 .form__radio-fake {
   display: inline-block;
-  width: 1rem;
-  height: 1rem;
-  border: 0.1rem solid #c9c9c9;
+  width: 0.9375rem;
+  height: 0.9375rem;
+  border: 0.125rem solid #c9c9c9;
   background-color: #ffffff;
   border-radius: 50%;
   position: relative;
@@ -706,11 +707,11 @@ a:hover {
   border-color: #e35028; }
 
 .form__radio-input:checked + .form__radio-fake:after {
-  height: 0.4rem;
-  width: 0.4rem; }
+  height: 0.4375rem;
+  width: 0.4375rem; }
 
 .form__radio-label {
-  margin-right: 2rem;
+  margin-right: 1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -726,8 +727,8 @@ a:hover {
   font-family: 'Ubuntu';
   font-weight: 300;
   display: inline-block;
-  margin-left: 0.5rem;
-  font-size: 1rem;
+  margin-left: 0.625rem;
+  font-size: 0.875rem;
   text-align: left;
   color: #fff; }
 
@@ -737,14 +738,11 @@ a:hover {
   display: flex; }
 
 .menu--other {
-  margin-left: rem(-7px); }
-
-.square {
-  border-radius: 0rem; }
+  margin-left: -0.4375rem; }
 
 .button--delivery {
-  font-size: 0.8rem;
-  padding: 0.5rem 0.5rem;
+  font-size: 0.8125rem;
+  padding: 0.625rem 0.625rem;
   cursor: pointer; }
 
 .checkbox-custom {
@@ -766,29 +764,29 @@ a:hover {
   background: #fff;
   display: inline-block;
   vertical-align: middle;
-  width: 10px;
-  height: 10px;
-  padding: 2px;
-  margin-right: 10px; }
+  width: 0.9375rem;
+  height: 0.9375rem;
+  padding: 0.125rem;
+  margin-right: 0.625rem; }
 
 .checkbox-custom:checked + .checkbox-custom-label:after {
   content: "";
-  padding: 2px;
+  padding: 0.125rem;
   position: absolute;
-  height: 4px;
+  height: 0.25rem;
   border: solid #e45028;
-  border-width: 0 3px 3px 0;
+  border-width: 0 0.1875rem 0.1875rem 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  top: 5px;
-  left: 4px; }
+  top: 0.3125rem;
+  left: 0.1875rem; }
 
 .form__checkbox--text {
   font-family: 'Ubuntu';
   font-weight: 300;
   display: inline-block;
-  font-size: 1rem;
+  font-size: 0.875rem;
   text-align: left;
   color: #fff; }
 
@@ -803,7 +801,7 @@ a:hover {
   -ms-flex-align: top;
   align-items: top;
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 0.875rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -822,12 +820,12 @@ a:hover {
   flex-direction: column; }
 
 .team-acco__item {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 2.1875rem; }
   .team-acco__item.team-acco__item--active .content-team {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-height: 20.0rem; }
+    max-height: 12.5rem; }
   .team-acco__item.team-acco__item--active .team-acco__link {
     color: #f9b43b; }
     .team-acco__item.team-acco__item--active .team-acco__link:before {
@@ -841,13 +839,13 @@ a:hover {
 .team-acco__link {
   font-family: 'Gagalin-Regular';
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 0.875rem;
   text-decoration: none;
   position: relative;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-bottom: 2.0rem;
+  margin-bottom: 1.25rem;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
@@ -855,14 +853,14 @@ a:hover {
     content: "";
     display: block;
     position: absolute;
-    left: -1.8rem;
-    top: 0.8rem;
-    width: 0rem;
-    height: 0rem; }
+    left: -1.125rem;
+    top: 0.5rem;
+    width: 0;
+    height: 0; }
   .team-acco__link:before {
-    border-top: 0.7rem solid #f9b43b;
-    border-left: 0.7rem solid transparent;
-    border-right: 0.5rem solid transparent;
+    border-top: 0.4375rem solid #f9b43b;
+    border-left: 0.4375rem solid transparent;
+    border-right: 0.3125rem solid transparent;
     border-bottom: 0rem solid transparent;
     -webkit-transform: 0deg;
     -ms-transform: 0deg;
@@ -892,8 +890,8 @@ a:hover {
   flex-shrink: 0;
   border-radius: 50%;
   overflow: hidden;
-  width: 7.0rem;
-  height: 7.0rem;
+  width: 6.25rem;
+  height: 6.25rem;
   margin-right: 2.0rem; }
 
 .avatar-pic {
@@ -913,16 +911,16 @@ a:hover {
   text-align: left; }
 
 .text__header {
-  font-size: 1.2rem;
+  font-size: 0.875rem;
   font-weight: bold;
   line-height: 1.17; }
 
 .text__body {
   font-family: Ubuntu;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.67;
-  margin-top: 1rem; }
+  margin-top: 0.625rem; }
 
 .menu-acco {
   position: absolute;
@@ -940,7 +938,7 @@ a:hover {
   .menu-acco__item.menu-acco__item--active .menu-acco__title {
     color: #f9b43b; }
   .menu-acco__item.menu-acco__item--active .menu-acco__desc {
-    max-width: 50.0rem; }
+    max-width: 31.25rem; }
 
 .menu-acco__link {
   width: 5rem;
@@ -961,7 +959,7 @@ a:hover {
     background-image: url("./../images/diet_bg.jpg"); }
 
 .menu-acco__title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #fff;
   text-align: center;
   white-space: nowrap;
@@ -999,7 +997,7 @@ a:hover {
   max-width: 0rem; }
 
 .menu-acco__text {
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: #fff;
   line-height: 1.8;
   width: auto; }

@@ -56,25 +56,25 @@
 .overlay__title {
   font-family: 'Gagalin-Regular', Helvetica, sans-serif;
   color: #fff;
-  font-size: 1rem;
-  margin-bottom: 1rem;
+  font-size: rem(14px);
+  margin-bottom: rem(30px);
 }
 
 .overlay__text{
   color: #ffffff;
-  font-size: 1rem;
-  margin-bottom: 1rem;
+  font-size: rem(14px);
+  margin-bottom: rem(17px);
 }
 
 .overlay__button{
-  border-radius: 0.5rem;
+  border-radius: rem(5px);
   background-color: $grey;
-  padding: 1rem 1rem;
+  padding: rem(10px) rem(10px);
   display: inline-block;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: rem(13px);
   transition: .3s;
   &:hover {
     background-color: darken($grey, 5%);

@@ -1,5 +1,5 @@
 .header {
-	padding-top: 1.2rem;
+	margin-top: rem(12px);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -8,7 +8,7 @@
 .header__btns {
   display: flex;
   align-items: center;
-  margin-left: 7.0rem;
+  margin-left: rem(69px);
 }
 
 .header__links {
@@ -19,7 +19,7 @@
 .header__menu {
 	flex: 1;
 	text-align: right;
-	margin-right: 2.0rem;
+	margin-right: rem(20px);
 }
 
 .nav__list {
@@ -34,8 +34,8 @@
 	&:after {
 		content: "";
 		display: block;
-		width: 0.4rem;
-		height: 0.4rem;
+		width: rem(4px);
+		height: rem(4px);
 		border-radius: 50%;
 		background: white;
 		margin: 0 1.5rem;
@@ -51,19 +51,19 @@
 .nav__link {
 	transition: .5s;
 	white-space: pre;
-	font-size: 0.8125rem;
+	font-size: rem(13px);
 	text-transform: uppercase;
 	color: $white;
 	text-decoration: none;
 	&:hover {
 		transition: .5s;
-		font-size: 1.3rem;
+		font-size: rem(16px);;
 	}
 }
 
 .button {
 	background: $orange;
-	font-size: 0.8125rem;
+	font-size: rem(13px);
 	text-transform: uppercase;
 	color: #fff;
 	text-align: center;
