@@ -56,31 +56,31 @@ body {
 
 @font-face {
   font-family: 'Gagalin-Regular';
-  src: url("/fonts/Gagalin-Regular.woff") format("woff");
+  src: url("./fonts/Gagalin-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Lifehack-Medium';
-  src: url("/fonts/Lifehack-Medium.woff") format("woff");
+  src: url("./fonts/Lifehack-Medium.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("/fonts/Ubuntu-Light.woff") format("woff");
+  src: url("./fonts/Ubuntu-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("/fonts/Ubuntu-Medium.woff") format("woff");
+  src: url("./fonts/Ubuntu-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("/fonts/Ubuntu-Bold.woff") format("woff");
+  src: url("./fonts/Ubuntu-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 
@@ -219,7 +219,7 @@ a:hover {
     background-color: #d7431b; }
 
 .footer {
-  background: url("/images/footer_bg.jpg") center bottom no-repeat;
+  background: url("./images/footer_bg.jpg") center bottom no-repeat;
   background-size: cover;
   position: absolute;
   bottom: 0;
@@ -432,14 +432,8 @@ a:hover {
   background-image: -o-linear-gradient(top, #f9b43b, #e45028, #f9b43b);
   background-image: linear-gradient(to bottom, #f9b43b, #e45028, #f9b43b); }
 
-/*
-.content__burger {
-    max-width: 1100px;
-    align-items: center;
-    justify-content: center;
-}*/
 .team {
-  background-image: url("/images/team_bg.jpg");
+  background-image: url("./images/team_bg.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative; }
@@ -476,7 +470,7 @@ a:hover {
   text-align: center; }
 
 .menu {
-  background: url("/images/menu_bg.jpg") 50% no-repeat;
+  background: url("./images/menu_bg.jpg") 50% no-repeat;
   background-size: cover;
   position: relative; }
 
@@ -568,7 +562,7 @@ a:hover {
     background-color: rgba(35, 37, 39, 0.8); }
 
 .process {
-  background: url("/images/we_work_bg.png") 50% no-repeat;
+  background: url("./images/we_work_bg.png") 50% no-repeat;
   background-size: cover;
   position: relative;
   -webkit-box-pack: center;
@@ -580,7 +574,7 @@ a:hover {
 
 .form {
   width: 100%;
-  background: url("/images/order_bg.jpg") 50% no-repeat;
+  background: url("./images/order_bg.jpg") 50% no-repeat;
   background-size: cover;
   position: relative;
   -webkit-box-pack: center;

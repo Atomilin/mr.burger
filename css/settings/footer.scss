@@ -1,11 +1,10 @@
 .footer {
-    background: url('/images/footer_bg.jpg') center bottom no-repeat;
+    background: url('./images/footer_bg.jpg') center bottom no-repeat;
     background-size: cover;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    //padding: 1rem 0;
     height: 4rem;  
     display: flex;
 }
