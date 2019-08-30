@@ -42,7 +42,11 @@
     }
     &.diet {
         background-image: url('./../images/diet_bg.jpg');
-    }
+	}
+	
+	@include phones {
+		width: rem(48px);
+	}
 }
 
 .menu-acco__title {
@@ -54,7 +58,8 @@
     transform: rotate(-90deg) translateY(-50%);
     transform-origin: 0 0;
     left: 50%;
-    transition: .3s;
+	transition: .3s;
+	margin-top: rem(-54px);
 }
 
 .menu-acco__desc {
@@ -71,10 +76,11 @@
 }
 
 .menu-acco__text {
-	font-size: rem(20px);
+	font-size: rem(14px);
 	color: #fff;
     line-height: 1.8;
 	width: auto;
+	padding: rem(85px) rem(48px) 0;
 }
 
 .menu-acco__layout {

@@ -4,4 +4,12 @@
 
 .video {
     margin-top: rem(50px);
+    width: rem(660px); 
+    height: rem(370px);
+
+    @include phones {
+        margin-top: rem(60px);
+        width: rem(460px); 
+        height: rem(254px);
+    }
 }

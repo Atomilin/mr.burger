@@ -10,6 +10,10 @@
 		.content-team {
 			display: flex;
 			max-height: rem(200px);
+			
+			@include phones {
+				flex-direction: column;
+			}
 		}
 		.team-acco__link {
 			color: $yellow;
@@ -17,6 +21,10 @@
 				transform: rotate(-180deg);
 			}
 		}
+	}
+
+	@include phones {
+		text-align: center;
 	}
 
 }
@@ -50,17 +58,25 @@
 		transform: 0deg;
 		transition: .3s;
 	}
+
+	@include phones {
+		font-size: rem(25px);
+	}
 }
 
 .content-team {
 	width: 100%;
-	height: 0rem;
+	height: rem(0px);
 	transition: .3s;
 	display: flex;
 	justify-content: flex-start;
 	overflow: hidden;
 	height: auto;
-	max-height: 0rem;
+	max-height: rem(0px);
+
+	@include phones {
+		align-items: center;
+	}
 }
 
 .content-team__avatar {
@@ -69,7 +85,12 @@
 	overflow: hidden;
 	width: rem(100px);
 	height: rem(100px);
-	margin-right: 2.0rem;
+	margin-right: rem(21px);
+
+	@include phones {
+		margin-right: rem(0px);
+		margin-bottom: rem(22px);
+	}
   }
   
 .avatar-pic {
@@ -91,6 +112,10 @@
 	font-size: rem(14px);
 	font-weight: bold;
 	line-height: 1.17;
+
+	@include phones {
+		text-align: center;
+	}
 }
   
 .text__body {
@@ -99,4 +124,8 @@
 	font-weight: 300;
 	line-height: 1.67;
 	margin-top: rem(10px);
+
+	@include phones {
+		text-align: center;
+	}
 }

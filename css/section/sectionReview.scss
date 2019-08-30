@@ -9,6 +9,11 @@
   width: 25%;
   height: 50%;
   filter: grayscale(100%);
+
+  @include phones {
+    width: 50%;
+    height: 25%;
+  }
 }
 
 .review__picture{
@@ -25,11 +30,20 @@
     background: transparent;
     transition: .3s;
   }
+
   &:hover {
     .overlay {
       transform: translate(-50%, -50%) scale(1);
       opacity: 1;
+
+      @include phones {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
     }
+    
     &:after {
       background: rgba(#141414, .7);
     }
@@ -38,6 +52,8 @@
 
 .review__avatar{
   height: 100%;
+  width: 100%;    
+  object-fit: cover;
 }
 
 .overlay{
@@ -58,12 +74,21 @@
   color: #fff;
   font-size: rem(14px);
   margin-bottom: rem(30px);
+
+  @include phones {
+    font-size: rem(24px);
+    text-align: center;
+  }
 }
 
 .overlay__text{
   color: #ffffff;
   font-size: rem(14px);
   margin-bottom: rem(17px);
+
+  @include phones {
+    display: none;
+  }
 }
 
 .overlay__button{

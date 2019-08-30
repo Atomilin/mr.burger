@@ -7,12 +7,40 @@
     right: 0;
     height: rem(60px);  
     display: flex;
+    @include phones {
+        height: rem(116px);
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    @include tablets {
+        height: rem(130px);
+    }
 }
   
 .footer__col {
     margin-left: rem(80px);
     width: 100%;
     align-items: center;
+
+    @include phones {
+        width: 100%;
+        margin-top: rem(18px);
+        margin-bottom: rem(18px);
+        text-align: center;
+        align-items: center;
+        margin-left: rem(0px);
+    }
+
+   /* @include tablets {
+        height: rem(130px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }*/
 }
 
 .footer__col:last-child {
@@ -24,11 +52,20 @@
     font-size: 1rem;
     line-height: 0.9;
     margin-top: rem(8px);
+
+    
+    @include phones {
+        margin-top: rem(0px);
+    }
 }
   
 .footer__phone{
     margin-top: rem(5px);
     margin-bottom: rem(10px);
+    @include phones{
+        margin-bottom:rem(10px);
+        text-align:center;
+    }
 }
   
 .footer__phone-icon{
@@ -51,6 +88,14 @@
     margin-bottom: 0;
     display: flex;
     justify-content: center;
+    @include phones {
+        margin-top: rem(0px);
+        margin-bottom: rem(21px);
+        justify-content: center;
+    }
+   /* @include tablets {
+        align-items: center;
+    }*/
 }  
 
 .socials {

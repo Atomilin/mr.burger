@@ -6,6 +6,11 @@ $red: #e35028;
 $white: #fff;
 $grey: #2f3234cc;
 
+// Resolutions
+$laptop: 940px;
+$tablets: 768px;
+$phones: 480px;
+
 // Settings
 @import "./settings/mixins"; //миксины
 @import "./settings/common.scss"; //общие стили

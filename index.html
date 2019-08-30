@@ -28,31 +28,34 @@
                                 <nav class="nav">
                                     <ul class="nav__list">
                                     <li class="nav__item">
-                                        <a class="nav__link" href="" alt="Ссылка на страницу о нас">о нас</a>
+                                        <a class="nav__link" href="" alt="Ссылка на страницу о нас" data-title="о нас">о нас</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a class="nav__link" href="" alt="Ссылка на страницу бургеры">бургеры</a>
+                                        <a class="nav__link" href="" alt="Ссылка на страницу бургеры" data-title="бургеры">бургеры</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a class="nav__link" href="" alt="Ссылка на страницу команда">команда</a>
+                                        <a class="nav__link" href="" alt="Ссылка на страницу команда" data-title="команда">команда</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a class="nav__link" href="" alt="Ссылка на страницу меню">меню</a>
+                                        <a class="nav__link" href="" alt="Ссылка на страницу меню" data-title="меню">меню</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a class="nav__link" href="" alt="Ссылка на страницу отзывы">отзывы</a>
+                                        <a class="nav__link" href="" alt="Ссылка на страницу отзывы" data-title="отзывы">отзывы</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a class="nav__link" href="" alt="Ссылка на страницу как мы работаем">как мы работаем</a>
+                                        <a class="nav__link" href="" alt="Ссылка на страницу как мы работаем" data-title="как мы работаем">как мы работаем</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a class="nav__link" href="" alt="Ссылка на страницу контакты">контакты</a>
+                                        <a class="nav__link" href="" alt="Ссылка на страницу контакты" data-title="контакты">контакты</a>
                                     </li>
                                     </ul>
                                 </nav>
                             </div>
                             <div class="header__links">
                                 <a class="button" href="" alt="Ссылка на форму заказа">Заказать</a>
+                                <a class="menu-link" href="">
+                                    <div class="menu-link__bars"></div>
+                                  </a>
                             </div>
                         </div>
         
@@ -314,7 +317,7 @@
             <section class="section process">
                 <div class="content content--we-best">
                     <div class="title title--black">как мы работаем</div>
-                    <iframe class="video" width="660" height="370" src="https://www.youtube.com/embed/nxevcb3x0qM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="video" src="https://www.youtube.com/embed/nxevcb3x0qM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </section>
             <!--Delivery-->
@@ -348,11 +351,11 @@
                                     <span class="form__subtitle">Корпус</span>
                                     <input type="text" class="form__input" placeholder="">
                                 </label>
-                                <label for="" class="form__label">
+                                <label for="" class="form__label form__label--flat">
                                     <span class="form__subtitle">Квартира</span>
                                     <input type="text" class="form__input" placeholder="">
                                 </label>
-                                <label for="" class="form__label">
+                                <label for="" class="form__label form__label--flor">
                                     <span class="form__subtitle">Этаж</span>
                                     <input type="text" class="form__input" placeholder="">
                                 </label>
@@ -367,7 +370,7 @@
                             </div>
                             <div class="form__raw">
                                 <div class="form__radio">
-                                    <div class="form__radio--wrap">
+                                    <div class="form__radio--wrap form__raw--adaptive">
                                         <label class="form__radio-label">
                                             <input type="radio" class="form__radio-input" name="review" checked>
                                             <span class="form__radio-fake"></span>
@@ -381,11 +384,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="form__raw">
+                            <div class="form__raw form__raw--adaptive">
                                 <input id="checkbox-1" class="checkbox-custom" name="checkbox-1" type="checkbox" checked>
                                 <label for="checkbox-1" class="checkbox-custom-label form__checkbox--text">Не перезванивать</label>
                             </div>
-                            <div class="form__raw">
+                            <div class="form__raw form__raw--adaptive">
                                 <div class="form__button">
                                     <button class="button button--delivery" type="submit">Заказать</button>
                                 </div>

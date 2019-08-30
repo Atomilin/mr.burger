@@ -12,13 +12,28 @@
 .advantages {
     display: flex;
     margin-top: rem(55px);
+
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .advantages__item {
     margin-right: rem(36px);
+    flex:1;
+    @include phones {
+        margin-right: rem(0px);
+        margin-bottom: rem(50px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 .advantages__item:last-child {
-    margin-right: 0rem;
+    margin-right: rem(0px);
+    @include phones {
+        margin-bottom: rem(0px);
+    }
 }
 .advantages__icon{
     width: 90%;
@@ -26,16 +41,35 @@
     svg {
       max-width: 95%;
     }
+
+    @include phones {
+        width: 30%;
+        flex-shrink: 0;
+    }
 }
 .advantages__desc{
     text-align: center;
     margin-top: rem(33px);
+    
+    @include phones {
+        margin-left: rem(35px);
+        margin-top: rem(0px);
+        text-align: left;
+        /*display: flex;
+        flex-direction: column;
+        align-items: flex-start;*/
+    }
 }
 .advantages__title{
     font-size: rem(24px);
     font-family: 'Lifehack-Medium';
-    white-space: nowrap;
     color: $black;
+
+    @include phones {
+        display: flex;
+        
+        //white-space: nowrap;
+    }
 }
 .advantages__text{
     text-align: justify;

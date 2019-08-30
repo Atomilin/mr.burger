@@ -8,6 +8,10 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    @include phones {
+        flex-direction: column;
+        justify-content: center;
+    }
 }
   
 .main-content__left, .main-content__right {
@@ -15,6 +19,12 @@
 }
   
 .main-content__right {
+    @include phones() {
+        margin-top: rem(52px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .main-content__subtitle {
@@ -23,6 +33,14 @@
     color: white;
     font-family: 'Lifehack-Medium';
     text-transform: lowercase;
+
+    @include phones() {
+        font-size: rem(54px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
   
 .main-content__img {
