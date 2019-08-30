@@ -19,6 +19,12 @@
     align-items: flex-start;
     flex-direction: column;
 
+    @include tablets {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
     @include phones {
         width: 100%;
         align-items: center;
@@ -28,7 +34,11 @@
 
 .title--team {
     text-align: center;
-    
+
+    @include tablets {
+        margin-bottom: rem(49px);
+    }
+
     @include phones {
         margin-bottom: rem(32px);
     }

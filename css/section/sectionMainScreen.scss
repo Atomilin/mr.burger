@@ -8,6 +8,12 @@
     justify-content: center;
     align-items: center;
     position: relative;
+
+    @include tablets {
+        flex-direction: column;
+        justify-content: center;
+    }
+
     @include phones {
         flex-direction: column;
         justify-content: center;
@@ -19,6 +25,14 @@
 }
   
 .main-content__right {
+
+    @include tablets() {
+        margin-top: rem(40px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     @include phones() {
         margin-top: rem(52px);
         display: flex;
@@ -33,6 +47,14 @@
     color: white;
     font-family: 'Lifehack-Medium';
     text-transform: lowercase;
+
+    @include tablets() {
+        font-size: rem(65px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
     @include phones() {
         font-size: rem(54px);

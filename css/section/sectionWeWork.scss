@@ -6,6 +6,12 @@
     margin-top: rem(50px);
     width: rem(660px); 
     height: rem(370px);
+    
+    @include tablets {
+        margin-top: rem(60px);
+        width: rem(720px); 
+        height: rem(407px);
+    }
 
     @include phones {
         margin-top: rem(60px);

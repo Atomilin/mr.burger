@@ -7,6 +7,7 @@
     right: 0;
     height: rem(60px);  
     display: flex;
+
     @include phones {
         height: rem(116px);
         width: 100%;
@@ -14,9 +15,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-    @include tablets {
-        height: rem(130px);
     }
 }
   
@@ -33,14 +31,6 @@
         align-items: center;
         margin-left: rem(0px);
     }
-
-   /* @include tablets {
-        height: rem(130px);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-    }*/
 }
 
 .footer__col:last-child {
@@ -93,9 +83,6 @@
         margin-bottom: rem(21px);
         justify-content: center;
     }
-   /* @include tablets {
-        align-items: center;
-    }*/
 }  
 
 .socials {

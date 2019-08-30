@@ -7,6 +7,10 @@
 .form__wrapper {
     margin: rem(66px) rem(70px);
 
+    @include tablets {
+        margin: rem(152px) rem(150px);
+    }
+
     @include phones {
         margin: rem(50px) rem(12px);
     }
@@ -15,6 +19,11 @@
 .form__content {
     margin-top: rem(44px);
     display: flex;
+
+    @include tablets {
+        margin-top: rem(0px);
+        flex-direction: column;
+    }
 
     @include phones {
         margin-top: rem(0px);

@@ -18,6 +18,10 @@
 		}
 		.menu-acco__desc {
 			max-width: rem(500px);
+
+			@include tablets {
+				max-width: rem(520px);
+			}
 		}
 	}
 }
