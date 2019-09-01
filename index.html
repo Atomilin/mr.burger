@@ -116,9 +116,743 @@
             <!--Burger-->
             <section class="section burger">
                 <div class="content content__burger">
-                    <div class="slider">
-                        <!--Slaider_start-->
-                        <!--Slaider_end-->
+                    <div class="arrow-slaider">
+                        <a class="arrow--left" onclick="prevSlide()">
+                            <svg class="arrow--icon">
+                                <use xlink:href="images/icons/sprite.svg#arrow-scroll"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="content__description">
+                        <ul class="slaider">
+                            <li class="slaider__deactive">
+                                <div class="slaider__left">
+                                    <div class="slider__phones">
+                                        <div class="slider__composition">
+                                            <svg class="slider__burger-icon" style="fill:#fff;">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#burger"></use>
+                                            </svg>
+                                                Состав
+                                            <div class="composition__hover">
+                                                <ul class="hover__list">
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#e25028;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#beef"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Говядина</div>
+                                                        <div class="hover__weigth">300г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#f8b43a;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#buns"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Булочки</div>
+                                                        <div class="hover__weigth">100г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#8ac03e;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#salad"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Зелень</div>
+                                                        <div class="hover__weigth">70г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#e25028;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#sauce"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Соус</div>
+                                                        <div class="hover__weigth">150г</div>
+                                                    </li>
+                                                    <li class="hover__item" class="hover__icon" style="fill:#8ac03e;">
+                                                        <svg class="hover__icon">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cucumber"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Овощи</div>
+                                                        <div class="hover__weigth">200г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#f8b43a;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cheese"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Сыр</div>
+                                                        <div class="hover__weigth">80г</div>
+                                                    </li>
+                                                </ul>
+                                                <div class="hover__close"></div>
+                                            </div>
+                                        </div>
+                                        <div class="slider__calories-picture">
+                                            <svg class="slider__calories-icon" style="fill:#fff;">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#kkal"></use>
+                                            </svg>
+                                            <span class="slider__calories-number">1200</span>
+                                            ккал
+                                        </div>
+                                    </div>
+                                    <div class="slider__composition slider__composition--phones">
+                                        <svg class="slider__burger-icon" style="fill:#fff;">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#burger"></use>
+                                        </svg>
+                                            Состав
+                                        <div class="composition__hover">
+                                            <ul class="hover__list">
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#e25028;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#beef"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Говядина</div>
+                                                    <div class="hover__weigth">300г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#f8b43a;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#buns"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Булочки</div>
+                                                    <div class="hover__weigth">100г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#8ac03e;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#salad"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Зелень</div>
+                                                    <div class="hover__weigth">70г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#e25028;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#sauce"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Соус</div>
+                                                    <div class="hover__weigth">150г</div>
+                                                </li>
+                                                <li class="hover__item" class="hover__icon" style="fill:#8ac03e;">
+                                                    <svg class="hover__icon">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cucumber"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Овощи</div>
+                                                    <div class="hover__weigth">200г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#f8b43a;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cheese"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Сыр</div>
+                                                    <div class="hover__weigth">80г</div>
+                                                </li>
+                                            </ul>
+                                            <div class="hover__close"></div>
+                                        </div>
+                                    </div>
+                                    <div class="slider__list">
+                                        <div class="slider__pic-wrapper">
+                                            <img class="slider__pic" src="images/burgers/black_burger.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="slider__calories-picture slider__calories-picture--phones">
+                                        <svg class="slider__calories-icon" style="fill:#fff;">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#kkal"></use>
+                                        </svg>
+                                        <span class="slider__calories-number">1200</span>
+                                        ккал
+                                    </div>
+                                </div>
+                                <div class="slaider__right">
+                                    <div class="title title--white title--burger">Dark BEEF Burger</div>
+                                    <div class="slaider__right--subtitle">
+                                        Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                                    </div>
+                                    <div class="slaider__footer">
+                                        <div class="title__footer">500</div>
+                                        <div class="title__footer title__footer--subtitle">рублей</div>
+                                        <div class="header__links">
+                                            <a class="button" href="" alt="Ссылка на форму заказа">Заказать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slaider__deactive">
+                                <div class="slaider__left">
+                                    <div class="slider__phones">
+                                        <div class="slider__composition">
+                                            <svg class="slider__burger-icon" style="fill:#fff;">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#burger"></use>
+                                            </svg>
+                                                Состав
+                                            <div class="composition__hover">
+                                                <ul class="hover__list">
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#e25028;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#beef"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Говядина</div>
+                                                        <div class="hover__weigth">250г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#f8b43a;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#buns"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Булочки</div>
+                                                        <div class="hover__weigth">100г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#8ac03e;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#salad"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Зелень</div>
+                                                        <div class="hover__weigth">70г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#e25028;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#sauce"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Соус</div>
+                                                        <div class="hover__weigth">150г</div>
+                                                    </li>
+                                                    <li class="hover__item" class="hover__icon" style="fill:#8ac03e;">
+                                                        <svg class="hover__icon">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cucumber"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Овощи</div>
+                                                        <div class="hover__weigth">200г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#f8b43a;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cheese"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Сыр</div>
+                                                        <div class="hover__weigth">80г</div>
+                                                    </li>
+                                                </ul>
+                                                <div class="hover__close"></div>
+                                            </div>
+                                        </div>
+                                        <div class="slider__calories-picture">
+                                            <svg class="slider__calories-icon" style="fill:#fff;">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#kkal"></use>
+                                            </svg>
+                                            <span class="slider__calories-number">1000</span>
+                                            ккал
+                                        </div>
+                                    </div>
+                                    <div class="slider__composition slider__composition--phones">
+                                        <svg class="slider__burger-icon" style="fill:#fff;">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#burger"></use>
+                                        </svg>
+                                            Состав
+                                        <div class="composition__hover">
+                                            <ul class="hover__list">
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#e25028;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#beef"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Говядина</div>
+                                                    <div class="hover__weigth">250г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#f8b43a;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#buns"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Булочки</div>
+                                                    <div class="hover__weigth">100г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#8ac03e;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#salad"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Зелень</div>
+                                                    <div class="hover__weigth">70г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#e25028;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#sauce"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Соус</div>
+                                                    <div class="hover__weigth">150г</div>
+                                                </li>
+                                                <li class="hover__item" class="hover__icon" style="fill:#8ac03e;">
+                                                    <svg class="hover__icon">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cucumber"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Овощи</div>
+                                                    <div class="hover__weigth">200г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#f8b43a;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cheese"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Сыр</div>
+                                                    <div class="hover__weigth">80г</div>
+                                                </li>
+                                            </ul>
+                                            <div class="hover__close"></div>
+                                        </div>
+                                    </div>
+                                    <div class="slider__list">
+                                        <div class="slider__pic-wrapper">
+                                            <img class="slider__pic" src="images/burgers/bacon_cheeseburger.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="slider__calories-picture slider__calories-picture--phones">
+                                        <svg class="slider__calories-icon" style="fill:#fff;">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#kkal"></use>
+                                        </svg>
+                                        <span class="slider__calories-number">1000</span>
+                                        ккал
+                                    </div>
+                                </div>
+                                <div class="slaider__right">
+                                    <div class="title title--white title--burger">Bacon  CheeseBurger</div>
+                                    <div class="slaider__right--subtitle">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium excepturi vel provident! Quae, illum totam! Vero assumenda quis in, illo, eos saepe ab, architecto perspiciatis nihil odit fuga quibusdam itaque.
+                                    </div>
+                                    <div class="slaider__footer">
+                                        <div class="title__footer">300</div>
+                                        <div class="title__footer title__footer--subtitle">рублей</div>
+                                        <div class="header__links">
+                                            <a class="button" href="" alt="Ссылка на форму заказа">Заказать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slaider__deactive">
+                                <div class="slaider__left">
+                                    <div class="slider__phones">
+                                        <div class="slider__composition">
+                                            <svg class="slider__burger-icon" style="fill:#fff;">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#burger"></use>
+                                            </svg>
+                                                Состав
+                                            <div class="composition__hover">
+                                                <ul class="hover__list">
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#e25028;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#beef"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Говядина</div>
+                                                        <div class="hover__weigth">200г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#f8b43a;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#buns"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Булочки</div>
+                                                        <div class="hover__weigth">100г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#8ac03e;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#salad"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Зелень</div>
+                                                        <div class="hover__weigth">70г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#e25028;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#sauce"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Соус</div>
+                                                        <div class="hover__weigth">150г</div>
+                                                    </li>
+                                                    <li class="hover__item" class="hover__icon" style="fill:#8ac03e;">
+                                                        <svg class="hover__icon">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cucumber"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Овощи</div>
+                                                        <div class="hover__weigth">200г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#f8b43a;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cheese"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Сыр</div>
+                                                        <div class="hover__weigth">80г</div>
+                                                    </li>
+                                                </ul>
+                                                <div class="hover__close"></div>
+                                            </div>
+                                        </div>
+                                        <div class="slider__calories-picture">
+                                            <svg class="slider__calories-icon" style="fill:#fff;">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#kkal"></use>
+                                            </svg>
+                                            <span class="slider__calories-number">1400</span>
+                                            ккал
+                                        </div>
+                                    </div>
+                                    <div class="slider__composition slider__composition--phones">
+                                        <svg class="slider__burger-icon" style="fill:#fff;">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#burger"></use>
+                                        </svg>
+                                            Состав
+                                        <div class="composition__hover">
+                                            <ul class="hover__list">
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#e25028;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#beef"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Говядина</div>
+                                                    <div class="hover__weigth">300г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#f8b43a;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#buns"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Булочки</div>
+                                                    <div class="hover__weigth">100г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#8ac03e;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#salad"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Зелень</div>
+                                                    <div class="hover__weigth">70г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#e25028;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#sauce"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Соус</div>
+                                                    <div class="hover__weigth">150г</div>
+                                                </li>
+                                                <li class="hover__item" class="hover__icon" style="fill:#8ac03e;">
+                                                    <svg class="hover__icon">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cucumber"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Овощи</div>
+                                                    <div class="hover__weigth">200г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#f8b43a;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cheese"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Сыр</div>
+                                                    <div class="hover__weigth">80г</div>
+                                                </li>
+                                            </ul>
+                                            <div class="hover__close"></div>
+                                        </div>
+                                    </div>
+                                    <div class="slider__list">
+                                        <div class="slider__pic-wrapper">
+                                            <img class="slider__pic" src="images/burgers/burger_sandwitch.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="slider__calories-picture slider__calories-picture--phones">
+                                        <svg class="slider__calories-icon" style="fill:#fff;">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#kkal"></use>
+                                        </svg>
+                                        <span class="slider__calories-number">1400</span>
+                                        ккал
+                                    </div>
+                                </div>
+                                <div class="slaider__right">
+                                    <div class="title title--white title--burger">Burger Sandwitch</div>
+                                    <div class="slaider__right--subtitle">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium excepturi vel provident! Quae, illum totam! Vero assumenda quis in, illo, eos saepe ab, architecto perspiciatis nihil odit fuga quibusdam itaque.
+                                    </div>
+                                    <div class="slaider__footer">
+                                        <div class="title__footer">100</div>
+                                        <div class="title__footer title__footer--subtitle">рублей</div>
+                                        <div class="header__links">
+                                            <a class="button" href="" alt="Ссылка на форму заказа">Заказать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slaider__deactive">
+                                <div class="slaider__left">
+                                    <div class="slider__phones">
+                                        <div class="slider__composition">
+                                            <svg class="slider__burger-icon" style="fill:#fff;">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#burger"></use>
+                                            </svg>
+                                                Состав
+                                            <div class="composition__hover">
+                                                <ul class="hover__list">
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#e25028;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#beef"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Курица</div>
+                                                        <div class="hover__weigth">200г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#f8b43a;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#buns"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Булочки</div>
+                                                        <div class="hover__weigth">100г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#8ac03e;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#salad"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Зелень</div>
+                                                        <div class="hover__weigth">70г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#e25028;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#sauce"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Соус</div>
+                                                        <div class="hover__weigth">150г</div>
+                                                    </li>
+                                                    <li class="hover__item" class="hover__icon" style="fill:#8ac03e;">
+                                                        <svg class="hover__icon">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cucumber"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Овощи</div>
+                                                        <div class="hover__weigth">200г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#f8b43a;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cheese"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Сыр</div>
+                                                        <div class="hover__weigth">80г</div>
+                                                    </li>
+                                                </ul>
+                                                <div class="hover__close"></div>
+                                            </div>
+                                        </div>
+                                        <div class="slider__calories-picture">
+                                            <svg class="slider__calories-icon" style="fill:#fff;">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#kkal"></use>
+                                            </svg>
+                                            <span class="slider__calories-number">500</span>
+                                            ккал
+                                        </div>
+                                    </div>
+                                    <div class="slider__composition slider__composition--phones">
+                                        <svg class="slider__burger-icon" style="fill:#fff;">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#burger"></use>
+                                        </svg>
+                                            Состав
+                                        <div class="composition__hover">
+                                            <ul class="hover__list">
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#e25028;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#beef"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Курица</div>
+                                                    <div class="hover__weigth">200г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#f8b43a;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#buns"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Булочки</div>
+                                                    <div class="hover__weigth">100г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#8ac03e;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#salad"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Зелень</div>
+                                                    <div class="hover__weigth">70г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#e25028;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#sauce"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Соус</div>
+                                                    <div class="hover__weigth">150г</div>
+                                                </li>
+                                                <li class="hover__item" class="hover__icon" style="fill:#8ac03e;">
+                                                    <svg class="hover__icon">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cucumber"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Овощи</div>
+                                                    <div class="hover__weigth">200г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#f8b43a;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cheese"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Сыр</div>
+                                                    <div class="hover__weigth">80г</div>
+                                                </li>
+                                            </ul>
+                                            <div class="hover__close"></div>
+                                        </div>
+                                    </div>
+                                    <div class="slider__list">
+                                        <div class="slider__pic-wrapper">
+                                            <img class="slider__pic" src="images/burgers/chicken_burger.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="slider__calories-picture slider__calories-picture--phones">
+                                        <svg class="slider__calories-icon" style="fill:#fff;">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#kkal"></use>
+                                        </svg>
+                                        <span class="slider__calories-number">500</span>
+                                        ккал
+                                    </div>
+                                </div>
+                                <div class="slaider__right">
+                                    <div class="title title--white title--burger">Chicken Burger</div>
+                                    <div class="slaider__right--subtitle">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium excepturi vel provident! Quae, illum totam! Vero assumenda quis in, illo, eos saepe ab, architecto perspiciatis nihil odit fuga quibusdam itaque.
+                                    </div>
+                                    <div class="slaider__footer">
+                                        <div class="title__footer">380</div>
+                                        <div class="title__footer title__footer--subtitle">рублей</div>
+                                        <div class="header__links">
+                                            <a class="button" href="" alt="Ссылка на форму заказа">Заказать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slaider__deactive">
+                                <div class="slaider__left">
+                                    <div class="slider__phones">
+                                        <div class="slider__composition">
+                                            <svg class="slider__burger-icon" style="fill:#fff;">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#burger"></use>
+                                            </svg>
+                                                Состав
+                                            <div class="composition__hover">
+                                                <ul class="hover__list">
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#e25028;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#beef"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Креветки</div>
+                                                        <div class="hover__weigth">150г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#f8b43a;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#buns"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Булочки</div>
+                                                        <div class="hover__weigth">100г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#8ac03e;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#salad"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Зелень</div>
+                                                        <div class="hover__weigth">70г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#e25028;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#sauce"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Соус</div>
+                                                        <div class="hover__weigth">150г</div>
+                                                    </li>
+                                                    <li class="hover__item" class="hover__icon" style="fill:#8ac03e;">
+                                                        <svg class="hover__icon">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cucumber"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Овощи</div>
+                                                        <div class="hover__weigth">200г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#f8b43a;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cheese"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Сыр</div>
+                                                        <div class="hover__weigth">80г</div>
+                                                    </li>
+                                                </ul>
+                                                <div class="hover__close"></div>
+                                            </div>
+                                        </div>
+                                        <div class="slider__calories-picture">
+                                            <svg class="slider__calories-icon" style="fill:#fff;">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#kkal"></use>
+                                            </svg>
+                                            <span class="slider__calories-number">700</span>
+                                            ккал
+                                        </div>
+                                    </div>
+                                    <div class="slider__composition slider__composition--phones">
+                                        <svg class="slider__burger-icon" style="fill:#fff;">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#burger"></use>
+                                        </svg>
+                                            Состав
+                                        <div class="composition__hover">
+                                            <ul class="hover__list">
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#e25028;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#beef"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Креветки</div>
+                                                    <div class="hover__weigth">150г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#f8b43a;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#buns"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Булочки</div>
+                                                    <div class="hover__weigth">100г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#8ac03e;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#salad"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Зелень</div>
+                                                    <div class="hover__weigth">70г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#e25028;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#sauce"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Соус</div>
+                                                    <div class="hover__weigth">150г</div>
+                                                </li>
+                                                <li class="hover__item" class="hover__icon" style="fill:#8ac03e;">
+                                                    <svg class="hover__icon">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cucumber"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Овощи</div>
+                                                    <div class="hover__weigth">200г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#f8b43a;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cheese"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Сыр</div>
+                                                    <div class="hover__weigth">80г</div>
+                                                </li>
+                                            </ul>
+                                            <div class="hover__close"></div>
+                                        </div>
+                                    </div>
+                                    <div class="slider__list">
+                                        <div class="slider__pic-wrapper">
+                                            <img class="slider__pic" src="images/burgers/spicy_shrimp_burger.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="slider__calories-picture slider__calories-picture--phones">
+                                        <svg class="slider__calories-icon" style="fill:#fff;">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#kkal"></use>
+                                        </svg>
+                                        <span class="slider__calories-number">700</span>
+                                        ккал
+                                    </div>
+                                </div>
+                                <div class="slaider__right">
+                                    <div class="title title--white title--burger">Spicy Shrimp Burger</div>
+                                    <div class="slaider__right--subtitle">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium excepturi vel provident! Quae, illum totam! Vero assumenda quis in, illo, eos saepe ab, architecto perspiciatis nihil odit fuga quibusdam itaque.
+                                    </div>
+                                    <div class="slaider__footer">
+                                        <div class="title__footer">890</div>
+                                        <div class="title__footer title__footer--subtitle">рублей</div>
+                                        <div class="header__links">
+                                            <a class="button" href="" alt="Ссылка на форму заказа">Заказать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="arrow-slaider">
+                        <a class="arrow--right" onclick="nextSlide()">
+                            <svg class="arrow--icon">
+                                <use xlink:href="images/icons/sprite.svg#arrow-scroll"></use>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -453,5 +1187,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

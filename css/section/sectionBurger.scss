@@ -1,3 +1,47 @@
 .burger {
     background-image: linear-gradient(to bottom,#f9b43b,#e45028,#f9b43b);
 }
+
+.content__burger {
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.arrow-slaider {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.arrow--left {
+    transform: rotate(90deg);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    &:hover {
+        transform: translateX(-5px) rotate(90deg);
+        cursor: pointer;
+    }
+}
+
+.arrow--right {
+    transform: rotate(-90deg);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    &:hover {
+        cursor: pointer;
+        transform: translateX(5px) rotate(-90deg);
+    } 
+}
+
+.arrow--icon {
+    width: rem(40px);
+    height: rem(40px);
+    transition: .3s;
+    fill: $white;
+  }
