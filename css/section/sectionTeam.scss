@@ -42,4 +42,8 @@
     @include phones {
         margin-bottom: rem(32px);
     }
+
+    @include small {
+        margin-bottom: rem(15px);
+    }
 }

@@ -14,6 +14,10 @@
     @include phones {
         margin: rem(50px) rem(12px);
     }
+
+    @include small {
+        margin: rem(20px) rem(12px);
+    }
 }
 
 .form__content {
@@ -36,6 +40,16 @@
     flex-direction: column;
     margin-right: rem(20px);
     width: 100%;
+
+    @include phones {
+        margin-right: rem(0px);
+        margin-bottom: rem(20px);
+    }
+
+    @include small {
+        margin-right: rem(0px);
+        margin-bottom: rem(10px);
+    }
 }
 
 .form__content--right {
@@ -47,6 +61,11 @@
 .form__raw {
     margin-bottom: rem(20px);
     display: flex;
+
+    
+    @include small {
+        margin-bottom: rem(10px);
+    }
 }
 
 .form__raw:last-child {
@@ -103,6 +122,10 @@
     border-radius: rem(5px);
     width: 100%;
     height: rem(36px);
+
+    @include small {
+        height: rem(30px);
+    }
 }
 
 .form__input:focus {
@@ -114,6 +137,10 @@
     height: rem(110px);
     border-radius: rem(5px);
     border: rem(2px) solid transparent;
+
+    @include small {
+        height: rem(90px);
+    }
 }
 
 .form__radio {
@@ -253,7 +280,12 @@
 
 
 .title--team {
+
     @include phones {
         white-space: inherit;
+    }
+
+    @include small {
+        line-height: normal;
     }
 }

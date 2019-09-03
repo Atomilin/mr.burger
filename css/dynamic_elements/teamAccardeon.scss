@@ -18,6 +18,10 @@
 			@include phones {
 				flex-direction: column;
 			}
+
+			@include small {
+				flex-direction: column;
+			}
 		}
 		.team-acco__link {
 			color: $yellow;
@@ -33,6 +37,11 @@
 
 	@include phones {
 		text-align: center;
+	}
+
+	@include small {
+		text-align: center;
+		margin-bottom: rem(15px);
 	}
 
 }
@@ -74,6 +83,10 @@
 	@include phones {
 		font-size: rem(25px);
 	}
+
+	@include small {
+		font-size: rem(25px);
+	}
 }
 
 .content-team {
@@ -91,6 +104,10 @@
 	}
 
 	@include phones {
+		align-items: center;
+	}
+
+	@include small {
 		align-items: center;
 	}
 }
@@ -111,6 +128,13 @@
 	@include phones {
 		margin-right: rem(0px);
 		margin-bottom: rem(22px);
+	}
+
+	@include small {
+		margin-right: rem(0px);
+		margin-bottom: rem(10px);
+		width: rem(80px);
+		height: rem(80px);
 	}
   }
   
@@ -139,6 +163,10 @@
 	}
 
 	@include phones {
+		text-align: center;
+	}
+
+	@include small {
 		text-align: center;
 	}
 }

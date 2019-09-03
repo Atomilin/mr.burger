@@ -20,7 +20,7 @@ body {
 
 .container {
   height: 100%;
-  min-height: rem(900px);
+  min-height: rem(650px);
   transition: transform 1s;
 
   @include tablets {
@@ -28,6 +28,10 @@ body {
   }
 
   @include phones {
+    min-height: rem(0px);
+  }
+
+  @include small {
     min-height: rem(0px);
   }
 }
@@ -46,6 +50,10 @@ body {
   }
 
   @include phones {
+    background-position: center center;
+  }
+
+  @include small {
     background-position: center center;
   }
 }
@@ -73,12 +81,21 @@ body {
     font-size: rem(63px);
     white-space: nowrap;
   }
+
+  @include small {
+    font-size: rem(54px);
+    white-space: nowrap;
+  }
 }
 
 .title.title--black {
     color: #2f3234; 
 
     @include phones {
+      white-space: inherit;
+    }
+
+    @include small {
       white-space: inherit;
     }
 }

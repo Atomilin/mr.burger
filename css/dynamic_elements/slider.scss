@@ -10,6 +10,11 @@
         display: flex;
         justify-content: space-between;
     }
+
+    @include small {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .content__description {
@@ -32,6 +37,11 @@
         margin-left: rem(0px);
         margin-right: rem(0px);
     }
+
+    @include small {
+        margin-left: rem(0px);
+        margin-right: rem(0px);
+    }
 }
 
 .slaider {
@@ -41,13 +51,38 @@
 
 .slaider__left {
     flex-direction: column;
+    width: 50%;
+    
+    @include tablets {
+        width: 100%;
+    }
+
+    @include phones {
+        width: 100%;
+    }
+
+    @include small {
+        width: 100%;
+    }
 }
 
 .slaider__right {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex: 1;
+    width: 50%;
+
+    @include tablets {
+        width: 100%;
+    }
+
+    @include phones {
+        width: 100%;
+    }
+
+    @include small {
+        width: 100%;
+    }
 }
 .slaider__deactive {
     display: none;
@@ -57,6 +92,10 @@
     }
 
     @include phones {
+        flex-direction: column;
+    }
+
+    @include small {
         flex-direction: column;
     }
 }
@@ -74,8 +113,15 @@
     background: #F08C33;
     border-radius: 8px;
     cursor: pointer;
+    position: relative;
     &:hover {
         background: $red;
+    }
+
+    
+    @include small {
+        width: rem(75px); 
+        height: rem(75px);
     }
 }
   
@@ -92,33 +138,48 @@
     @include phones {
         display: none;
     }
+
+    @include small {
+        display: none;
+    }
 }
 
 .slider__burger-icon {
     height: rem(46px);
     width: rem(46px);
     margin-top: rem(4px);
+
+    @include small {
+        height: rem(46px);
+        width: rem(46px);
+        margin-top: rem(2px);
+    }
 }
 
 .composition__hover {
     background: rgba(255, 255, 255, .85);
     border-radius: 5px;
     display: none;
+    position: absolute;
     flex-direction: column;
     color: $black;
-    position: absolute;
-    top: rem(229px);
-    left: rem(154px);
+    top: 0;
+    left: 100%;
     z-index: 1;
 
     @include tablets {
-        top: rem(58px);
-        left: rem(110px);
+        top: 0;
+        left: 100%;
     }
 
     @include phones {
-        top: rem(58px);
-        left: rem(110px);
+        top: 0;
+        left: 100%;
+    }
+
+    @include small {
+        top: 0;
+        left: 100%;
     }
   }
   
@@ -150,6 +211,10 @@
     @include phones {
         margin-right: rem(20px);
     }
+
+    @include small {
+        margin-right: rem(10px);
+    }
 }
 
 .hover__component {
@@ -165,6 +230,10 @@
     @include phones {
         margin-right: rem(20px);
     }
+
+    @include small {
+        margin-right: rem(10px);
+    }
 }
 
 .hover__weigth {
@@ -178,6 +247,10 @@
     }
 
     @include phones {
+        margin-right: rem(52px);
+    }
+
+    @include small {
         margin-right: rem(52px);
     }
 }
@@ -196,6 +269,10 @@
     }
 
     @include phones {
+        display: inline-block;
+    }
+
+    @include small {
         display: inline-block;
     }
 }
@@ -275,11 +352,20 @@
     @include phones {
         display: none;
     }
+
+    @include small {
+        display: none;
+    }
 }
 
 .slider__calories-icon {
     width: rem(60px);
     height: rem(60px);
+
+    @include small {
+        width: rem(60px);
+        height: rem(60px);
+    }
 }
 
 .slider__calories-number {
@@ -301,6 +387,12 @@
     @include  phones {
         text-align: center;
     }
+
+    @include  small {
+        text-align: center;
+        margin-top: rem(30px);
+        margin-bottom: rem(20px);
+    }
 }
 //цена и кнопка
 .slaider__footer {
@@ -312,6 +404,10 @@
     }
 
     @include phones {
+        justify-content: center;
+    }
+
+    @include small {
         justify-content: center;
     }
 }
@@ -330,6 +426,11 @@
     font-size: rem(51px);
     white-space: nowrap;
   }
+
+  @include small {
+    font-size: rem(30px);
+    white-space: nowrap;
+  }
 }
 
 .title__footer--subtitle {
@@ -344,6 +445,10 @@
     @include phones {
         font-size: rem(24px);
     }
+
+    @include small {
+        font-size: rem(18px);
+    }
 }
 //заголовок бургера
 .title--burger {
@@ -357,6 +462,12 @@
 
     @include phones {
         font-size: rem(50px);
+        white-space: normal;
+        text-align: center;
+    }
+
+    @include small {
+        font-size: rem(28px);
         white-space: normal;
         text-align: center;
     }

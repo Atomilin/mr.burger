@@ -39,6 +39,13 @@
         flex-direction: column;
         align-items: center;
     }
+
+    @include small() {
+        margin-top: rem(20px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .main-content__subtitle {
@@ -58,6 +65,14 @@
 
     @include phones() {
         font-size: rem(54px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    @include small() {
+        font-size: rem(43px);
         display: flex;
         flex-direction: column;
         align-items: center;

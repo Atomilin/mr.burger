@@ -17,6 +17,10 @@
   display: flex;
   align-items: center;
   margin-left: rem(69px);
+
+  @include small {
+	margin-left: rem(20px);
+}
 }
 
 .header__links {

@@ -7,9 +7,10 @@ $white: #fff;
 $grey: #2f3234cc;
 
 // Resolutions
-$desktop: 1200px;
-$tablets: 768px;
+$small: 320px;
 $phones: 480px;
+$tablets: 768px;
+$desktop: 1200px;
 
 // Settings
 @import "./settings/mixins"; //миксины

@@ -84,7 +84,15 @@
 	color: #fff;
     line-height: 1.8;
 	width: auto;
-	padding: rem(85px) rem(48px) 0;
+	padding: rem(50px) rem(48px) 0;
+
+	@include phones {
+		padding: rem(35px) rem(30px) 0;
+	}
+
+	@include small {
+		padding: rem(28px) rem(20px) 0;
+	}
 }
 
 .menu-acco__layout {

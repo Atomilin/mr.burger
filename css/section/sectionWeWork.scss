@@ -18,4 +18,10 @@
         width: rem(460px); 
         height: rem(254px);
     }
+
+    @include small {
+        margin-top: rem(40px);
+        width: rem(340px); 
+        height: rem(187px);
+    }
 }
