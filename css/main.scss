@@ -7,10 +7,10 @@ $white: #fff;
 $grey: #2f3234cc;
 
 // Resolutions
-$small: 320px;
-$phones: 480px;
-$tablets: 768px;
 $desktop: 1200px;
+$tablets: 768px;
+$phones: 480px;
+$small: 375px;
 
 // Settings
 @import "./settings/mixins"; //миксины
@@ -34,4 +34,5 @@ $desktop: 1200px;
 //Dynamic elements
 @import "./dynamic_elements/slider.scss"; //слайдер
 @import "./dynamic_elements/teamAccardeon.scss"; //аккардеон страницы "команда"
-@import "./dynamic_elements/menuAccardeon.scss"; //аккардеон страницы "команда"
+@import "./dynamic_elements/menuAccardeon.scss"; //аккардеон страницы "меню"
+@import "./dynamic_elements/menuNavPhone.scss"; //аккардеон страницы "меню"

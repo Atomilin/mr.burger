@@ -1,4 +1,4 @@
-//Функция для слайдера
+//**********************************Функция для слайдера**********************************************************//
 
 /* Индекс слайда по умолчанию */
 var slideIndex = 1;
@@ -25,7 +25,7 @@ function showSlides(n) {
     var slides = document.getElementsByClassName("slaider__deactive");
 
     if (n > slides.length) {
-      slideIndex = 1
+      slideIndex = 1;
     }
     if (n < 1) {
         slideIndex = slides.length
@@ -35,5 +35,23 @@ function showSlides(n) {
     }
 
     slides[slideIndex - 1].style.display = "flex";
+}
+//*********************************************Функция клика по крестику*******************************************//
 
+//открытие и закрытие меню на главном экране
+function openMenu() {
+    var menuNavPhone = document.getElementById("menu-phone");
+    menuNavPhone.style.display = "flex";
+}
+
+function closeMenu() {
+    var menuNavPhone = document.getElementById("menu-phone");
+    menuNavPhone.style.display = "none";
+
+    //закрытие состава в секции бургеры
+    /*var i;
+    var compositionClose = document.getElementsByClassName("composition__hover");
+    for (i = 0; i < compositionClose.length; i++) {
+        compositionClose[i].style.display = "none";
+    }*/
 }

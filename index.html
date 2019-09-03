@@ -53,12 +53,30 @@
                             </div>
                             <div class="header__links">
                                 <a class="button" href="" alt="Ссылка на форму заказа">Заказать</a>
-                                <a class="menu-link" href="">
+                                <a class="menu-link" onclick="openMenu()">
                                     <div class="menu-link__bars"></div>
-                                  </a>
+                                </a>
                             </div>
                         </div>
         
+                    </div>
+                    <!--Phone menu navigation-->
+                    <div class="menu-phone" id="menu-phone">
+                        <div class="menu-phone__wrapper">
+                            <a onclick="closeMenu()">
+                                    <div class="menu-phone__close"></div>
+                            </a>
+                            <nav class="nav">
+                                <ul class="menu-phone__list">
+                                    <li class="menu-phone__item">почему мы</li>
+                                    <li class="menu-phone__item">меню</li>
+                                    <li class="menu-phone__item">советы</li>
+                                    <li class="menu-phone__item">кто мы</li>
+                                    <li class="menu-phone__item">заказ</li>
+                                    <li class="menu-phone__item">контакты</li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
                     <!--Content-->
                     <div class="main-content">
@@ -178,7 +196,9 @@
                                                         <div class="hover__weigth">80г</div>
                                                     </li>
                                                 </ul>
-                                                <div class="hover__close"></div>
+                                                <a onclick="closeMenu()">
+                                                    <div class="hover__close"></div>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="slider__calories-picture">
