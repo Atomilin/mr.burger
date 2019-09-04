@@ -42,13 +42,9 @@
 }
 
 .menu-phone__item {
-    font-family: Ubuntu;
-    font-size: rem(24px);
-    text-transform: uppercase;
     display: flex;
     align-items: center;
     flex-direction: column;
-    cursor: pointer;
     &:after {
         content: "";
         display: block;
@@ -93,4 +89,14 @@
 
 .menu-phone__close:after {
     transform: rotate(-45deg);
+}
+
+.menu-phone__link {
+    font-family: Ubuntu;
+    font-size: rem(24px);
+    transition: .5s;
+	white-space: pre;
+	color: $white;
+	text-decoration: none;
+    cursor: pointer;
 }

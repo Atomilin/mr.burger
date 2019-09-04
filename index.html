@@ -14,7 +14,7 @@
     <div class="wrapper">
         <div class="container">
             <!--We do-->
-            <section class="section main">
+            <section class="section main" data-section="one">
                 <div class="content">
                     <!--Header-->
                     <div class="header">
@@ -27,61 +27,38 @@
                             <div class="header__menu">
                                 <nav class="nav">
                                     <ul class="nav__list">
-                                    <li class="nav__item">
-                                        <a class="nav__link" href="" alt="Ссылка на страницу о нас" data-title="о нас">о нас</a>
-                                    </li>
-                                    <li class="nav__item">
-                                        <a class="nav__link" href="" alt="Ссылка на страницу бургеры" data-title="бургеры">бургеры</a>
-                                    </li>
-                                    <li class="nav__item">
-                                        <a class="nav__link" href="" alt="Ссылка на страницу команда" data-title="команда">команда</a>
-                                    </li>
-                                    <li class="nav__item">
-                                        <a class="nav__link" href="" alt="Ссылка на страницу меню" data-title="меню">меню</a>
-                                    </li>
-                                    <li class="nav__item">
-                                        <a class="nav__link" href="" alt="Ссылка на страницу отзывы" data-title="отзывы">отзывы</a>
-                                    </li>
-                                    <li class="nav__item">
-                                        <a class="nav__link" href="" alt="Ссылка на страницу как мы работаем" data-title="как мы работаем">как мы работаем</a>
-                                    </li>
-                                    <li class="nav__item">
-                                        <a class="nav__link" href="" alt="Ссылка на страницу контакты" data-title="контакты">контакты</a>
-                                    </li>
+                                        <li class="nav__item">
+                                            <a class="nav__link" href="#two" alt="Ссылка на страницу о нас" data-title="о нас">о нас</a>
+                                        </li>
+                                        <li class="nav__item">
+                                            <a class="nav__link" href="#three" alt="Ссылка на страницу бургеры" data-title="бургеры">бургеры</a>
+                                        </li>
+                                        <li class="nav__item">
+                                            <a class="nav__link" href="#four" alt="Ссылка на страницу команда" data-title="команда">команда</a>
+                                        </li>
+                                        <li class="nav__item">
+                                            <a class="nav__link" href="#five" alt="Ссылка на страницу меню" data-title="меню">меню</a>
+                                        </li>
+                                        <li class="nav__item">
+                                            <a class="nav__link" href="#six" alt="Ссылка на страницу отзывы" data-title="отзывы">отзывы</a>
+                                        </li>
+                                        <li class="nav__item">
+                                            <a class="nav__link" href="#seven" alt="Ссылка на страницу как мы работаем" data-title="как мы работаем">как мы работаем</a>
+                                        </li>
+                                        <li class="nav__item">
+                                            <a class="nav__link" href="#nine" alt="Ссылка на страницу контакты" data-title="контакты">контакты</a>
+                                        </li>
                                     </ul>
                                 </nav>
                             </div>
                             <div class="header__links">
-                                <a class="button" href="" alt="Ссылка на форму заказа">Заказать</a>
+                                <a class="button" href="#eight" alt="Ссылка на форму заказа">Заказать</a>
                                 <a class="menu-link" onclick="openMenu()">
                                     <div class="menu-link__bars"></div>
                                 </a>
                             </div>
                         </div>
         
-                    </div>
-                    <!--Phone menu navigation-->
-                    <div class="menu-phone" id="menu-phone">
-                        <div class="menu-phone__wrapper">
-                            <div class="menu-phone__logo">
-                                <a href="index.html">
-                                    <img class="menu-phone__img" src="images/icons/logo.svg" alt="">
-                                </a>
-                            </div>
-                            <a onclick="closeMenu()">
-                                    <div class="menu-phone__close"></div>
-                            </a>
-                            <nav class="nav">
-                                <ul class="menu-phone__list">
-                                    <li class="menu-phone__item">о нас</li>
-                                    <li class="menu-phone__item">бургеры</li>
-                                    <li class="menu-phone__item">команда</li>
-                                    <li class="menu-phone__item">меню</li>
-                                    <li class="menu-phone__item">отзывы</li>
-                                    <li class="menu-phone__item">контакты</li>
-                                </ul>
-                            </nav>
-                        </div>
                     </div>
                     <!--Content-->
                     <div class="main-content">
@@ -94,15 +71,50 @@
                             </div>
                     </div>
                     <!--Next screen-->
-                    <a class="arrow" href="#">
+                    <a class="arrow" href="#two">
                         <svg class="arrow__icon">
                             <use xlink:href="./images/icons/sprite.svg#arrow-scroll"></use>
                         </svg>
                     </a>
                 </div>
+                <!--Phone menu navigation-->
+                <div class="menu-phone" id="menu-phone">
+                    <div class="menu-phone__wrapper">
+                        <div class="menu-phone__logo">
+                            <a href="index.html">
+                                <img class="menu-phone__img" src="images/icons/logo.svg" alt="">
+                            </a>
+                        </div>
+                        <a onclick="closeMenu()">
+                                <div class="menu-phone__close"></div>
+                        </a>
+                        <nav class="nav">
+                            <ul class="menu-phone__list">
+                                <li class="menu-phone__item">
+                                    <a class="menu-phone__link" href="#two" alt="Ссылка на страницу о нас">о нас</a>
+                                </li>
+                                <li class="menu-phone__item">
+                                    <a class="menu-phone__link" href="#three" alt="Ссылка на страницу бургеры">бургеры</a>
+                                </li>
+                                <li class="menu-phone__item">
+                                    <a class="menu-phone__link" href="#four" alt="Ссылка на страницу команда">команда</a>
+                                </li>
+                                <li class="menu-phone__item">
+                                    <a class="menu-phone__link" href="#five" alt="Ссылка на страницу меню">меню</a>
+                                </li>
+                                <li class="menu-phone__item">
+                                    <a class="menu-phone__link" href="#six" alt="Ссылка на страницу отзывы">отзывы</a>
+                                </li>
+                                <li class="menu-phone__item">
+                                    <a class="menu-phone__link" href="#nine" alt="Ссылка на страницу контакты">контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </section>
             <!--We best-->
-            <section class="section we-best">
+            <section class="section we-best" data-section="two">
                 <div class="content content--we-best">
                     <div class="title title--black">Мы лучшие</div>
                     <ul class="advantages">
@@ -137,7 +149,7 @@
                 </div>
             </section>
             <!--Burger-->
-            <section class="section burger">
+            <section class="section burger" data-section="three">
                 <div class="content content__burger">
                     <div class="arrow-slaider">
                         <a class="arrow--left" onclick="prevSlide()">
@@ -874,7 +886,7 @@
                 </div>
             </section>
             <!--Team-->
-            <section class="section team">
+            <section class="section team" data-section="four">
                 <div class="team__section">
                     <div class="title title--team">Команда</div>
                     <div class="team__content">
@@ -944,7 +956,7 @@
                 </div>
             </section>
             <!--Menu-->
-            <section class="section menu">
+            <section class="section menu" data-section="five">
                 <div class="title title--white menu__title">Меню</div>
                 <ul class="menu-acco">
                     <li class="menu-acco__item menu-acco__item--active">
@@ -980,7 +992,7 @@
                 </ul>
             </section>
             <!--Review-->
-            <section class="section">
+            <section class="section" data-section="six">
                 <ul class="review__list">
                     <li class="review__item">
                         <div class="review__picture">
@@ -1065,14 +1077,14 @@
                 </ul>
             </section>
             <!--We work-->
-            <section class="section process">
+            <section class="section process" data-section="seven">
                 <div class="content content--we-best">
                     <div class="title title--black">как мы работаем</div>
                     <iframe class="video" src="https://www.youtube.com/embed/nxevcb3x0qM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </section>
             <!--Delivery-->
-            <section class="section form">
+            <section class="section form" data-section="eight">
                 <div class="form__wrapper">
                     <div class="title title--team">Закажите доставку</div>
                     <form class="form__content">
@@ -1152,7 +1164,7 @@
                 </div>
             </section>
             <!--Contacts+map-->
-            <section class="section">
+            <section class="section" data-section="nine">
                 <div id="map" class="map"></div>
                 <footer class="footer">
                     <div class="footer__col">
@@ -1200,6 +1212,13 @@
             </section>
         </div>
     </div>
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins/jquery.fancybox.min.js"></script>
+
     <script src="js/main.js"></script>
+    <script src="js/accordeon.js"></script>
+    <script src="js/navigation.js"></script>
 </body>
 </html>

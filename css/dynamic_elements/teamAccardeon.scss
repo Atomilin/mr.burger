@@ -57,6 +57,7 @@
 	display: inline-flex;
 	margin-bottom: rem(20px);
 	align-items: center;
+	cursor: pointer;
 	&:before,
 	&:after {
 		content: "";

@@ -47,11 +47,4 @@ function openMenu() {
 function closeMenu() {
     var menuNavPhone = document.getElementById("menu-phone");
     menuNavPhone.style.display = "none";
-
-    //закрытие состава в секции бургеры
-    /*var i;
-    var compositionClose = document.getElementsByClassName("composition__hover");
-    for (i = 0; i < compositionClose.length; i++) {
-        compositionClose[i].style.display = "none";
-    }*/
 }

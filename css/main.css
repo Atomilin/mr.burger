@@ -1927,7 +1927,8 @@ a:hover {
   margin-bottom: 1.25rem;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  cursor: pointer; }
   .team-acco__link:before, .team-acco__link:after {
     content: "";
     display: block;
@@ -2213,9 +2214,6 @@ a:hover {
   color: #fff; }
 
 .menu-phone__item {
-  font-family: Ubuntu;
-  font-size: 1.5rem;
-  text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2225,8 +2223,7 @@ a:hover {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
-  cursor: pointer; }
+  flex-direction: column; }
   .menu-phone__item:after {
     content: "";
     display: block;
@@ -2267,3 +2264,14 @@ a:hover {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg); }
+
+.menu-phone__link {
+  font-family: Ubuntu;
+  font-size: 1.5rem;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  white-space: pre;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer; }
