@@ -1,0 +1,103 @@
+.menu-acco {
+	position: absolute;
+	right: 0;
+	top: 0;
+    bottom: 0;
+	display: flex;
+}
+
+.menu-acco__item {
+    height: 100%;
+    
+	&.menu-acco__item--active {
+		.menu-acco__layout {
+			background-color: rgba($black, 0.8);	
+        }
+        .menu-acco__title {
+			color: $yellow;
+		}
+		.menu-acco__desc {
+			max-width: rem(500px);
+
+			@include tablets {
+				max-width: rem(520px);
+			}
+		}
+	}
+}
+
+.menu-acco__link {
+	width: rem(80px);
+	display: block;
+	height: 100%;
+	float: left;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-decoration: none;
+	position: relative;
+	font-family: 'Gagalin-Regular', Helvetica, sans-serif;
+
+    &.meat {
+        background-image: url('./../images/meat_bg.jpg');
+    }
+    &.vegan {
+        background-image: url('./../images/vegan_bg.jpg');
+    }
+    &.diet {
+        background-image: url('./../images/diet_bg.jpg');
+	}
+	
+	@include phones {
+		width: rem(48px);
+	}
+}
+
+.menu-acco__title {
+	font-size: rem(40px);
+	color: #fff;
+	text-align: center;
+    white-space: nowrap;
+    position: absolute;
+    transform: rotate(-90deg) translateY(-50%);
+    transform-origin: 0 0;
+    left: 50%;
+	transition: .3s;
+	margin-top: rem(-54px);
+}
+
+.menu-acco__desc {
+	height: 100%;
+	background: rgba(#2f3234, .93);
+	width: rem(0px);
+	transition: .3s;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	overflow: hidden;
+	width: auto;
+	max-width: rem(0px);
+}
+
+.menu-acco__text {
+	font-size: rem(14px);
+	color: #fff;
+    line-height: 1.8;
+	width: auto;
+	padding: rem(50px) rem(48px) 0;
+
+	@include phones {
+		padding: rem(35px) rem(30px) 0;
+	}
+
+	@include small {
+		padding: rem(28px) rem(20px) 0;
+	}
+}
+
+.menu-acco__layout {
+	width: 100%;
+	height: 100%;
+	background-color: rgba($black, .5);
+	transition: .4s;
+}

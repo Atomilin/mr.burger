@@ -1,0 +1,474 @@
+.slider__phones {
+    display: none;
+
+    @include tablets {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @include phones {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @include small {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.content__description {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    color: $white;
+    font-size: rem(14px);
+    flex-direction: column;
+    align-items: center;
+    margin-left: rem(20px);
+    margin-right: rem(40px);
+
+    @include tablets {
+        margin-left: rem(0px);
+        margin-right: rem(0px);
+    }
+
+    @include phones {
+        margin-left: rem(0px);
+        margin-right: rem(0px);
+    }
+
+    @include small {
+        margin-left: rem(0px);
+        margin-right: rem(0px);
+    }
+}
+
+.slaider {
+    display: flex;
+    align-items: flex-start;
+}
+
+.slaider__left {
+    flex-direction: column;
+    width: 50%;
+    
+    @include tablets {
+        width: 100%;
+    }
+
+    @include phones {
+        width: 100%;
+    }
+
+    @include small {
+        width: 100%;
+    }
+}
+
+.slaider__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+
+    @include tablets {
+        width: 100%;
+    }
+
+    @include phones {
+        width: 100%;
+    }
+
+    @include small {
+        width: 100%;
+    }
+}
+.slaider__deactive {
+    display: none;
+
+    @include tablets {
+        flex-direction: column;
+    }
+
+    @include phones {
+        flex-direction: column;
+    }
+
+    @include small {
+        flex-direction: column;
+    }
+}
+
+/// состав
+
+.slider__composition {
+    font-family: 'Gagalin-Regular', Helvetica, sans-serif;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: rem(90px); 
+    height: rem(90px);
+    background: #F08C33;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    &:hover {
+        background: $red;
+    }
+
+    
+    @include small {
+        width: rem(75px); 
+        height: rem(75px);
+    }
+}
+  
+.slider__composition:hover .composition__hover{
+    display: flex;
+}
+
+.slider__composition--phones {
+
+    @include tablets {
+        display: none;
+    }
+
+    @include phones {
+        display: none;
+    }
+
+    @include small {
+        display: none;
+    }
+}
+
+.slider__burger-icon {
+    height: rem(46px);
+    width: rem(46px);
+    margin-top: rem(4px);
+
+    @include small {
+        height: rem(46px);
+        width: rem(46px);
+        margin-top: rem(2px);
+    }
+}
+
+.composition__hover {
+    background: rgba(255, 255, 255, .85);
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    color: $black;
+    top: 0;
+    left: 100%;
+    z-index: 1;
+
+    @include tablets {
+        top: 0;
+        left: 100%;
+    }
+
+    @include phones {
+        top: 0;
+        left: 100%;
+    }
+
+    @include small {
+        top: 0;
+        left: 100%;
+    }
+  }
+  
+.hover__list {
+    justify-content: center;
+    align-items: center;
+}
+  
+.hover__item{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    margin-bottom:rem(13px);
+    margin-left:rem(20px);
+    &:first-child{
+        margin-top:rem(18px);
+    }
+}
+
+.hover__icon {
+    width: rem(45px);
+    height: rem(45px);
+    margin-right: rem(25px);
+
+    @include tablets {
+        margin-right: rem(20px);
+    }
+
+    @include phones {
+        margin-right: rem(20px);
+    }
+
+    @include small {
+        margin-right: rem(10px);
+    }
+}
+
+.hover__component {
+    margin-right:rem(67px);
+    font-size:rem(14px);
+    font-family: Ubuntu;
+    font-weight: bold;
+    
+    @include tablets {
+        margin-right: rem(20px);
+    }
+
+    @include phones {
+        margin-right: rem(20px);
+    }
+
+    @include small {
+        margin-right: rem(10px);
+    }
+}
+
+.hover__weigth {
+    margin-left: auto;
+    display:flex;
+    flex-wrap:nowrap;
+    margin-right:rem(20px);
+   
+    @include tablets {
+        margin-right: rem(52px);
+    }
+
+    @include phones {
+        margin-right: rem(52px);
+    }
+
+    @include small {
+        margin-right: rem(52px);
+    }
+}
+
+.hover__close {
+    display: none;
+    position: absolute;
+    right: 28px;
+    top: 15px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+
+    @include tablets {
+        display: inline-block;
+    }
+
+    @include phones {
+        display: inline-block;
+    }
+
+    @include small {
+        display: inline-block;
+    }
+}
+
+.hover__close:before, .hover__close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 25px;
+    width: 4px;
+    background-color: #eb8262;
+    border-radius: rem(10px);
+}
+
+.hover__close:before {
+    transform: rotate(45deg);
+}
+
+.hover__close:after {
+    transform: rotate(-45deg);
+}
+
+/// бургеры
+.slider__display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-width: 471px;
+}
+
+.slider__list {
+    width: 100%;
+    white-space: nowrap;
+    font-size: 0;
+    list-style: none;
+    transform: translateX(0%);
+    transition: transform .35s;
+    will-change: transform;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.slider__pic-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider__pic {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+///каллории
+.slider__calories-picture {
+    display: inline-flex;
+    position: relative;
+    flex-direction: column;
+    font-family: 'Gagalin-Regular', Helvetica, sans-serif;
+    width: rem(60px);
+    align-items: center;
+    justify-content: center;
+}
+
+.slider__calories-picture--phones {
+    
+    @include tablets {
+        display: none;
+    }
+
+    @include phones {
+        display: none;
+    }
+
+    @include small {
+        display: none;
+    }
+}
+
+.slider__calories-icon {
+    width: rem(60px);
+    height: rem(60px);
+
+    @include small {
+        width: rem(60px);
+        height: rem(60px);
+    }
+}
+
+.slider__calories-number {
+    position: absolute;
+    font-size: rem(20px);
+}
+//описание бургеров
+.slaider__right--subtitle {
+    font-family: Ubuntu;
+    font-size: rem(14px);
+    font-weight: 300;
+    margin-top: rem(56px);
+    margin-bottom: rem(36px);
+
+    @include  tablets {
+        text-align: center;
+    }
+
+    @include  phones {
+        text-align: center;
+    }
+
+    @include  small {
+        text-align: center;
+        margin-top: rem(30px);
+        margin-bottom: rem(20px);
+    }
+}
+//цена и кнопка
+.slaider__footer {
+    display: flex;
+    align-items: baseline;
+
+    @include tablets {
+        justify-content: center;
+    }
+
+    @include phones {
+        justify-content: center;
+    }
+
+    @include small {
+        justify-content: center;
+    }
+}
+
+.title__footer {
+    font-size: rem(72px);
+    color: #e45028; 
+    font-family: 'Gagalin-Regular', Helvetica, sans-serif;
+  
+  @include tablets {
+    font-size: rem(72px);
+    white-space: nowrap;
+  }
+
+  @include phones {
+    font-size: rem(51px);
+    white-space: nowrap;
+  }
+
+  @include small {
+    font-size: rem(30px);
+    white-space: nowrap;
+  }
+}
+
+.title__footer--subtitle {
+    margin-left: rem(10px);
+    margin-right: rem(30px);
+    font-size: rem(30px);
+
+    @include tablets {
+        font-size: rem(24px);
+    }
+
+    @include phones {
+        font-size: rem(24px);
+    }
+
+    @include small {
+        font-size: rem(18px);
+    }
+}
+//заголовок бургера
+.title--burger {
+    line-height: 0.89;
+
+    @include tablets {
+        font-size: rem(72px);
+        white-space: normal;
+        text-align: center;
+    }
+
+    @include phones {
+        font-size: rem(50px);
+        white-space: normal;
+        text-align: center;
+    }
+
+    @include small {
+        font-size: rem(28px);
+        white-space: normal;
+        text-align: center;
+    }
+}

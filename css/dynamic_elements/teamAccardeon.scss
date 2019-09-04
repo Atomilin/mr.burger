@@ -1,0 +1,189 @@
+.team-acco {
+	display: flex;
+	flex-direction: column;
+}
+
+.team-acco__item {
+	margin-bottom: rem(35px);
+
+	&.team-acco__item--active {
+		.content-team {
+			display: flex;
+			max-height: rem(200px);
+			
+			@include tablets {
+				flex-direction: column;
+			}
+
+			@include phones {
+				flex-direction: column;
+			}
+
+			@include small {
+				flex-direction: column;
+			}
+		}
+		.team-acco__link {
+			color: $yellow;
+			&:before {
+				transform: rotate(-180deg);
+			}
+		}
+	}
+
+	@include tablets {
+		text-align: center;
+	}
+
+	@include phones {
+		text-align: center;
+	}
+
+	@include small {
+		text-align: center;
+		margin-bottom: rem(15px);
+	}
+
+}
+.team-acco__item:last-child{
+	margin-bottom: 0rem;
+}
+.team-acco__link {
+    font-family: 'Gagalin-Regular';
+	color: #fff;
+	font-size: rem(14px);
+	text-decoration: none;
+	position: relative;
+	display: inline-flex;
+	margin-bottom: rem(20px);
+	align-items: center;
+	cursor: pointer;
+	&:before,
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		left: rem(-18px);
+		top: rem(8px);
+		width: 0;
+		height: 0;
+	}
+	&:before {
+		border-top: rem(7px) solid $yellow;
+		border-left: rem(7px) solid transparent;
+		border-right: rem(5px) solid transparent;
+		border-bottom: 0rem solid transparent;
+		transform: 0deg;
+		transition: .3s;
+	}
+
+	@include tablets {
+		font-size: rem(25px);
+	}
+
+	@include phones {
+		font-size: rem(25px);
+	}
+
+	@include small {
+		font-size: rem(25px);
+	}
+}
+
+.content-team {
+	width: 100%;
+	height: rem(0px);
+	transition: .3s;
+	display: flex;
+	justify-content: flex-start;
+	overflow: hidden;
+	height: auto;
+	max-height: rem(0px);
+
+	@include tablets {
+		align-items: center;
+	}
+
+	@include phones {
+		align-items: center;
+	}
+
+	@include small {
+		align-items: center;
+	}
+}
+
+.content-team__avatar {
+	flex-shrink: 0;
+	border-radius: 50%;
+	overflow: hidden;
+	width: rem(100px);
+	height: rem(100px);
+	margin-right: rem(21px);
+
+	@include tablets {
+		margin-right: rem(0px);
+		margin-bottom: rem(22px);
+	}
+
+	@include phones {
+		margin-right: rem(0px);
+		margin-bottom: rem(22px);
+	}
+
+	@include small {
+		margin-right: rem(0px);
+		margin-bottom: rem(10px);
+		width: rem(80px);
+		height: rem(80px);
+	}
+  }
+  
+.avatar-pic {
+	max-width: 100%;
+	max-height: 100%;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.text {
+	font-family: Ubuntu;
+	font-style: normal;
+	font-stretch: normal;
+	color: $white;
+	letter-spacing: normal;
+	text-align: left;
+}
+.text__header {
+	font-size: rem(14px);
+	font-weight: bold;
+	line-height: 1.17;
+	
+	@include tablets {
+		text-align: center;
+	}
+
+	@include phones {
+		text-align: center;
+	}
+
+	@include small {
+		text-align: center;
+	}
+}
+  
+.text__body {
+	font-family: Ubuntu;
+	font-size: rem(14px);
+	font-weight: 300;
+	line-height: 1.67;
+	margin-top: rem(10px);
+
+	@include tablets {
+		text-align: center;
+	}
+
+	@include phones {
+		text-align: center;
+	}
+}

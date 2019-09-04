@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mr.burger</title>
+    <link rel="shortcut icon" href="./images/icons/favicon.ico" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" type="text/css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <!--We do-->
+            <section class="section main" data-section="one">
+                <div class="content">
+                    <!--Header-->
+                    <div class="header">
+                        <div class="header__logo">
+                            <a href="index.html">
+                                <img src="./images/icons/logo.svg" alt="Логотип">
+                            </a>
+                        </div> 
+                        <div class="header__btns">
+                            <div class="header__menu">
+                                <nav class="nav">
+                                    <ul class="nav__list">
+                                        <li class="nav__item">
+                                            <a class="nav__link" href="#two" alt="Ссылка на страницу о нас" data-title="о нас">о нас</a>
+                                        </li>
+                                        <li class="nav__item">
+                                            <a class="nav__link" href="#three" alt="Ссылка на страницу бургеры" data-title="бургеры">бургеры</a>
+                                        </li>
+                                        <li class="nav__item">
+                                            <a class="nav__link" href="#four" alt="Ссылка на страницу команда" data-title="команда">команда</a>
+                                        </li>
+                                        <li class="nav__item">
+                                            <a class="nav__link" href="#five" alt="Ссылка на страницу меню" data-title="меню">меню</a>
+                                        </li>
+                                        <li class="nav__item">
+                                            <a class="nav__link" href="#six" alt="Ссылка на страницу отзывы" data-title="отзывы">отзывы</a>
+                                        </li>
+                                        <li class="nav__item">
+                                            <a class="nav__link" href="#seven" alt="Ссылка на страницу как мы работаем" data-title="как мы работаем">как мы работаем</a>
+                                        </li>
+                                        <li class="nav__item">
+                                            <a class="nav__link" href="#nine" alt="Ссылка на страницу контакты" data-title="контакты">контакты</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="header__links">
+                                <a class="button" href="#eight" alt="Ссылка на форму заказа">Заказать</a>
+                                <a class="menu-link" onclick="openMenu()">
+                                    <div class="menu-link__bars"></div>
+                                </a>
+                            </div>
+                        </div>
+        
+                    </div>
+                    <!--Content-->
+                    <div class="main-content">
+                            <div class="main-content__left">
+                                <img class="main-content__img" src="./images/steam_burger.png" alt="">
+                            </div>
+                            <div class="main-content__right">
+                                <div class="title">Мы делаем</div>
+                                <div class="main-content__subtitle">Натуральные бургеры</div>
+                            </div>
+                    </div>
+                    <!--Next screen-->
+                    <a class="arrow" href="#two">
+                        <svg class="arrow__icon">
+                            <use xlink:href="./images/icons/sprite.svg#arrow-scroll"></use>
+                        </svg>
+                    </a>
+                </div>
+                <!--Phone menu navigation-->
+                <div class="menu-phone" id="menu-phone">
+                    <div class="menu-phone__wrapper">
+                        <div class="menu-phone__logo">
+                            <a href="index.html">
+                                <img class="menu-phone__img" src="images/icons/logo.svg" alt="">
+                            </a>
+                        </div>
+                        <a onclick="closeMenu()">
+                                <div class="menu-phone__close"></div>
+                        </a>
+                        <nav class="nav">
+                            <ul class="menu-phone__list">
+                                <li class="menu-phone__item">
+                                    <a class="menu-phone__link" href="#two" alt="Ссылка на страницу о нас">о нас</a>
+                                </li>
+                                <li class="menu-phone__item">
+                                    <a class="menu-phone__link" href="#three" alt="Ссылка на страницу бургеры">бургеры</a>
+                                </li>
+                                <li class="menu-phone__item">
+                                    <a class="menu-phone__link" href="#four" alt="Ссылка на страницу команда">команда</a>
+                                </li>
+                                <li class="menu-phone__item">
+                                    <a class="menu-phone__link" href="#five" alt="Ссылка на страницу меню">меню</a>
+                                </li>
+                                <li class="menu-phone__item">
+                                    <a class="menu-phone__link" href="#six" alt="Ссылка на страницу отзывы">отзывы</a>
+                                </li>
+                                <li class="menu-phone__item">
+                                    <a class="menu-phone__link" href="#nine" alt="Ссылка на страницу контакты">контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+            <!--We best-->
+            <section class="section we-best" data-section="two">
+                <div class="content content--we-best">
+                    <div class="title title--black">Мы лучшие</div>
+                    <ul class="advantages">
+                        <li class="advantages__item">
+                            <svg class="advantages__icon" style="fill: #e25028">
+                                <use xlink:href="./images/icons/sprite.svg#meat"></use>
+                            </svg>
+                            <div class="advantages__desc">
+                                <div class="advantages__title">100% свежее мясо</div>
+                                <div class="advantages__text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</div>
+                            </div>
+                        </li>
+                        <li class="advantages__item">
+                            <svg class="advantages__icon" style="fill: #f8b43a">
+                                    <use xlink:href="./images/icons/sprite.svg#hand"></use>
+                                </svg>
+                            <div class="advantages__desc">
+                                <div class="advantages__title">Ручная сборка</div>
+                                <div class="advantages__text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</div>
+                            </div>
+                        </li>
+                        <li class="advantages__item">
+                            <svg class="advantages__icon" style="fill: #8ac03e">
+                                    <use xlink:href="./images/icons/sprite.svg#natural"></use>
+                            </svg>
+                            <div class="advantages__desc">
+                                <div class="advantages__title">Натуральные ингредиенты</div>
+                                <div class="advantages__text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!--Burger-->
+            <section class="section burger" data-section="three">
+                <div class="content content__burger">
+                    <div class="arrow-slaider">
+                        <a class="arrow--left" onclick="prevSlide()">
+                            <svg class="arrow--icon">
+                                <use xlink:href="images/icons/sprite.svg#arrow-scroll"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="content__description">
+                        <ul class="slaider">
+                            <li class="slaider__deactive">
+                                <div class="slaider__left">
+                                    <div class="slider__phones">
+                                        <div class="slider__composition">
+                                            <svg class="slider__burger-icon" style="fill:#fff;">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#burger"></use>
+                                            </svg>
+                                                Состав
+                                            <div class="composition__hover">
+                                                <ul class="hover__list">
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#e25028;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#beef"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Говядина</div>
+                                                        <div class="hover__weigth">300г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#f8b43a;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#buns"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Булочки</div>
+                                                        <div class="hover__weigth">100г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#8ac03e;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#salad"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Зелень</div>
+                                                        <div class="hover__weigth">70г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#e25028;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#sauce"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Соус</div>
+                                                        <div class="hover__weigth">150г</div>
+                                                    </li>
+                                                    <li class="hover__item" class="hover__icon" style="fill:#8ac03e;">
+                                                        <svg class="hover__icon">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cucumber"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Овощи</div>
+                                                        <div class="hover__weigth">200г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#f8b43a;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cheese"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Сыр</div>
+                                                        <div class="hover__weigth">80г</div>
+                                                    </li>
+                                                </ul>
+                                                <a onclick="closeMenu()">
+                                                    <div class="hover__close"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="slider__calories-picture">
+                                            <svg class="slider__calories-icon" style="fill:#fff;">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#kkal"></use>
+                                            </svg>
+                                            <span class="slider__calories-number">1200</span>
+                                            ккал
+                                        </div>
+                                    </div>
+                                    <div class="slider__composition slider__composition--phones">
+                                        <svg class="slider__burger-icon" style="fill:#fff;">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#burger"></use>
+                                        </svg>
+                                            Состав
+                                        <div class="composition__hover">
+                                            <ul class="hover__list">
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#e25028;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#beef"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Говядина</div>
+                                                    <div class="hover__weigth">300г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#f8b43a;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#buns"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Булочки</div>
+                                                    <div class="hover__weigth">100г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#8ac03e;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#salad"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Зелень</div>
+                                                    <div class="hover__weigth">70г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#e25028;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#sauce"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Соус</div>
+                                                    <div class="hover__weigth">150г</div>
+                                                </li>
+                                                <li class="hover__item" class="hover__icon" style="fill:#8ac03e;">
+                                                    <svg class="hover__icon">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cucumber"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Овощи</div>
+                                                    <div class="hover__weigth">200г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#f8b43a;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cheese"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Сыр</div>
+                                                    <div class="hover__weigth">80г</div>
+                                                </li>
+                                            </ul>
+                                            <div class="hover__close"></div>
+                                        </div>
+                                    </div>
+                                    <div class="slider__list">
+                                        <img class="slider__pic" src="images/burgers/black_burger.png" alt="">
+                                    </div>
+                                    <div class="slider__calories-picture slider__calories-picture--phones">
+                                        <svg class="slider__calories-icon" style="fill:#fff;">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#kkal"></use>
+                                        </svg>
+                                        <span class="slider__calories-number">1200</span>
+                                        ккал
+                                    </div>
+                                </div>
+                                <div class="slaider__right">
+                                    <div class="title title--white title--burger">Dark BEEF Burger</div>
+                                    <div class="slaider__right--subtitle">
+                                        Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                                    </div>
+                                    <div class="slaider__footer">
+                                        <div class="title__footer">500</div>
+                                        <div class="title__footer title__footer--subtitle">рублей</div>
+                                        <div class="header__links">
+                                            <a class="button" href="" alt="Ссылка на форму заказа">Заказать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slaider__deactive">
+                                <div class="slaider__left">
+                                    <div class="slider__phones">
+                                        <div class="slider__composition">
+                                            <svg class="slider__burger-icon" style="fill:#fff;">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#burger"></use>
+                                            </svg>
+                                                Состав
+                                            <div class="composition__hover">
+                                                <ul class="hover__list">
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#e25028;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#beef"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Говядина</div>
+                                                        <div class="hover__weigth">250г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#f8b43a;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#buns"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Булочки</div>
+                                                        <div class="hover__weigth">100г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#8ac03e;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#salad"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Зелень</div>
+                                                        <div class="hover__weigth">70г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#e25028;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#sauce"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Соус</div>
+                                                        <div class="hover__weigth">150г</div>
+                                                    </li>
+                                                    <li class="hover__item" class="hover__icon" style="fill:#8ac03e;">
+                                                        <svg class="hover__icon">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cucumber"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Овощи</div>
+                                                        <div class="hover__weigth">200г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#f8b43a;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cheese"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Сыр</div>
+                                                        <div class="hover__weigth">80г</div>
+                                                    </li>
+                                                </ul>
+                                                <div class="hover__close"></div>
+                                            </div>
+                                        </div>
+                                        <div class="slider__calories-picture">
+                                            <svg class="slider__calories-icon" style="fill:#fff;">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#kkal"></use>
+                                            </svg>
+                                            <span class="slider__calories-number">1000</span>
+                                            ккал
+                                        </div>
+                                    </div>
+                                    <div class="slider__composition slider__composition--phones">
+                                        <svg class="slider__burger-icon" style="fill:#fff;">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#burger"></use>
+                                        </svg>
+                                            Состав
+                                        <div class="composition__hover">
+                                            <ul class="hover__list">
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#e25028;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#beef"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Говядина</div>
+                                                    <div class="hover__weigth">250г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#f8b43a;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#buns"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Булочки</div>
+                                                    <div class="hover__weigth">100г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#8ac03e;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#salad"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Зелень</div>
+                                                    <div class="hover__weigth">70г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#e25028;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#sauce"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Соус</div>
+                                                    <div class="hover__weigth">150г</div>
+                                                </li>
+                                                <li class="hover__item" class="hover__icon" style="fill:#8ac03e;">
+                                                    <svg class="hover__icon">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cucumber"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Овощи</div>
+                                                    <div class="hover__weigth">200г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#f8b43a;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cheese"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Сыр</div>
+                                                    <div class="hover__weigth">80г</div>
+                                                </li>
+                                            </ul>
+                                            <div class="hover__close"></div>
+                                        </div>
+                                    </div>
+                                    <div class="slider__list">
+                                        <img class="slider__pic" src="images/burgers/bacon_cheeseburger.png" alt="">
+                                    </div>
+                                    <div class="slider__calories-picture slider__calories-picture--phones">
+                                        <svg class="slider__calories-icon" style="fill:#fff;">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#kkal"></use>
+                                        </svg>
+                                        <span class="slider__calories-number">1000</span>
+                                        ккал
+                                    </div>
+                                </div>
+                                <div class="slaider__right">
+                                    <div class="title title--white title--burger">Bacon  CheeseBurger</div>
+                                    <div class="slaider__right--subtitle">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium excepturi vel provident! Quae, illum totam! Vero assumenda quis in, illo, eos saepe ab, architecto perspiciatis nihil odit fuga quibusdam itaque.
+                                    </div>
+                                    <div class="slaider__footer">
+                                        <div class="title__footer">300</div>
+                                        <div class="title__footer title__footer--subtitle">рублей</div>
+                                        <div class="header__links">
+                                            <a class="button" href="" alt="Ссылка на форму заказа">Заказать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slaider__deactive">
+                                <div class="slaider__left">
+                                    <div class="slider__phones">
+                                        <div class="slider__composition">
+                                            <svg class="slider__burger-icon" style="fill:#fff;">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#burger"></use>
+                                            </svg>
+                                                Состав
+                                            <div class="composition__hover">
+                                                <ul class="hover__list">
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#e25028;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#beef"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Говядина</div>
+                                                        <div class="hover__weigth">200г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#f8b43a;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#buns"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Булочки</div>
+                                                        <div class="hover__weigth">100г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#8ac03e;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#salad"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Зелень</div>
+                                                        <div class="hover__weigth">70г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#e25028;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#sauce"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Соус</div>
+                                                        <div class="hover__weigth">150г</div>
+                                                    </li>
+                                                    <li class="hover__item" class="hover__icon" style="fill:#8ac03e;">
+                                                        <svg class="hover__icon">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cucumber"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Овощи</div>
+                                                        <div class="hover__weigth">200г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#f8b43a;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cheese"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Сыр</div>
+                                                        <div class="hover__weigth">80г</div>
+                                                    </li>
+                                                </ul>
+                                                <div class="hover__close"></div>
+                                            </div>
+                                        </div>
+                                        <div class="slider__calories-picture">
+                                            <svg class="slider__calories-icon" style="fill:#fff;">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#kkal"></use>
+                                            </svg>
+                                            <span class="slider__calories-number">1400</span>
+                                            ккал
+                                        </div>
+                                    </div>
+                                    <div class="slider__composition slider__composition--phones">
+                                        <svg class="slider__burger-icon" style="fill:#fff;">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#burger"></use>
+                                        </svg>
+                                            Состав
+                                        <div class="composition__hover">
+                                            <ul class="hover__list">
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#e25028;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#beef"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Говядина</div>
+                                                    <div class="hover__weigth">300г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#f8b43a;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#buns"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Булочки</div>
+                                                    <div class="hover__weigth">100г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#8ac03e;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#salad"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Зелень</div>
+                                                    <div class="hover__weigth">70г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#e25028;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#sauce"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Соус</div>
+                                                    <div class="hover__weigth">150г</div>
+                                                </li>
+                                                <li class="hover__item" class="hover__icon" style="fill:#8ac03e;">
+                                                    <svg class="hover__icon">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cucumber"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Овощи</div>
+                                                    <div class="hover__weigth">200г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#f8b43a;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cheese"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Сыр</div>
+                                                    <div class="hover__weigth">80г</div>
+                                                </li>
+                                            </ul>
+                                            <div class="hover__close"></div>
+                                        </div>
+                                    </div>
+                                    <div class="slider__list">
+                                        <img class="slider__pic" src="images/burgers/burger_sandwitch.png" alt="">
+                                    </div>
+                                    <div class="slider__calories-picture slider__calories-picture--phones">
+                                        <svg class="slider__calories-icon" style="fill:#fff;">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#kkal"></use>
+                                        </svg>
+                                        <span class="slider__calories-number">1400</span>
+                                        ккал
+                                    </div>
+                                </div>
+                                <div class="slaider__right">
+                                    <div class="title title--white title--burger">Burger Sandwitch</div>
+                                    <div class="slaider__right--subtitle">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium excepturi vel provident! Quae, illum totam! Vero assumenda quis in, illo, eos saepe ab, architecto perspiciatis nihil odit fuga quibusdam itaque.
+                                    </div>
+                                    <div class="slaider__footer">
+                                        <div class="title__footer">100</div>
+                                        <div class="title__footer title__footer--subtitle">рублей</div>
+                                        <div class="header__links">
+                                            <a class="button" href="" alt="Ссылка на форму заказа">Заказать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slaider__deactive">
+                                <div class="slaider__left">
+                                    <div class="slider__phones">
+                                        <div class="slider__composition">
+                                            <svg class="slider__burger-icon" style="fill:#fff;">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#burger"></use>
+                                            </svg>
+                                                Состав
+                                            <div class="composition__hover">
+                                                <ul class="hover__list">
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#e25028;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#beef"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Курица</div>
+                                                        <div class="hover__weigth">200г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#f8b43a;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#buns"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Булочки</div>
+                                                        <div class="hover__weigth">100г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#8ac03e;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#salad"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Зелень</div>
+                                                        <div class="hover__weigth">70г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#e25028;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#sauce"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Соус</div>
+                                                        <div class="hover__weigth">150г</div>
+                                                    </li>
+                                                    <li class="hover__item" class="hover__icon" style="fill:#8ac03e;">
+                                                        <svg class="hover__icon">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cucumber"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Овощи</div>
+                                                        <div class="hover__weigth">200г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#f8b43a;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cheese"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Сыр</div>
+                                                        <div class="hover__weigth">80г</div>
+                                                    </li>
+                                                </ul>
+                                                <div class="hover__close"></div>
+                                            </div>
+                                        </div>
+                                        <div class="slider__calories-picture">
+                                            <svg class="slider__calories-icon" style="fill:#fff;">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#kkal"></use>
+                                            </svg>
+                                            <span class="slider__calories-number">500</span>
+                                            ккал
+                                        </div>
+                                    </div>
+                                    <div class="slider__composition slider__composition--phones">
+                                        <svg class="slider__burger-icon" style="fill:#fff;">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#burger"></use>
+                                        </svg>
+                                            Состав
+                                        <div class="composition__hover">
+                                            <ul class="hover__list">
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#e25028;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#beef"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Курица</div>
+                                                    <div class="hover__weigth">200г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#f8b43a;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#buns"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Булочки</div>
+                                                    <div class="hover__weigth">100г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#8ac03e;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#salad"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Зелень</div>
+                                                    <div class="hover__weigth">70г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#e25028;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#sauce"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Соус</div>
+                                                    <div class="hover__weigth">150г</div>
+                                                </li>
+                                                <li class="hover__item" class="hover__icon" style="fill:#8ac03e;">
+                                                    <svg class="hover__icon">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cucumber"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Овощи</div>
+                                                    <div class="hover__weigth">200г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#f8b43a;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cheese"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Сыр</div>
+                                                    <div class="hover__weigth">80г</div>
+                                                </li>
+                                            </ul>
+                                            <div class="hover__close"></div>
+                                        </div>
+                                    </div>
+                                    <div class="slider__list">
+                                        <img class="slider__pic" src="images/burgers/chicken_burger.png" alt="">
+                                    </div>
+                                    <div class="slider__calories-picture slider__calories-picture--phones">
+                                        <svg class="slider__calories-icon" style="fill:#fff;">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#kkal"></use>
+                                        </svg>
+                                        <span class="slider__calories-number">500</span>
+                                        ккал
+                                    </div>
+                                </div>
+                                <div class="slaider__right">
+                                    <div class="title title--white title--burger">Chicken Burger</div>
+                                    <div class="slaider__right--subtitle">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium excepturi vel provident! Quae, illum totam! Vero assumenda quis in, illo, eos saepe ab, architecto perspiciatis nihil odit fuga quibusdam itaque.
+                                    </div>
+                                    <div class="slaider__footer">
+                                        <div class="title__footer">380</div>
+                                        <div class="title__footer title__footer--subtitle">рублей</div>
+                                        <div class="header__links">
+                                            <a class="button" href="" alt="Ссылка на форму заказа">Заказать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slaider__deactive">
+                                <div class="slaider__left">
+                                    <div class="slider__phones">
+                                        <div class="slider__composition">
+                                            <svg class="slider__burger-icon" style="fill:#fff;">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#burger"></use>
+                                            </svg>
+                                                Состав
+                                            <div class="composition__hover">
+                                                <ul class="hover__list">
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#e25028;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#beef"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Креветки</div>
+                                                        <div class="hover__weigth">150г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#f8b43a;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#buns"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Булочки</div>
+                                                        <div class="hover__weigth">100г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#8ac03e;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#salad"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Зелень</div>
+                                                        <div class="hover__weigth">70г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#e25028;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#sauce"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Соус</div>
+                                                        <div class="hover__weigth">150г</div>
+                                                    </li>
+                                                    <li class="hover__item" class="hover__icon" style="fill:#8ac03e;">
+                                                        <svg class="hover__icon">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cucumber"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Овощи</div>
+                                                        <div class="hover__weigth">200г</div>
+                                                    </li>
+                                                    <li class="hover__item">
+                                                        <svg class="hover__icon" style="fill:#f8b43a;">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cheese"></use>
+                                                        </svg>
+                                                        <div class="hover__component">Сыр</div>
+                                                        <div class="hover__weigth">80г</div>
+                                                    </li>
+                                                </ul>
+                                                <div class="hover__close"></div>
+                                            </div>
+                                        </div>
+                                        <div class="slider__calories-picture">
+                                            <svg class="slider__calories-icon" style="fill:#fff;">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#kkal"></use>
+                                            </svg>
+                                            <span class="slider__calories-number">700</span>
+                                            ккал
+                                        </div>
+                                    </div>
+                                    <div class="slider__composition slider__composition--phones">
+                                        <svg class="slider__burger-icon" style="fill:#fff;">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#burger"></use>
+                                        </svg>
+                                            Состав
+                                        <div class="composition__hover">
+                                            <ul class="hover__list">
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#e25028;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#beef"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Креветки</div>
+                                                    <div class="hover__weigth">150г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#f8b43a;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#buns"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Булочки</div>
+                                                    <div class="hover__weigth">100г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#8ac03e;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#salad"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Зелень</div>
+                                                    <div class="hover__weigth">70г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#e25028;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#sauce"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Соус</div>
+                                                    <div class="hover__weigth">150г</div>
+                                                </li>
+                                                <li class="hover__item" class="hover__icon" style="fill:#8ac03e;">
+                                                    <svg class="hover__icon">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cucumber"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Овощи</div>
+                                                    <div class="hover__weigth">200г</div>
+                                                </li>
+                                                <li class="hover__item">
+                                                    <svg class="hover__icon" style="fill:#f8b43a;">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#cheese"></use>
+                                                    </svg>
+                                                    <div class="hover__component">Сыр</div>
+                                                    <div class="hover__weigth">80г</div>
+                                                </li>
+                                            </ul>
+                                            <div class="hover__close"></div>
+                                        </div>
+                                    </div>
+                                    <div class="slider__list">
+                                        <div class="slider__pic-wrapper">
+                                            <img class="slider__pic" src="images/burgers/spicy_shrimp_burger.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="slider__calories-picture slider__calories-picture--phones">
+                                        <svg class="slider__calories-icon" style="fill:#fff;">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/sprite.svg#kkal"></use>
+                                        </svg>
+                                        <span class="slider__calories-number">700</span>
+                                        ккал
+                                    </div>
+                                </div>
+                                <div class="slaider__right">
+                                    <div class="title title--white title--burger">Spicy Shrimp Burger</div>
+                                    <div class="slaider__right--subtitle">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium excepturi vel provident! Quae, illum totam! Vero assumenda quis in, illo, eos saepe ab, architecto perspiciatis nihil odit fuga quibusdam itaque.
+                                    </div>
+                                    <div class="slaider__footer">
+                                        <div class="title__footer">890</div>
+                                        <div class="title__footer title__footer--subtitle">рублей</div>
+                                        <div class="header__links">
+                                            <a class="button" href="" alt="Ссылка на форму заказа">Заказать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="arrow-slaider">
+                        <a class="arrow--right" onclick="nextSlide()">
+                            <svg class="arrow--icon">
+                                <use xlink:href="images/icons/sprite.svg#arrow-scroll"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!--Team-->
+            <section class="section team" data-section="four">
+                <div class="team__section">
+                    <div class="title title--team">Команда</div>
+                    <div class="team__content">
+                        <ul class="team-acco">
+                            <li class="team-acco__item">
+                                <a class="team-acco__link" href="#">Дэниэл Редклифф</a>
+                                <div class="content-team">
+                                    <div class="content-team__avatar">
+                                        <img class="avatar-pic" src="./images/photos/teammate1.jpg" alt="аватар">
+                                    </div>
+                                    <div class="text">
+                                        <div class="text__header">Профессия
+                                        </div>
+                                        <div class="text__body">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate accusantium incidunt doloribus accusamus ducimus odit omnis minima vel dolorum maiores, nulla harum quod magni recusandae amet laboriosam quia perspiciatis. Veritatis.
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team-acco__item team-acco__item--active">
+                                <a class="team-acco__link" href="#">Ричард Джеймс</a>
+                                <div class="content-team">
+                                    <div class="content-team__avatar">
+                                        <img class="avatar-pic" src="./images/photos/teammate2.jpg" alt="аватар">
+                                    </div>
+                                    <div class="text">
+                                        <div class="text__header">Оператор
+                                        </div>
+                                        <div class="text__body">    
+                                            С радостью поможет подобрать идеальный бургер и оформить заказ.
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team-acco__item">
+                                <a class="team-acco__link" href="#">Джейк Финн</a>
+                                <div class="content-team">
+                                    <div class="content-team__avatar">
+                                        <img class="avatar-pic" src="./images/photos/teammate3.jpg" alt="аватар">
+                                    </div>
+                                    <div class="text">
+                                        <div class="text__header">Профессия
+                                        </div>
+                                        <div class="text__body">    
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor iure sint modi repudiandae a quae illo cupiditate illum molestias voluptate magni ducimus, consectetur voluptatem tempore eligendi deleniti incidunt. Maiores, consequatur.
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team-acco__item">
+                                <a class="team-acco__link" href="#">Николай Иванов</a>
+                                <div class="content-team">
+                                    <div class="content-team__avatar">
+                                        <img class="avatar-pic" src="./images/photos/teammate4.jpg" alt="аватар">
+                                    </div>
+                                    <div class="text">
+                                        <div class="text__header">Профессия
+                                        </div>
+                                        <div class="text__body">    
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor iure sint modi repudiandae a quae illo cupiditate illum molestias voluptate magni ducimus, consectetur voluptatem tempore eligendi deleniti incidunt. Maiores, consequatur.
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!--Menu-->
+            <section class="section menu" data-section="five">
+                <div class="title title--white menu__title">Меню</div>
+                <ul class="menu-acco">
+                    <li class="menu-acco__item menu-acco__item--active">
+                        <a class="menu-acco__link meat" href="">
+                            <div class="menu-acco__layout"></div>
+                            <div class="menu-acco__title">Для мясоедов</div>
+                        </a>
+                        <div class="menu-acco__desc">
+                            <div class="menu-acco__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dicta doloremque, exercitationem molestiae nulla amet, excepturi et similique nihil perferendis eligendi mollitia laborum esse consequuntur facilis at sint inventore ab.
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-acco__item">
+                        <a class="menu-acco__link vegan" href="#">
+                            <div class="menu-acco__layout"></div>
+                            <div class="menu-acco__title">Вегетарианское</div>
+                        </a>
+                        <div class="menu-acco__desc">
+                            <div class="menu-acco__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum vero magni ratione cupiditate repellat vitae distinctio quasi debitis dolores totam sapiente quo enim laudantium laboriosam autem, minima dolorum quis?
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-acco__item">
+                        <a class="menu-acco__link diet" href="#">
+                            <div class="menu-acco__layout"></div>
+                            <div class="menu-acco__title">Диетическое</div>
+                        </a>
+                        <div class="menu-acco__desc">
+                            <div class="menu-acco__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque soluta laborum quasi fuga similique voluptate temporibus officiis nam optio, quidem modi quia inventore velit ipsa suscipit, dignissimos necessitatibus aut magni!
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <!--Review-->
+            <section class="section" data-section="six">
+                <ul class="review__list">
+                    <li class="review__item">
+                        <div class="review__picture">
+                            <img class="review__avatar" src="./images/photos/user1.jpg" alt="Тариф для одного">
+                            <div class="overlay">
+                                <div class="overlay__title">Имя</div>
+                                <div class="overlay__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere quia provident officia quo dolorem. Rem dolorem aliquid recusandae placeat corrupti alias dicta animi fugiat libero itaque ullam fuga, sapiente iure!</div>
+                                <a class="overlay__button" href="">Подробнее</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="review__item">
+                        <div class="review__picture">
+                            <img class="review__avatar" src="./images/photos/user2.jpg" alt="Тариф для одного">
+                            <div class="overlay">
+                                <div class="overlay__title">Константин Спилберг</div>
+                                <div class="overlay__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                                <a class="overlay__button" href="">Подробнее</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="review__item">
+                        <div class="review__picture">
+                            <img class="review__avatar" src="./images/photos/user3.jpg" alt="Тариф для одного">
+                            <div class="overlay">
+                                <div class="overlay__title">Имя</div>
+                                <div class="overlay__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere quia provident officia quo dolorem. Rem dolorem aliquid recusandae placeat corrupti alias dicta animi fugiat libero itaque ullam fuga, sapiente iure!</div>
+                                <a class="overlay__button" href="">Подробнее</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="review__item">
+                        <div class="review__picture">
+                            <img class="review__avatar" src="./images/photos/user4.jpg" alt="Тариф для одного">
+                            <div class="overlay">
+                                <div class="overlay__title">Имя</div>
+                                <div class="overlay__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere quia provident officia quo dolorem. Rem dolorem aliquid recusandae placeat corrupti alias dicta animi fugiat libero itaque ullam fuga, sapiente iure!</div>
+                                <a class="overlay__button" href="">Подробнее</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="review__item">
+                        <div class="review__picture">
+                            <img class="review__avatar" src="./images/photos/user5.jpg" alt="Тариф для одного">
+                            <div class="overlay">
+                                <div class="overlay__title">Имя</div>
+                                <div class="overlay__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere quia provident officia quo dolorem. Rem dolorem aliquid recusandae placeat corrupti alias dicta animi fugiat libero itaque ullam fuga, sapiente iure!</div>
+                                <a class="overlay__button" href="">Подробнее</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="review__item">
+                        <div class="review__picture">
+                            <img class="review__avatar" src="./images/photos/user6.jpg" alt="Тариф для одного">
+                            <div class="overlay">
+                                <div class="overlay__title">Имя</div>
+                                <div class="overlay__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere quia provident officia quo dolorem. Rem dolorem aliquid recusandae placeat corrupti alias dicta animi fugiat libero itaque ullam fuga, sapiente iure!</div>
+                                <a class="overlay__button" href="">Подробнее</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="review__item">
+                        <div class="review__picture">
+                            <img class="review__avatar" src="./images/photos/user7.jpg" alt="Тариф для одного">
+                            <div class="overlay">
+                                <div class="overlay__title">Имя</div>
+                                <div class="overlay__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere quia provident officia quo dolorem. Rem dolorem aliquid recusandae placeat corrupti alias dicta animi fugiat libero itaque ullam fuga, sapiente iure!</div>
+                                <a class="overlay__button" href="">Подробнее</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="review__item">
+                        <div class="review__picture">
+                            <img class="review__avatar" src="./images/photos/user8.jpg" alt="Тариф для одного">
+                            <div class="overlay">
+                                <div class="overlay__title">Имя</div>
+                                <div class="overlay__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere quia provident officia quo dolorem. Rem dolorem aliquid recusandae placeat corrupti alias dicta animi fugiat libero itaque ullam fuga, sapiente iure!</div>
+                                <a class="overlay__button" href="">Подробнее</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <!--We work-->
+            <section class="section process" data-section="seven">
+                <div class="content content--we-best">
+                    <div class="title title--black">как мы работаем</div>
+                    <iframe class="video" src="https://www.youtube.com/embed/nxevcb3x0qM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+            <!--Delivery-->
+            <section class="section form" data-section="eight">
+                <div class="form__wrapper">
+                    <div class="title title--team">Закажите доставку</div>
+                    <form class="form__content">
+                        <div class="form__content--left">
+                            <div class="form__raw">
+                                <label for="" class="form__label">
+                                    <span class="form__subtitle">Имя</span>
+                                    <input type="text" class="form__input" placeholder="Андрей">
+                                </label>
+                                <label for="" class="form__label">
+                                    <span class="form__subtitle">Телефон</span>
+                                    <input type="text" class="form__input" placeholder="88005555525">
+                                </label>
+                            </div>
+                            <div class="form__raw">
+                                <label for="" class="form__label">
+                                    <span class="form__subtitle">Улица</span>
+                                    <input type="text" class="form__input" placeholder="">
+                                </label>
+                            </div>
+                            <div class="form__raw">
+                                <label for="" class="form__label">
+                                    <span class="form__subtitle">Дом</span>
+                                    <input type="text" class="form__input" placeholder="">
+                                </label>
+                                <label for="" class="form__label">
+                                    <span class="form__subtitle">Корпус</span>
+                                    <input type="text" class="form__input" placeholder="">
+                                </label>
+                                <label for="" class="form__label form__label--flat">
+                                    <span class="form__subtitle">Квартира</span>
+                                    <input type="text" class="form__input" placeholder="">
+                                </label>
+                                <label for="" class="form__label form__label--flor">
+                                    <span class="form__subtitle">Этаж</span>
+                                    <input type="text" class="form__input" placeholder="">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form__content--right">
+                            <div class="form__raw">
+                                <label for="" class="form__label">
+                                    <span class="form__subtitle">Комментарий</span>
+                                    <textarea class="form__textarea form__input" placeholder=""></textarea>
+                                </label>
+                            </div>
+                            <div class="form__raw">
+                                <div class="form__radio">
+                                    <div class="form__radio--wrap form__raw--adaptive">
+                                        <label class="form__radio-label">
+                                            <input type="radio" class="form__radio-input" name="review" checked>
+                                            <span class="form__radio-fake"></span>
+                                            <span class="form__radio-text">Потребуется сдача</span>
+                                        </label>
+                                        <label class="form__radio-label">
+                                            <input type="radio" class="form__radio-input" name="review" checked>
+                                            <span class="form__radio-fake"></span>
+                                            <span class="form__radio-text">Оплата по карте</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__raw form__raw--adaptive">
+                                <input id="checkbox-1" class="checkbox-custom" name="checkbox-1" type="checkbox" checked>
+                                <label for="checkbox-1" class="checkbox-custom-label form__checkbox--text">Не перезванивать</label>
+                            </div>
+                            <div class="form__raw form__raw--adaptive">
+                                <div class="form__button">
+                                    <button class="button button--delivery" type="submit">Заказать</button>
+                                </div>
+                                <div class="form__button">
+                                    <button class="dismiss button button--delivery" type="submit">Очистить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <!--Contacts+map-->
+            <section class="section" data-section="nine">
+                <div id="map" class="map"></div>
+                <footer class="footer">
+                    <div class="footer__col">
+                        <div class="footer__address">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
+                        <div class="footer__phone">
+                            <svg class="footer__phone-icon" style="fill:#e45028;">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./images/icons/sprite.svg#phone"></use>
+                            </svg>
+                            <a class="footer__phone-link" href="tel:+78123771377">+7 (812) 377-13-77</a>
+                        </div>
+                    </div>
+                    <div class="footer__col footer__col_right">
+                        <ul class="socials">
+                            <li class="socials__item">
+                            <a class="socials__link" href="#">
+                                <svg class="socials__link-icon" style="fill: #fff">
+                                <use xlink:href="./images/icons/sprite.svg#vk"></use>
+                                </svg>
+                            </a>
+                            </li>
+                            <li class="socials__item">
+                            <a class="socials__link" href="#">
+                                <svg class="socials__link-icon" style="fill: #fff">
+                                <use xlink:href="./images/icons/sprite.svg#fb"></use>
+                                </svg>
+                            </a>
+                            </li>
+                            <li class="socials__item">
+                            <a class="socials__link" href="#">
+                                <svg class="socials__link-icon" style="fill: #fff">
+                                <use xlink:href="./images/icons/sprite.svg#inst"></use>
+                                </svg>
+                            </a>
+                            </li>
+                            <li class="socials__item">
+                            <a class="socials__link" href="#">
+                                <svg class="socials__link-icon" style="fill: #fff">
+                                <use xlink:href="./images/icons/sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+                            </li>
+                        </ul>
+                    </div>
+                </footer>
+            </section>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins/jquery.fancybox.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/accordeon.js"></script>
+    <script src="js/navigation.js"></script>
+</body>
+</html>

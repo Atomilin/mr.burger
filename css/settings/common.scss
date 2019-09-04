@@ -1,0 +1,109 @@
+html, body {
+  height: 100%; 
+}
+
+body {
+  font-size: rem(16px);
+  font-family: 'Ubuntu', Helvetica, sans-serif;
+  font-weight: 300;
+  line-height: 1.42;
+  position: relative;
+  color: #2f3234;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  min-height: rem(650px);
+  transition: transform 1s;
+
+  @include tablets {
+    min-height: rem(0px);
+  }
+
+  @include phones {
+    min-height: rem(0px);
+  }
+
+  @include small {
+    min-height: rem(0px);
+  }
+}
+
+.section {
+  height: 100%;
+  position: relative;
+  display: flex;
+  overflow: hidden; 
+  background-repeat: no-repeat;
+  background-size: cover; 
+  position: relative;
+  
+  @include tablets {
+    background-position: center center;
+  }
+
+  @include phones {
+    background-position: center center;
+  }
+
+  @include small {
+    background-position: center center;
+  }
+}
+
+.content {
+  margin: 0 auto;
+  width: 95%;
+  max-width: rem(940px);
+  position: relative;
+  display: flex;
+  flex-direction: column; 
+}
+
+.title {
+  color: #f9b43b;
+  font-size: rem(72px);
+  font-family: 'Gagalin-Regular', Helvetica, sans-serif;
+  
+  @include tablets {
+    font-size: rem(72px);
+    white-space: nowrap;
+  }
+
+  @include phones {
+    font-size: rem(63px);
+    white-space: nowrap;
+  }
+
+  @include small {
+    font-size: rem(54px);
+    white-space: nowrap;
+  }
+}
+
+.title.title--black {
+    color: #2f3234; 
+
+    @include phones {
+      white-space: inherit;
+    }
+
+    @include small {
+      white-space: inherit;
+    }
+}
+
+.title.title--white {
+    color: white; 
+}
+
+.title.title--orange {
+  color: #e45028; 
+}

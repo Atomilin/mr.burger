@@ -1,0 +1,291 @@
+.form {
+    background-image: url('./../images/order_bg.jpg');
+    justify-content: center;
+    align-items: center;
+}
+
+.form__wrapper {
+    margin: rem(66px) rem(70px);
+
+    @include tablets {
+        margin: rem(152px) rem(150px);
+    }
+
+    @include phones {
+        margin: rem(50px) rem(12px);
+    }
+
+    @include small {
+        margin: rem(20px) rem(12px);
+    }
+}
+
+.form__content {
+    margin-top: rem(44px);
+    display: flex;
+
+    @include tablets {
+        margin-top: rem(0px);
+        flex-direction: column;
+    }
+
+    @include phones {
+        margin-top: rem(0px);
+        flex-direction: column;
+    }
+}
+
+.form__content--left {
+    display: flex;
+    flex-direction: column;
+    margin-right: rem(20px);
+    width: 100%;
+
+    @include phones {
+        margin-right: rem(0px);
+        margin-bottom: rem(20px);
+    }
+
+    @include small {
+        margin-right: rem(0px);
+        margin-bottom: rem(10px);
+    }
+}
+
+.form__content--right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form__raw {
+    margin-bottom: rem(20px);
+    display: flex;
+
+    
+    @include small {
+        margin-bottom: rem(10px);
+    }
+}
+
+.form__raw:last-child {
+    margin-bottom: 0;
+}
+
+.form__raw--adaptive {
+    @include phones {
+        justify-content: center;
+    }
+}
+
+.form__label {
+    margin-right: rem(20px);
+    flex: 1;
+}
+
+.form__label--flor {
+    @include phones {
+        display: none;
+    }
+}
+
+.form__label--flat {
+    @include phones {
+        margin-right: rem(0px);
+    }
+}
+
+.form__label:last-child {
+    margin-right: 0;
+}
+
+.form__subtitle {
+    font-family: 'Ubuntu';
+    display: block;
+    font-weight: normal;
+    font-size: rem(14px);
+    text-align: left;
+    color: #fff;
+    margin-bottom: rem(7px);
+}
+
+.form__input {
+    outline: none;
+    box-sizing: border-box;
+    font-weight: normal;
+    border: rem(2px) solid transparent;
+    background-color: #ffffff;
+    font-size: rem(14px);
+    font-weight: 300;
+    color: #2f3234;
+    padding: rem(5px) rem(5px);
+    border-radius: rem(5px);
+    width: 100%;
+    height: rem(36px);
+
+    @include small {
+        height: rem(30px);
+    }
+}
+
+.form__input:focus {
+    border-color: #f9b43b;
+}
+
+.form__textarea {
+    resize: none;
+    height: rem(110px);
+    border-radius: rem(5px);
+    border: rem(2px) solid transparent;
+
+    @include small {
+        height: rem(90px);
+    }
+}
+
+.form__radio {
+    flex: 1;
+}
+
+.form__button {
+    text-align: right;
+    margin-right: rem(20px);
+}
+
+.form__button:last-child {
+    margin-right: 0rem;
+}
+
+.dismiss {
+    background-color: transparent;
+}
+
+.form__radio-input {
+    display: none;
+}
+
+.form__radio-fake {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.form__radio-fake:after {
+    content: "";
+    display: inline-block;
+    height: 0;
+    width: 0;
+    transition: .4s;
+    background-color: #e35028;
+    border-radius: 50%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.form__radio-input:checked + .form__radio-fake {
+    transition: .4s;
+    border-color: #e35028; 
+}
+
+.form__radio-input:checked + .form__radio-fake:after {
+    height: 6px;
+    width: 6px;
+}
+
+.form__radio-label {
+    margin-right: rem(20px);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.form__radio-label:last-child {
+    margin-right: 0;
+}
+
+.form__radio-text {
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    display: inline-block;
+    margin-left: rem(10px);
+    font-size: rem(14px);
+    text-align: left;
+    color: $white;
+}
+
+.form__radio--wrap {
+    display: flex;
+}
+
+.menu--other {
+    margin-left: rem(-7px);
+}
+
+.button--delivery {
+    font-size: rem(13px);
+    padding: rem(10px) rem(10px);
+    cursor: pointer;
+}
+
+
+.checkbox-custom {
+    display: none;
+}
+
+.checkbox-custom-label {
+    display: flex;
+    align-items: center;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.checkbox-custom + .checkbox-custom-label:before {
+    content: '';
+    background: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px; 
+    height: 16px;
+    padding: 2px; 
+    margin-right: rem(10px);
+}
+
+.checkbox-custom:checked + .checkbox-custom-label:after {
+    content: "";
+    padding: rem(2px);
+    position: absolute;
+    height: rem(4px);
+    border: solid #e45028;
+    border-width: 0 rem(3px) rem(3px) 0;
+    transform: rotate(45deg);
+    top: 4px;
+    left: 6px;
+  }
+
+  .form__checkbox--text {
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    display: inline-block;
+    font-size: rem(14px);
+    text-align: left;
+    color: $white;
+}
+
+
+.title--team {
+
+    @include phones {
+        white-space: inherit;
+    }
+
+    @include small {
+        line-height: normal;
+    }
+}

@@ -1,0 +1,27 @@
+.process {
+    background-image: url('./../images/we_work_bg.png');
+}
+
+.video {
+    margin-top: rem(50px);
+    width: rem(660px); 
+    height: rem(370px);
+    
+    @include tablets {
+        margin-top: rem(60px);
+        width: rem(720px); 
+        height: rem(407px);
+    }
+
+    @include phones {
+        margin-top: rem(60px);
+        width: rem(460px); 
+        height: rem(254px);
+    }
+
+    @include small {
+        margin-top: rem(40px);
+        width: rem(340px); 
+        height: rem(187px);
+    }
+}
