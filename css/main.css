@@ -1359,6 +1359,105 @@ a:hover {
   .title--team {
     line-height: normal; } }
 
+.modul {
+  display: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(47, 50, 52, 0.99);
+  z-index: 1; }
+
+.modul__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  margin: 10% auto;
+  padding: 0.3125rem 1.25rem 0.8125rem 1.25rem;
+  border-radius: 0.625rem;
+  background: #fff;
+  text-align: center; }
+  @media screen and (max-width: 768px) {
+    .modul__wrapper {
+      width: 80%; } }
+  @media screen and (max-width: 480px) {
+    .modul__wrapper {
+      width: 80%; } }
+  @media screen and (max-width: 375px) {
+    .modul__wrapper {
+      width: 80%; } }
+
+.modul-close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.modul__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 1.25rem;
+  padding-bottom: 0;
+  margin-bottom: 0; }
+
+.modul__title {
+  font-family: Ubuntu;
+  font-size: 1.125rem;
+  margin-top: 0.9375rem; }
+
+.modul__text {
+  font-family: Ubuntu; }
+
+.modul-close__cross {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  height: 0.9375rem;
+  cursor: pointer; }
+
+.modul-close__cross:before, .modul-close__cross:after {
+  position: absolute;
+  content: '';
+  height: 1.4375rem;
+  width: 0.25rem;
+  background-color: #e45028;
+  border-radius: 0.625rem; }
+
+.modul-close__cross:before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.modul-close__cross:after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
 .slider__phones {
   display: none; }
   @media screen and (max-width: 768px) {

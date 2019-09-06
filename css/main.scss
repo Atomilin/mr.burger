@@ -30,6 +30,7 @@ $small: 375px;
 @import "./section/sectionReview.scss"; //стили страницы "отзывы" 
 @import "./section/sectionWeWork.scss"; //стили страницы "как мы работаем" 
 @import "./section/sectionDelivery.scss"; //стили страницы "закажи сейчас" 
+@import "./section/modulWindow.scss"; //стили модального окна 
 
 //Dynamic elements
 @import "./dynamic_elements/slider.scss"; //слайдер

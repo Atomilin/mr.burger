@@ -86,7 +86,7 @@
                             </a>
                         </div>
                         <a onclick="closeMenu()">
-                                <div class="menu-phone__close"></div>
+                            <div class="menu-phone__close"></div>
                         </a>
                         <nav class="nav">
                             <ul class="menu-phone__list">
@@ -1087,40 +1087,40 @@
             <section class="section form" data-section="eight">
                 <div class="form__wrapper">
                     <div class="title title--team">Закажите доставку</div>
-                    <form class="form__content">
+                    <form class="form__content" id="form-delivery" name="fileinfo">
                         <div class="form__content--left">
                             <div class="form__raw">
                                 <label for="" class="form__label">
                                     <span class="form__subtitle">Имя</span>
-                                    <input type="text" class="form__input" placeholder="Андрей">
+                                    <input type="text" class="form__input" placeholder="Андрей" name="name" required>
                                 </label>
                                 <label for="" class="form__label">
                                     <span class="form__subtitle">Телефон</span>
-                                    <input type="text" class="form__input" placeholder="88005555525">
+                                    <input type="text" class="form__input" placeholder="88005555525" name="phone" required>
                                 </label>
                             </div>
                             <div class="form__raw">
                                 <label for="" class="form__label">
                                     <span class="form__subtitle">Улица</span>
-                                    <input type="text" class="form__input" placeholder="">
+                                    <input type="text" class="form__input" placeholder="" name="street">
                                 </label>
                             </div>
                             <div class="form__raw">
                                 <label for="" class="form__label">
                                     <span class="form__subtitle">Дом</span>
-                                    <input type="text" class="form__input" placeholder="">
+                                    <input type="text" class="form__input" placeholder="" name="home">
                                 </label>
                                 <label for="" class="form__label">
                                     <span class="form__subtitle">Корпус</span>
-                                    <input type="text" class="form__input" placeholder="">
+                                    <input type="text" class="form__input" placeholder="" name="part">
                                 </label>
                                 <label for="" class="form__label form__label--flat">
                                     <span class="form__subtitle">Квартира</span>
-                                    <input type="text" class="form__input" placeholder="">
+                                    <input type="text" class="form__input" placeholder="" name="flat">
                                 </label>
                                 <label for="" class="form__label form__label--flor">
                                     <span class="form__subtitle">Этаж</span>
-                                    <input type="text" class="form__input" placeholder="">
+                                    <input type="text" class="form__input" placeholder="" name="floor">
                                 </label>
                             </div>
                         </div>
@@ -1128,19 +1128,19 @@
                             <div class="form__raw">
                                 <label for="" class="form__label">
                                     <span class="form__subtitle">Комментарий</span>
-                                    <textarea class="form__textarea form__input" placeholder=""></textarea>
+                                    <textarea class="form__textarea form__input" placeholder="" name="comment" required></textarea>
                                 </label>
                             </div>
                             <div class="form__raw">
                                 <div class="form__radio">
                                     <div class="form__radio--wrap form__raw--adaptive">
                                         <label class="form__radio-label">
-                                            <input type="radio" class="form__radio-input" name="review" checked>
+                                            <input type="radio" class="form__radio-input" name="payment" checked>
                                             <span class="form__radio-fake"></span>
                                             <span class="form__radio-text">Потребуется сдача</span>
                                         </label>
                                         <label class="form__radio-label">
-                                            <input type="radio" class="form__radio-input" name="review" checked>
+                                            <input type="radio" class="form__radio-input" name="payment" checked>
                                             <span class="form__radio-fake"></span>
                                             <span class="form__radio-text">Оплата по карте</span>
                                         </label>
@@ -1153,10 +1153,10 @@
                             </div>
                             <div class="form__raw form__raw--adaptive">
                                 <div class="form__button">
-                                    <button class="button button--delivery" type="submit">Заказать</button>
+                                    <button class="button button--delivery" type="submit" id="sendButton" onclick="sendRequest()">Заказать</button>
                                 </div>
                                 <div class="form__button">
-                                    <button class="dismiss button button--delivery" type="submit">Очистить</button>
+                                    <button class="dismiss button button--delivery" type="reset">Очистить</button>
                                 </div>
                             </div>
                         </div>
@@ -1213,6 +1213,21 @@
         </div>
     </div>
 
+      <!--Modul window-->
+    <div class="modul" id="modul">
+        <div class="modul__wrapper">
+            <div class="modul-close">
+                <a onclick="closeModul()">
+                    <div class="modul-close__cross"></div>
+                </a>
+            </div>
+            <div class="modul__title" id="modul__title">title</div>
+            <div class="modul__text" id="modul__text">text</div>
+            <div class="modul__bottom">
+                <a class="modul__close button" onclick="closeModul()">Закрыть</a>
+            </div>
+        </div>
+    </div>
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins/jquery.fancybox.min.js"></script>
@@ -1220,5 +1235,6 @@
     <script src="js/main.js"></script>
     <script src="js/accordeon.js"></script>
     <script src="js/navigation.js"></script>
+    <script src="js/modul.js"></script>
 </body>
 </html>

@@ -3,12 +3,14 @@ $(document).ready(function(){
 
     $('.nav__link').on('click',function(e){
         e.preventDefault();
+        document.body.style.overflow = 'visible';
         showSection($(this).attr('href'), true);
     });
 
     $('.menu-phone__link').on('click',function(e){
         e.preventDefault();
         showSection($(this).attr('href'), true);
+        document.body.style.overflow = 'visible';
         $('.menu-phone').css("display", "none");
     });
 
