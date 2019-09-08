@@ -39,18 +39,18 @@ function sendRequest() {
           //задаем новый тектс заголовку
           document.getElementById("modul__title").textContent = "Заказ отправлен";
           document.getElementById("modul__text").textContent = "Ваш заказ принят!";
-        } else {
-          //вызоы модального окна с сообщением об ошибке и обязательными полями
-          // открытие модального окна
-          var modul = document.getElementById("modul");
-          modul.style.display = "flex";
-          document.getElementsByClassName('modul__wrapper')[0].style.position = 'fixed';
-          document.body.style.overflow = 'hidden';
-          //задаем новый тектс заголовку
-          document.getElementById("modul__title").textContent = "Заказ не отправлен";
-          document.getElementById("modul__text").textContent = "Вы забыли указать необходимые данные: имя, телефон, комментарий";
-        }
+        } 
       });
+    } else {
+      //вызоы модального окна с сообщением об ошибке и обязательными полями
+      // открытие модального окна
+      var modul = document.getElementById("modul");
+      modul.style.display = "flex";
+      document.getElementsByClassName('modul__wrapper')[0].style.position = 'fixed';
+      document.body.style.overflow = 'hidden';
+      //задаем новый тектс заголовку
+      document.getElementById("modul__title").textContent = "Заказ не отправлен";
+      document.getElementById("modul__text").textContent = "Вы забыли указать необходимые данные: имя, телефон, комментарий";
     }
   });
 
