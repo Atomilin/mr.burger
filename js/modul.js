@@ -1,13 +1,56 @@
 //***********************************************Функция заказа***************************************************/
 function sendRequest() {
   event.preventDefault();
+  console.log("обращение к функции");
 
   // проверка данных для отправки
   const form = document.querySelector('#form-delivery');
   const sendButton = document.querySelector('#sendButton');
 
-  sendButton.addEventListener('click', event => {
-    //event.preventDefault();
+
+  function validateForm(form) {
+    let valid = true;
+
+    if (!validateField(form.elements.name)) {
+      valid = false;
+    }
+
+    if (!validateField(form.elements.phone)) {
+      valid = false;
+    }
+
+    if (!validateField(form.elements.comment)) {
+      valid = false;
+    }
+    return valid;
+  }
+
+  function validateField(field) {
+    if (!field.checkValidity()) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+
+  //функция открытия модального окна
+  function modulWindow(title, content) {
+
+     // открытие модального окна
+     var modul = document.getElementById("modul");
+     modul.style.display = "flex";
+     document.getElementsByClassName('modul__wrapper')[0].style.position = 'fixed';
+     document.body.style.overflow = 'hidden';
+     //задаем новый тектс заголовку
+     document.getElementById("modul__title").textContent = title;
+     document.getElementById("modul__text").textContent = content;
+
+  }
+
+  //отправка запроса на сервер
+  sendButton.addEventListener('click', () => {
+
+    console.log("клик прочитан");
 
     if (validateForm(form)) {
 
@@ -30,70 +73,14 @@ function sendRequest() {
       xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
       xhr.send(formData);
       
-      function processReqChange() {   
+      function processReqChange() {
         
         if (xhr.readyState == 4 && xhr.status == 200) {
-
-            // открытие модального окна
-          var modul = document.getElementById("modul");
-          modul.style.display = "flex";
-          document.getElementsByClassName('modul__wrapper')[0].style.position = 'fixed';
-          document.body.style.overflow = 'hidden';
-          //задаем новый тектс заголовку
-          document.getElementById("modul__title").textContent = "Заказ отправлен";
-          document.getElementById("modul__text").textContent = "Ваш заказ принят!";
-          
+          modulWindow("Спасибо!", "Ваш заказ принят!");
         }  
-    }
-      /*xhr.addEventListener('LOAD', () => {
-        if (xhr.readyState == 4 && xhr.response.status == 200) {
-          
-          // открытие модального окна
-          var modul = document.getElementById("modul");
-          modul.style.display = "flex";
-          document.getElementsByClassName('modul__wrapper')[0].style.position = 'fixed';
-          document.body.style.overflow = 'hidden';
-          //задаем новый тектс заголовку
-          document.getElementById("modul__title").textContent = "Заказ отправлен";
-          document.getElementById("modul__text").textContent = "Ваш заказ принят!";
-        } 
-      });*/
+      }
     } else {
-      //вызоы модального окна с сообщением об ошибке и обязательными полями
-      // открытие модального окна
-      var modul = document.getElementById("modul");
-      modul.style.display = "flex";
-      document.getElementsByClassName('modul__wrapper')[0].style.position = 'fixed';
-      document.body.style.overflow = 'hidden';
-      //задаем новый тектс заголовку
-      document.getElementById("modul__title").textContent = "Заказ не отправлен";
-      document.getElementById("modul__text").textContent = "Вы забыли указать необходимые данные: имя, телефон, комментарий";
+      modulWindow("Заказ не отправлен!", "Вы забыли указать необходимые данные: имя, телефон, комментарий");
     }
   });
-
-  function validateForm(form) {
-    let valid = true;
-
-    if (!validateField(form.elements.name)) {
-      valid = false;
-    }
-
-    if (!validateField(form.elements.phone)) {
-      valid = false;
-    }
-
-    if (!validateField(form.elements.comment)) {
-      valid = false;
-    }
-
-    return valid;
-  }
-
-  function validateField(field) {
-    if (!field.checkValidity()) {
-      return false;
-    } else {
-      return true;
-    }
-  }
 }
