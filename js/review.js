@@ -1,7 +1,5 @@
 //**********************************Функция открытия отзыва************************/
-function openReview() {
-    event.preventDefault();
-
+//топорная реализация
     const review_one = document.querySelector('#review_one');
     const review_two = document.querySelector('#review_two');
     const review_three = document.querySelector('#review_three');
@@ -25,27 +23,34 @@ function openReview() {
  }
 
  review_one.addEventListener('click', () => {
+    event.preventDefault();
     modulWindow("Имя1", "Отзыв1");
  });
  review_two.addEventListener('click', () => {
+   event.preventDefault();
     modulWindow("Имя2", "Отзыв2");
  });
  review_three.addEventListener('click', () => {
+   event.preventDefault();
     modulWindow("Имя3", "Отзыв3");
  });
  review_four.addEventListener('click', () => {
+    event.preventDefault();
     modulWindow("Имя4", "Отзыв4");
  });
  review_five.addEventListener('click', () => {
+   event.preventDefault();
     modulWindow("Имя5", "Отзыв5");
  });
  review_six.addEventListener('click', () => {
+    event.preventDefault();
     modulWindow("Имя6", "Отзыв6");
  });
  review_seven.addEventListener('click', () => {
+    event.preventDefault();
     modulWindow("Имя7", "Отзыв7");
  });
  review_eight.addEventListener('click', () => {
+    event.preventDefault();
     modulWindow("Имя8", "Отзыв8");
  });
-}

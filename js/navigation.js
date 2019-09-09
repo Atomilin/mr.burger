@@ -19,7 +19,6 @@ $(document).ready(function(){
         showSection($(this).attr('href'), true);
     });
 
-
     showSection(window.location.hash, false);
 });
 

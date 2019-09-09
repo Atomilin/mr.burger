@@ -1,8 +1,4 @@
 //***********************************************Функция заказа***************************************************/
-function sendRequest() {
-  event.preventDefault();
-  console.log("обращение к функции");
-
   // проверка данных для отправки
   const form = document.querySelector('#form-delivery');
   const sendButton = document.querySelector('#sendButton');
@@ -48,8 +44,8 @@ function sendRequest() {
   }
 
   //отправка запроса на сервер
-  sendButton.addEventListener('click', () => {
-
+  form.addEventListener('submit', () => {
+    event.preventDefault();
     console.log("клик прочитан");
 
     if (validateForm(form)) {
@@ -83,4 +79,3 @@ function sendRequest() {
       modulWindow("Заказ не отправлен!", "Вы забыли указать необходимые данные: имя, телефон, комментарий");
     }
   });
-}
