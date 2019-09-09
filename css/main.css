@@ -10,7 +10,8 @@ body {
   position: relative;
   color: #2f3234;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  overflow: hidden; }
 
 .wrapper {
   width: 100%;
@@ -98,6 +99,10 @@ body {
 
 .title.title--orange {
   color: #e45028; }
+
+.map {
+  width: 100%;
+  height: 100%; }
 
 @font-face {
   font-family: 'Gagalin-Regular';
@@ -1456,6 +1461,11 @@ a:hover {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg); }
+
+.section--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .slider__phones {
   display: none; }
