@@ -1,43 +1,46 @@
 //****************************Функция навигации**************************************//
 $(document).ready(function () {
+    var sectionIndex = 0;
 
     $('.nav__link').on('click', function (e) {
         e.preventDefault();
-        document.body.style.overflow = 'visible';
         showSection($(this).attr('href'), true);
+        sectionIndex = $(this).attr('href').replace(/#/, '');
     });
 
     $('.menu-phone__link').on('click', function (e) {
         e.preventDefault();
         showSection($(this).attr('href'), true);
-        document.body.style.overflow = 'visible';
+        sectionIndex = $(this).attr('href').replace(/#/, '');
         $('.menu-phone').css("display", "none");
     });
 
     $('.arrow').on('click', function (e) {
         e.preventDefault();
         showSection($(this).attr('href'), true);
+        sectionIndex = $(this).attr('href').replace(/#/, '');
     });
 
     // постраничный слайдер начало
-    var sectionIndex = 0;
+
     showSlides(sectionIndex);
 
-    /* Функция увеличивает индекс на 1, показывает следующй слайд*/
-    function nextSlide() {
-        showSlides(sectionIndex += 1);
-    }
-
     var flag = false;
-    /* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
-    function prevSlide() {
-        showSlides(sectionIndex -= 1);
-    }
 
     $('.wrapper').bind('mousewheel', function (e) {
-
         if (!flag) {
-            console.log(sectionIndex);
+
+            /* Функция увеличивает индекс на 1, показывает следующй слайд*/
+            function nextSlide() {
+                showSlides(sectionIndex = parseInt(sectionIndex) + 1);
+            }
+
+
+            /* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
+            function prevSlide() {
+                showSlides(sectionIndex -= 1);
+            }
+
             var items = Array.from($(".section"));
 
             if (e.originalEvent.wheelDelta > 0) {
@@ -59,7 +62,9 @@ $(document).ready(function () {
             }
 
             flag = true;
-        setTimeout( function() {flag = false;}, 1000 );
+            setTimeout(function () {
+                flag = false;
+            }, 1000);
         }
     });
     // постраничный слайдер конец
@@ -96,7 +101,7 @@ function showSec(section, isAnimate) {
         if (isAnimate) {
             $('body, html').animate({
                 scrollTop: reqSecPos
-            }, 500);
+            });
         } else {
             $('body, html').scrollTop(reqSecPos);
         }
