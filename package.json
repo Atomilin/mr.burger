@@ -1,0 +1,26 @@
+{
+  "name": "mr_burger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "scripts": {
+    "gulp" : "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Atomilin/mr.burger.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Atomilin/mr.burger/issues"
+  },
+  "homepage": "https://github.com/Atomilin/mr.burger#readme"
+}

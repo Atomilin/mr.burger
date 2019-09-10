@@ -22,6 +22,7 @@ $small: 375px;
 
 
 //Sections
+
 @import "./section/sectionMainScreen.scss"; //стили главной страницы
 @import "./section/sectionWeBest.scss"; //стили страницы "мы лучшие" 
 @import "./section/sectionBurger.scss"; //стили страницы "бургеры"
@@ -34,6 +35,7 @@ $small: 375px;
 @import "./section/sectionActive.scss"; //стили активной секции 
 
 //Dynamic elements
+@import "./dynamic_elements/fixMenu.scss"; //стили навигации
 @import "./dynamic_elements/slider.scss"; //слайдер
 @import "./dynamic_elements/teamAccardeon.scss"; //аккардеон страницы "команда"
 @import "./dynamic_elements/menuAccardeon.scss"; //аккардеон страницы "меню"

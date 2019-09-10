@@ -2,10 +2,12 @@
 $(document).ready(function () {
     var sectionIndex = 0;
 
-    $('.nav__link').on('click', function (e) {
+    $('.nav__link, .fixed-menu__link').on('click', function (e) {
         e.preventDefault();
         showSection($(this).attr('href'), true);
         sectionIndex = $(this).attr('href').replace(/#/, '');
+        $('.fixed-menu__item').eq(sectionIndex-1).addClass('active').siblings().removeClass('active');
+        switchColors(sectionIndex-1);
     });
 
     $('.menu-phone__link').on('click', function (e) {
@@ -19,6 +21,8 @@ $(document).ready(function () {
         e.preventDefault();
         showSection($(this).attr('href'), true);
         sectionIndex = $(this).attr('href').replace(/#/, '');
+        $('.fixed-menu__item').eq(sectionIndex-1).addClass('active').siblings().removeClass('active');
+        switchColors(sectionIndex-1);
     });
 
     // постраничный слайдер начало
@@ -58,6 +62,8 @@ $(document).ready(function () {
             for (var i = 0; i <= items.length; i++) {
                 if (sectionIndex == i) {
                     showSec(sectionIndex, true);
+                    $('.fixed-menu__item').eq(sectionIndex-1).addClass('active').siblings().removeClass('active');
+                    switchColors(sectionIndex-1);
                 }
             }
 
@@ -107,3 +113,16 @@ function showSec(section, isAnimate) {
         }
     }
 }
+
+var switchColors = function (sectionEq) {
+
+    const blackDot = [1, 6, 8];
+
+    var dots = $('.fixed-menu__link');
+
+    if ($.inArray(sectionEq, blackDot) != -1) {
+      dots.addClass('fixed-menu__link--black');
+    } else {
+      dots.removeClass('fixed-menu__link--black');
+    }
+  }
