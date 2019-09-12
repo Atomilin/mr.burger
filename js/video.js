@@ -1,3 +1,9 @@
+var tag = document.createElement('script');
+
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
 //Инициализация плеера
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
@@ -6,24 +12,40 @@ function onYouTubeIframeAPIReady() {
       width: '850',
       videoId: 'nxevcb3x0qM',
       events: {
-        'onReady': onPlayerReady
+        'onReady': onPlayerReady,
+        'onStateChange': onPlayerStateChange
       }
 });
 }
-
-// Обработчик готовность
 function onPlayerReady(event) {
-	var player = event.target;
-  iframe = document.getElementById('player');
-  setupListener(); 			  
-  updateTimerDisplay();
-  updateProgressBar();
-              
-  time_update_interval = setInterval(function () {
-      updateTimerDisplay();
-      updateProgressBar();
-  }, 10000);		  
+  event.target.playVideo();
 }
+
+// 5. The API calls this function when the player's state changes.
+//    The function indicates that when playing a video (state=1),
+//    the player should play for six seconds and then stop.
+var done = false;
+function onPlayerStateChange(event) {
+  if (event.data == YT.PlayerState.PLAYING && !done) {
+    setTimeout(stopVideo, 6000);
+    done = true;
+  }
+}
+function stopVideo() {
+  player.stopVideo();
+}
+// Обработчик готовность
+/*function onPlayerReady() {
+    iframe = document.getElementById('player');
+    setupListener(); 			  
+    updateTimerDisplay();
+    updateProgressBar();
+                
+    time_update_interval = setInterval(function () {
+        updateTimerDisplay();
+        updateProgressBar();
+    }, 6000);	 
+}*/
 
 /*Слушать события*/
 function setupListener (){
