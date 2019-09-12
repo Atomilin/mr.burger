@@ -25,12 +25,11 @@ $(document).ready(function () {
         switchColors(sectionIndex-1);
     });
 
-    // постраничный слайдер начало
-
     showSlides(sectionIndex);
 
     var flag = false;
 
+    // постраничный слайдер начало
     $('.wrapper').bind('mousewheel', function (e) {
         if (!flag) {
 
@@ -38,7 +37,6 @@ $(document).ready(function () {
             function nextSlide() {
                 showSlides(sectionIndex = parseInt(sectionIndex) + 1);
             }
-
 
             /* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
             function prevSlide() {
@@ -74,6 +72,50 @@ $(document).ready(function () {
         }
     });
     // постраничный слайдер конец
+    var initialPoint;
+    var finalPoint;
+    //свайп начало
+    $(".wrapper").on('touchstart', function(e) {
+            initialPoint=event.changedTouches[0];
+        });
+    $(".wrapper").on('touchend', function(e) {
+
+         /* Функция увеличивает индекс на 1, показывает следующй слайд*/
+         function nextSlide() {
+            showSlides(sectionIndex = parseInt(sectionIndex) + 1);
+        }
+
+        /* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
+        function prevSlide() {
+            showSlides(sectionIndex -= 1);
+        }
+
+        var items = Array.from($(".section"));
+
+        finalPoint=event.changedTouches[0];
+
+        if (finalPoint.pageY < initialPoint.pageY){
+            nextSlide();
+            if (sectionIndex > items.length) {
+                sectionIndex = items.length;
+            }
+        }
+        else{
+            prevSlide();
+            if (sectionIndex < 0) {
+                sectionIndex = 0;
+            }
+        }
+
+        for (var i = 0; i <= items.length; i++) {
+            if (sectionIndex == i) {
+                showSec(sectionIndex, true);
+                $('.fixed-menu__item').eq(sectionIndex-1).addClass('active').siblings().removeClass('active');
+                switchColors(sectionIndex-1);
+            }
+        }
+    });
+    //свайп конец
 
     showSection(window.location.hash, false);
 });

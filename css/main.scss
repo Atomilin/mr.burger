@@ -14,29 +14,10 @@ $small: 375px;
 
 // Settings
 @import "./settings/mixins"; //миксины
-@import "./settings/common.scss"; //общие стили
-@import "./settings/fonts.scss"; //шрифты
-@import "./settings/zeroing.scss"; //сброс стандартных значений
-@import "./settings/header.scss"; //стили для шапки
-@import "./settings/footer.scss"; //стили для подвала
-
+@import "./settings/*.scss";
 
 //Sections
-
-@import "./section/sectionMainScreen.scss"; //стили главной страницы
-@import "./section/sectionWeBest.scss"; //стили страницы "мы лучшие" 
-@import "./section/sectionBurger.scss"; //стили страницы "бургеры"
-@import "./section/sectionTeam.scss"; //стили страницы "команда" 
-@import "./section/sectionMenu.scss"; //стили страницы "меню" 
-@import "./section/sectionReview.scss"; //стили страницы "отзывы" 
-@import "./section/sectionWeWork.scss"; //стили страницы "как мы работаем" 
-@import "./section/sectionDelivery.scss"; //стили страницы "закажи сейчас" 
-@import "./section/modulWindow.scss"; //стили модального окна 
-@import "./section/sectionActive.scss"; //стили активной секции 
+@import "./section/*.scss";
 
 //Dynamic elements
-@import "./dynamic_elements/fixMenu.scss"; //стили навигации
-@import "./dynamic_elements/slider.scss"; //слайдер
-@import "./dynamic_elements/teamAccardeon.scss"; //аккардеон страницы "команда"
-@import "./dynamic_elements/menuAccardeon.scss"; //аккардеон страницы "меню"
-@import "./dynamic_elements/menuNavPhone.scss"; //окно с навигацией для адаптива
+@import "./dynamic_elements/*.scss";
