@@ -13,7 +13,7 @@ function onYouTubeIframeAPIReady() {
 
 // Обработчик готовность
 function onPlayerReady(event) {
-  var player = event.target;
+	var player = event.target;
   iframe = document.getElementById('player');
   setupListener(); 			  
   updateTimerDisplay();
@@ -22,8 +22,9 @@ function onPlayerReady(event) {
   time_update_interval = setInterval(function () {
       updateTimerDisplay();
       updateProgressBar();
-  }, 1000);		  
+  }, 10000);		  
 }
+
 /*Слушать события*/
 function setupListener (){
   document.getElementById('full').addEventListener('click', playFullscreen);
@@ -37,32 +38,17 @@ function playFullscreen (){
       requestFullScreen.bind(iframe)();
     }
 }
-/*Загрузить плейлист*/			
-function loadPlaylistVideoIds() {
-  player.loadPlaylist({
-      'playlist': ['9HPiBJBCOq8', 'Mp4D0oHEnjc', '8y1D8KGtHfQ', 'jEEF_50sBrI'],
-      'listType': 'playlist',
-      'index': 0,
-      'startSeconds': 0,
-      'suggestedQuality': 'small'
-          });
-}			
+
 /*Громкость*/
 function editVolume () {				
   if (player.getVolume() == 0) {
-      player.setVolume('1000');
+      player.setVolume('100');
   } else {
       player.setVolume('0');
   }
   console.log(player.getVolume());
 }
-          
-/*Качество*/
-function editQuality () {
-  player.setPlaybackQuality('medium');			
-  document.getElementById('quality').innerHTML = '480';
-}
-          
+
 // Обновляем время на панельке - счетчик
 function updateTimerDisplay(){
   document.getElementById('time').innerHTML = formatTime(player.getCurrentTime());

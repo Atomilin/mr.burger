@@ -46,7 +46,6 @@
   //отправка запроса на сервер
   form.addEventListener('submit', () => {
     event.preventDefault();
-    console.log("клик прочитан");
 
     if (validateForm(form)) {
 

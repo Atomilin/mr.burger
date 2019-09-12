@@ -1771,7 +1771,9 @@ a:hover {
   cursor: pointer;
   position: relative; }
   .slider__composition:hover {
-    background: #e35028; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   @media screen and (max-width: 375px) {
     .slider__composition {
       width: 4.6875rem;

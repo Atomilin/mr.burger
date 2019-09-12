@@ -168,4 +168,4 @@ var switchColors = function (sectionEq) {
     } else {
       dots.removeClass('fixed-menu__link--black');
     }
-  }
+}
