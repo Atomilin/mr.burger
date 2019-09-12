@@ -18,12 +18,17 @@ function onYouTubeIframeAPIReady() {
 });
 }
 function onPlayerReady(event) {
-  event.target.playVideo();
+  //event.target.playVideo();
+  setupListener(); 			  
+    updateTimerDisplay();
+    updateProgressBar();
+                
+    time_update_interval = setInterval(function () {
+        updateTimerDisplay();
+        updateProgressBar();
+    }, 6000);	 
 }
 
-// 5. The API calls this function when the player's state changes.
-//    The function indicates that when playing a video (state=1),
-//    the player should play for six seconds and then stop.
 var done = false;
 function onPlayerStateChange(event) {
   if (event.data == YT.PlayerState.PLAYING && !done) {
