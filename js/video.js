@@ -18,7 +18,7 @@ function onYouTubeIframeAPIReady() {
 });
 }
 function onPlayerReady(event) {
-  //event.target.playVideo();
+
   setupListener(); 			  
     updateTimerDisplay();
     updateProgressBar();
