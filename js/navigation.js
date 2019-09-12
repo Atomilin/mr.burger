@@ -76,10 +76,11 @@ $(document).ready(function () {
     var finalPoint;
     //свайп начало
     $(".wrapper").on('touchstart', function(e) {
+        e.stopPropagation();
             initialPoint=event.changedTouches[0];
         });
     $(".wrapper").on('touchend', function(e) {
-
+        e.stopPropagation();
          /* Функция увеличивает индекс на 1, показывает следующй слайд*/
          function nextSlide() {
             showSlides(sectionIndex = parseInt(sectionIndex) + 1);
@@ -100,7 +101,7 @@ $(document).ready(function () {
                 sectionIndex = items.length;
             }
         }
-        else{
+        else if (finalPoint.pageY > initialPoint.pageY){
             prevSlide();
             if (sectionIndex < 0) {
                 sectionIndex = 0;
