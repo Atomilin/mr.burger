@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mr.burger</title>
     <link rel="shortcut icon" href="./images/icons/favicon.ico" type="image/x-icon">
+    <script src="https://www.youtube.com/iframe_api"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" type="text/css" rel="stylesheet" media="all">
     <link rel="stylesheet" href="./css/main.css">
 
@@ -1080,7 +1081,26 @@
             <section class="section process" data-section="7">
                 <div class="content content--we-best">
                     <div class="title title--black">как мы работаем</div>
-                    <iframe class="video" src="https://www.youtube.com/embed/nxevcb3x0qM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <!---->
+                    <div class="wrapper-video">
+                        <div class="video" id="player"></div>
+                        <div class="panel">
+                            <button id="back" onclick="player.previousVideo();"> &#171 </button>
+                            <button id="play" onclick="player.playVideo();">></button>
+                            <button id="pause" onclick="player.pauseVideo();">||</button>
+                            <button id="next" onclick="player.nextVideo();">&#187</button>
+                            <div id="time">00:00</div>		
+                            <div id="line" onclick="progress (event);">
+                                <div class="viewed"></div>
+                                <div id="fader" onclick="alert('fader');"></div>
+                            </div>
+                            <button id="volume" onclick="editVolume ();">
+                                <img class="volume-img" src="images/icons/volume.png"></button>
+                            <button id="full" onclick="playFullscreen ();">[]</button>
+                        </div>
+                    
+                    </div>		
+                    <!---->
                 </div>
             </section>
             <!--Delivery-->
@@ -1271,5 +1291,6 @@
     <script src="js/modul.js"></script>
     <script src="js/map.js"></script>
     <script src="js/review.js"></script>
+    <script src="js/video.js"></script>
 </body>
 </html>

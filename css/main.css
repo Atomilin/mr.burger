@@ -1057,8 +1057,19 @@ a:hover {
 .process {
   background-image: url("./../images/we_work_bg.png"); }
 
+.wrapper-video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
 .video {
-  margin-top: 3.125rem;
   width: 41.25rem;
   height: 23.125rem; }
   @media screen and (max-width: 768px) {
@@ -1076,6 +1087,80 @@ a:hover {
       margin-top: 2.5rem;
       width: 21.25rem;
       height: 11.6875rem; } }
+
+.panel {
+  width: 41.25rem;
+  height: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: grey;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  @media screen and (max-width: 768px) {
+    .panel {
+      width: 45rem;
+      height: 2.5rem; } }
+  @media screen and (max-width: 480px) {
+    .panel {
+      width: 28.75rem;
+      height: 2.5rem; } }
+  @media screen and (max-width: 375px) {
+    .panel {
+      width: 21.25rem;
+      height: 2.5rem; } }
+
+#play, #back, #next, #pause {
+  width: 50%;
+  height: inherit;
+  padding: 0; }
+
+#time {
+  width: 100%;
+  color: #fff;
+  padding: 0; }
+
+#line {
+  height: 4px;
+  width: 100%;
+  background: #fff;
+  float: left;
+  margin-right: 15px;
+  padding: 0; }
+
+#fader {
+  background: black;
+  border-radius: 5px;
+  width: 10px;
+  height: 10px;
+  position: relative;
+  z-index: 4;
+  bottom: 3px; }
+
+#volume {
+  width: 50%;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0; }
+
+#full {
+  width: 50%;
+  height: inherit;
+  padding: 0; }
+
+.viewed {
+  position: absolute;
+  background: red;
+  height: 4px; }
+
+.volume-img {
+  width: inherit; }
 
 .form {
   background-image: url("./../images/order_bg.jpg");
