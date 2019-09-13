@@ -1,7 +1,8 @@
 //устанавливаем зависимости npm install
+//устанавливаем jquery npm istall jquery
 //подключаем плагин normalize.css https://www.npmjs.com/package/normalize.css
 //npm install --save normalize.css
-const {src, dest, task, series, watch} = require('gulp');
+const {src, dest, task, series, watch, parallel} = require('gulp');
 //подключаем плагин gulp-rm https://www.npmjs.com/package/gulp-rm
 //npm install --save-dev gulp-rm
 const rm = require( 'gulp-rm' );
@@ -36,7 +37,20 @@ const cleanCSS = require('gulp-clean-css');
 const sourcemaps = require('gulp-sourcemaps');
 //подключаем плагин gulp-babel v.7 https://www.npmjs.com/package/gulp-babel
 //npm install --save-dev gulp-babel @babel/core @babel/preset-env
-//const babel = require('gulp-babel');
+const babel = require('gulp-babel');
+//подключаем плагин gulp-uglify https://www.npmjs.com/package/gulp-uglify
+//npm install --save-dev gulp-uglify
+var uglify = require('gulp-uglify');
+//устанавливаем оптимизацию svg кода https://www.npmjs.com/package/gulp-svg-sprite
+//npm install gulp-svgo gulp-svg-sprite --save-dev
+const svgo = require('gulp-svgo');
+const svgSprite = require('gulp-svg-sprite');
+//подключаем плагин для работы с dev и prod https://www.npmjs.com/package/gulp-if
+//npm install gulp-if --save-dev
+//npm install cross-env --save-dev
+const gulpif = require('gulp-if');
+
+const env = process.env.NODE_ENV;
 
 sass.compiler = require('node-sass');
 
@@ -59,32 +73,64 @@ const styles = [
 //склека файлов массива styles
 task("styles", () => {
     return src(styles)
-    .pipe(sourcemaps.init())
-        .pipe(concat('main.scss'))
+    .pipe(gulpif(env =='dev', sourcemaps.init()) )
+        .pipe(concat('main.min.scss'))
         .pipe(sassGlob())
         .pipe(sass().on('error', sass.logError))
         .pipe(px2rem()) 
-        .pipe(
-            autoprefixer({
+        .pipe(gulpif(env=='dev', 
+        autoprefixer({
             cascade: false
         }))
-        .pipe(gcmq())
+        )
+        .pipe(gulpif(env == 'prod', gcmq()))
+        .pipe(gulpif(env == 'prod', cleanCSS()))
         .pipe(cleanCSS())
-    .pipe(sourcemaps.write())
-    .pipe(dest('dist'));
+    .pipe(gulpif(env == 'dev',  sourcemaps.write()))
+    .pipe(dest('dist'))
+    .pipe(reload({stream: true}));
 });
 
+//массив скриптов и библиотек для проекта
+const libs = [
+    "node_modules/jquery/dist/jquery.js",
+    "js/*.js"
+]
 //склйка JS скриптов
 task('scripts', () => {
-    return src('js/*.js')
+    return src(libs)
         .pipe(sourcemaps.init())
-            .pipe(concat('main.js', {newLine: ";"}))
-            /*.pipe(babel({
+            .pipe(concat('main.min.js', {newLine: ";"}))
+            .pipe(babel({
                 presets: ['@babel/env']
-            }))*/
+            }))
+        .pipe(uglify())
         .pipe(sourcemaps.write())
-        .pipe(dest('dist'));
+        .pipe(dest('dist'))
+        .pipe(reload({stream: true}));
 })
+
+//создание иконок
+task("icons", () => {
+    return src('images/icons/*.svg')
+    .pipe(svgo({
+        plugins: [
+            {
+                removeAttrs: {attrs: "(fill|stroke|style|width|height|data.*)"}
+            }
+        ]
+    })
+    )
+    /*.pipe(svgSprite({
+        mode: {
+            symdol: {
+                sprite: "sprite.svg"
+            }
+        }
+    }))*/
+    .pipe(dest('dist/images/icons'));
+});
+
 //Запуск локального сервера
 task('server', () => {
     browserSync.init({
@@ -95,10 +141,28 @@ task('server', () => {
     });
 });
 
-//метод отслеживания изменений в папке css
-watch('./css/**/*.scss', series('styles'));
-//метод отслеживания изменений в файле html
-watch('*.html', series('copy:html'));
+task("watch", () => {
+    //метод отслеживания изменений в папке css
+    watch('./css/**/*.scss', series('styles'));
+    //метод отслеживания изменений в файле html
+    watch('*.html', series('copy:html'));
+    //метод отслеживания изменений в файле js
+    watch('./js/*.js', series('scripts'));
+    //метод отслеживания изменений в папке icons
+    watch('./images/icons/*.svg', series('icons'));
+});
 
-//команада для запуска таска
-task("default", series("clean", "copy:html", "styles", "scripts", "server"));
+//команада для запуска таска с параллельным запуском таска
+task("default", 
+    series(
+        "clean", 
+        parallel("copy:html", "styles", "scripts", "icons"),
+        parallel("watch", "server")
+    )
+);
+
+task("build", 
+    series(
+        "clean", 
+        parallel("copy:html", "styles", "scripts", "icons"))
+);

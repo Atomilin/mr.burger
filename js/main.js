@@ -65,11 +65,11 @@ function closeMenu() {
 
 
 //открытие и закрытие модального окна
-function openModul() {
+/*function openModul() {
     var modul = document.getElementById("modul");
     modul.style.display = "flex";
     document.getElementsByClassName('modul__wrapper')[0].style.position = 'fixed';
-}
+}*/
 
 function closeModul() {
     var modul = document.getElementById("modul");

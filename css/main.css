@@ -1114,7 +1114,8 @@ a:hover {
 #play, #back, #next, #pause {
   width: 50%;
   height: inherit;
-  padding: 0; }
+  padding: 0;
+  cursor: pointer; }
 
 #time {
   width: 100%;
@@ -1127,7 +1128,8 @@ a:hover {
   background: #fff;
   float: left;
   margin-right: 15px;
-  padding: 0; }
+  padding: 0;
+  cursor: pointer; }
 
 #fader {
   background: black;
@@ -1136,7 +1138,8 @@ a:hover {
   height: 10px;
   position: relative;
   z-index: 4;
-  bottom: 3px; }
+  bottom: 3px;
+  cursor: pointer; }
 
 #volume {
   width: 50%;
@@ -1147,12 +1150,14 @@ a:hover {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 0; }
+  padding: 0;
+  cursor: pointer; }
 
 #full {
   width: 50%;
   height: inherit;
-  padding: 0; }
+  padding: 0;
+  cursor: pointer; }
 
 .viewed {
   position: absolute;

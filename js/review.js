@@ -10,7 +10,7 @@
     const review_eight = document.querySelector('#review_eight');
 
     //функция открытия модального окна
-  function modulWindow(name, review) {
+  /*function modulWindow(name, review) {
 
     // открытие модального окна
     var modul = document.getElementById("modul");
@@ -20,7 +20,7 @@
     //задаем новый тектс заголовку
     document.getElementById("modul__title").textContent = name;
     document.getElementById("modul__text").textContent = review;
- }
+ }*/
 
  review_one.addEventListener('click', () => {
     event.preventDefault();

@@ -39,18 +39,6 @@ function onPlayerStateChange(event) {
 function stopVideo() {
   player.stopVideo();
 }
-// Обработчик готовность
-/*function onPlayerReady() {
-    iframe = document.getElementById('player');
-    setupListener(); 			  
-    updateTimerDisplay();
-    updateProgressBar();
-                
-    time_update_interval = setInterval(function () {
-        updateTimerDisplay();
-        updateProgressBar();
-    }, 6000);	 
-}*/
 
 /*Слушать события*/
 function setupListener (){
