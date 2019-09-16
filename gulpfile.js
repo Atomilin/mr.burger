@@ -59,10 +59,21 @@ task('clean', () => {
     return src( 'dist/**/*', { read: false }).pipe(rm());
 });
 
-//копируем файлы и указанной директории и с нужным расширением в папку dist и запуском автоматической перезагрузки
+//копируем файлы html из указанной директории и с нужным расширением в папку dist и запуском автоматической перезагрузки
 task('copy:html', () => {
     return src('*.html').pipe(dest('dist')).pipe(reload({stream: true}));
 });
+
+//копируем файлы fonts из указанной директории и с нужным расширением в папку dist и запуском автоматической перезагрузки
+task('copy:fonts', () => {
+    return src('fonts/*.woff').pipe(dest('dist/fonts')).pipe(reload({stream: true}));
+});
+
+//копируем файлы images jpg из указанной директории и с нужным расширением в папку dist и запуском автоматической перезагрузки
+task('copy:images', () => {
+    return src('images/**/*.*').pipe(dest('dist/images')).pipe(reload({stream: true}));
+});
+
 
 //массив из нужных файлов для склейки
 const styles = [
@@ -111,7 +122,7 @@ task('scripts', () => {
 })
 
 //создание иконок
-task("icons", () => {
+/*task("icons", () => {
     return src('images/icons/*.svg')
     .pipe(svgo({
         plugins: [
@@ -121,15 +132,15 @@ task("icons", () => {
         ]
     })
     )
-    /*.pipe(svgSprite({
+    .pipe(svgSprite({
         mode: {
             symdol: {
                 sprite: "sprite.svg"
             }
         }
-    }))*/
+    }))
     .pipe(dest('dist/images/icons'));
-});
+});*/
 
 //Запуск локального сервера
 task('server', () => {
@@ -149,14 +160,14 @@ task("watch", () => {
     //метод отслеживания изменений в файле js
     watch('./js/*.js', series('scripts'));
     //метод отслеживания изменений в папке icons
-    watch('./images/icons/*.svg', series('icons'));
+   // watch('./images/icons/*.svg', series('icons'));
 });
 
 //команада для запуска таска с параллельным запуском таска
 task("default", 
     series(
         "clean", 
-        parallel("copy:html", "styles", "scripts", "icons"),
+        parallel("copy:html", 'copy:fonts', 'copy:images', "styles", "scripts"/*, "icons"*/),
         parallel("watch", "server")
     )
 );
@@ -164,5 +175,5 @@ task("default",
 task("build", 
     series(
         "clean", 
-        parallel("copy:html", "styles", "scripts", "icons"))
+        parallel("copy:html", 'copy:fonts', 'copy:images', "styles", "scripts"/*, "icons"*/))
 );
