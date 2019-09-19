@@ -1,0 +1,84 @@
+.modul {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(47, 50, 52, .99);
+    z-index: 1;
+}
+
+.modul__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding: rem(5px) rem(20px) rem(13px) rem(20px);
+    border-radius: rem(10px);
+    background: #fff;
+    text-align: center;
+
+    @include tablets {
+        width: 80%;
+    }
+
+    @include phones {
+        width: 80%;
+    }
+
+    @include small {
+        width: 80%;
+    }
+}
+
+.modul-close {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modul__bottom {
+    display: flex;
+    justify-content: center;
+    padding-top: rem(20px);
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.modul__title {
+    font-family: Ubuntu;
+    font-size: rem(18px);
+    margin-top: rem(15px);
+}
+
+.modul__text {
+    font-family: Ubuntu;
+}
+
+//Крестик
+.modul-close__cross {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    height: rem(15px);
+    cursor: pointer;
+}
+
+.modul-close__cross:before, .modul-close__cross:after {
+    position: absolute;
+    content: '';
+    height: rem(23px);
+    width: rem(4px);
+    background-color: #e45028;
+    border-radius: rem(10px);
+}
+
+.modul-close__cross:before {
+    transform: rotate(45deg);
+}
+
+.modul-close__cross:after {
+    transform: rotate(-45deg);
+}

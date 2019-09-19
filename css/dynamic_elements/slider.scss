@@ -115,7 +115,7 @@
     cursor: pointer;
     position: relative;
     &:hover {
-        background: $red;
+        display: flex;
     }
 
     
@@ -181,7 +181,7 @@
         top: 0;
         left: 100%;
     }
-  }
+}
   
 .hover__list {
     justify-content: center;

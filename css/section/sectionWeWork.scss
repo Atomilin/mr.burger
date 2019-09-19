@@ -1,9 +1,14 @@
 .process {
     background-image: url('./../images/we_work_bg.png');
+    //display: none;
 }
-
+.wrapper-video {
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+}
 .video {
-    margin-top: rem(50px);
+    //margin-top: rem(50px);
     width: rem(660px); 
     height: rem(370px);
     
@@ -24,4 +29,80 @@
         width: rem(340px); 
         height: rem(187px);
     }
+}
+
+.panel {
+	width: rem(660px);
+	height: rem(40px);
+	display: flex;
+	background: grey;
+	align-items: center;
+
+	@include tablets {
+        width: rem(720px); 
+        height: rem(40px);
+    }
+
+    @include phones {
+        width: rem(460px); 
+        height: rem(40px);
+    }
+
+    @include small {
+        width: rem(340px); 
+        height: rem(40px);
+    }
+}
+#play, #back, #next, #pause{
+	width: 50%;
+	height: inherit;
+	padding: 0;
+	cursor: pointer;
+}
+#time{
+	width: 100%;
+	color: #fff;
+	padding: 0;
+}
+#line{	
+	height: 4px;
+	width: 100%;
+	background: #fff;
+	float: left;
+	margin-right: 15px;
+	padding: 0;
+	cursor: pointer;
+}
+#fader {
+	background: black;
+	border-radius: 5px;
+	width: 10px;
+	height: 10px;
+	position: relative;
+	z-index: 4;
+	bottom: 3px;
+	cursor: pointer;
+}
+#volume {
+	width: 50%;
+	height: inherit;
+	display: flex;
+    justify-content: center;
+	padding: 0;
+	cursor: pointer;
+}
+
+#full {
+	width: 50%;
+	height: inherit;
+	padding: 0;
+	cursor: pointer;
+}
+.viewed {
+	position: absolute;
+	background: red;
+	height: 4px;
+}
+.volume-img {
+	width: inherit;
 }
